@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <%= link_to "Ingredient Search", root_path, class: "navbar-brand" %>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <%= form_tag :foods, method: :get, class: "form-inline" do %>
+        <div class="form-group search-field">
+          <%= text_field_tag(:q) %>
+          <%= submit_tag "Search", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+</nav>
