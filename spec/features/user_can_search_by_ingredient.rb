@@ -5,9 +5,9 @@ describe 'user can search for food by ingredient' do
 
     visit root_path
 
-    fill_in :search, with: "sweet potatoes"
+    fill_in :q, with: "sweet potatoes"
 
-    click "Search"
+    click_button "Search"
 
     expect(current_path).to eq("/foods")
 
