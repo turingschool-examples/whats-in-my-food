@@ -10,6 +10,8 @@ class FoodsController < ApplicationController
     end
     # https://api.nal.usda.gov/fdc/v1/foods/search?api_key=fl6k6gMJqzehZDs1qP9uq2dDi2gaK9Fj2stPDIUx&query=Cheddar%20Cheese
 
-    food_info = JSON.parse(response.body, symbolize_names: true)
+    json = JSON.parse(response.body, symbolize_names: true)
+  
+    @foods = json[:foods]
   end
 end
