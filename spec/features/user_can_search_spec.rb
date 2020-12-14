@@ -19,12 +19,20 @@ RSpec.describe 'As a User' do
       # And for each of the foods I should see:
       # - The food's GTIN/UPC code
         expect(page).to have_css('.code')
+        info = find('.code').text
+        expect(info).to_not be_empty
       # - The food's description
         expect(page).to have_css('.description')
+        info = find('.description').text
+        expect(info).to_not be_empty
       # - The food's Brand Owner
         expect(page).to have_css('.brand_owner')
+        info = find('.brand_owner').text
+        expect(info).to_not be_empty
       # - The food's ingredients
         expect(page).to have_css('.ingredients')
+        info = find('.ingredients').text
+        expect(info).to_not be_empty
       end
     end
   end
