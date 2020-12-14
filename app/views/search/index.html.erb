@@ -1,0 +1,10 @@
+<h1>Total number of Items with <%= @search_term %>: <%= @results[:totalHits] %></h1>
+<% @results[:foods].each do |result| %>
+  <div class="item">
+    <%# binding.pry %>
+    <p class="code">Code: <% result[:fdcId]%></p>
+    <p class="description">Description: <% result[:description]%></p>
+    <p class="brand_owner">Brand Owner: <% result[:brandOwner]%></p>
+    <p class="ingredients">Ingredients: <% result[:ingredients]%></p>
+  </div>
+<% end %>

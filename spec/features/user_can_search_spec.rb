@@ -13,7 +13,7 @@ RSpec.describe 'As a User' do
       # Then I should be on page "/foods"
       expect(current_path).to eq(foods_path)
       # Then I should see a total of the number of items returned by the search.
-      expect(page).to have_content('Total number of Items with sweet potatoes: 20')
+      expect(page).to have_content('Total number of Items with sweet potatoes: 39244')
       # Then I should see a list of ten foods that contain the ingredient "sweet potatoes"
       within(first('.item')) do
       # And for each of the foods I should see:
