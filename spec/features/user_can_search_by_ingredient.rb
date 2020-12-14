@@ -11,7 +11,7 @@ describe 'user can search for food by ingredient' do
 
     expect(current_path).to eq("/foods")
 
-    expect(page).to have_content("8 Results")
+    expect(page).to have_content("50 Results")
   end
 end
 
