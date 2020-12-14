@@ -1,0 +1,6 @@
+<h3>Your search returned <%= "#{@foods.count} Results" %></h3>
+
+<p><%= @foods.each do |f| %></p>
+  <%= f[:foodCode] %>
+  <%= f[:description]%>
+<% end %>
