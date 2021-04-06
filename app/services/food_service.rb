@@ -1,17 +1,15 @@
 class FoodService
   def results(q)
     response = conn.get("/fdc/v1/foods/search?") do |faraday|
-      faraday.params['query'] = q[:q]
+      faraday.params['query'] = q
     end
-    parsed = JSON.parse(response.body, symbolize_names: true)
-    @foods = parsed[:foods].first(10).map do |data|
-      Food.new(data)
-    end
+    parsed = JSON.parse(response.body, symbolize_names: true)[:foods]
+
   end
 
   def total_results(q)
     response = conn.get("/fdc/v1/foods/search?") do |faraday|
-      faraday.params['query'] = q[:q]
+      faraday.params['query'] = q
     end
     JSON.parse(response.body, symbolize_names: true)[:totalHits]
   end
