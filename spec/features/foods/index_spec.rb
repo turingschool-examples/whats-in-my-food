@@ -3,11 +3,10 @@ require 'rails_helper'
 RSpec.describe "as a user" do
   describe "when i visit the /" do
     it "fills in sweet potatoes in the form and clicks search" do
-      visit '/'
+      visit root_path
 
-      expect(current_path).to eq.('/')
-      fill_in 'q', with: 'sweet potatoes'
-      click_on 'Search'
+      fill_in :q, with: 'sweet potatoes'
+      click_button 'Search'
       expect(current_path).to eq(foods_index_path)
       expect(page).to have_content('total search results')
       within('.results') do
