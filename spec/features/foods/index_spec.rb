@@ -9,4 +9,13 @@ describe "As an authenticated user, when I visit the root path and fill in the s
 
     expect(current_path).to eq(foods_path)
   end
+
+  it "display the total number of results returned" do
+    visit root_path
+
+    fill_in "q", with: "sweet potatoes"
+    click_button "Search"
+
+    expect(page).to have_content("Total number of items returned: 33074")
+  end
 end
