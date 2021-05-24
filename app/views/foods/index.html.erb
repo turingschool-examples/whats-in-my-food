@@ -1,0 +1,14 @@
+Total search results: <%= @total_results %>
+
+TEN food that contain sweet potatoes:
+<div class="ten-foods">
+  <ol>
+    <% @foods.each do |food| %>
+      <li id="food-#{food.id}">
+           GTIN/UPC code: <%= food[:gtinUpc] %>
+           Description: <%= food[:description] %>
+           Brand Ownder: <%= food[:brandOwner] %>
+           Ingredients: <%= food[:ingredients] %></li>
+    <% end %>
+  </ol>
+</div>

@@ -11,15 +11,17 @@ RSpec.describe 'Query FoodData Central with one ingredient' do
 
       expect(current_path).to eq('/foods')
       # (sweet potatoes should find more than 30,000 results)
-      expect(page).to have_content('Total search results:')
+      expect(page).to have_content('Total search results: 44128')
     end
 
     it 'Foods path displays TEN foods containing queried ingredient' do
 
-      expect(page).to have_content('TEN food that contain sweet potatoes')
+      expect(page).to have_content('TEN food that contain sweet potatoes:')
+      # test that there are only 10
     end
 
     it 'For each food item: GTIN/UPC code, description, Brand Owner, ingredients' do
+      within
     end
   end
 end
