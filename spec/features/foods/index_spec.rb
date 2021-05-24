@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'search', type: :feature do
-  describe 'I can select nations to view their members' do
-    it "I can select Fire Nation and can see the associated information " do 
+RSpec.describe 'foods', type: :feature do
+  describe 'I can input food query to view returned results' do
+    it "I can input 'sweet potatoes and can see the associated information " do 
       visit root_path
 
       fill_in :q, with: "sweet potatoes"
@@ -22,6 +22,16 @@ RSpec.describe 'search', type: :feature do
         expect(page).to have_css('.brand_owner')
         expect(page).to have_css('.ingredients')
       end
+    end
+
+    it "I am prompted to enter a valid search if no search is submitted" do 
+      visit root_path
+
+      fill_in :q, with: ""
+      click_button "Search"
+
+      expect(current_path).to eq(root_path)
+      expect(page).to have_content("Please input a food item to search!")
     end
   end
 end
