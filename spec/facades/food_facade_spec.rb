@@ -10,7 +10,7 @@ describe 'Food Facade'do
   end
 
   it 'returns count of foods containing a keyword' do
-    count = FoodFacade.count_of_foods_containing("sweet potatoes")
+    count = FoodFacade.count_foods_containing("sweet potatoes")
 
     expect(count).to eq(44128)
   end
