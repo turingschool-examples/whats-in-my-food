@@ -1,14 +1,14 @@
-<h1><%= @results[:foodSearchCriteria][:query].capitalize %></h1>
+<h1><%= @results.query %></h1>
 
-<h3><%= @results[:totalHits] %> Results:</h3>
+<h3><%= @results.total_results %> Results:</h3>
 
 <ol>
-  <% @results[:foods].each do |food| %>
-    <li>Brand Owner: <%= food[:brandOwner] %></li>
+  <% @results.foods.each do |food| %>
+    <li>Brand Owner: <%= food.brand_owner %></li>
     <ul>
-      <li>GTIN/UPC: <%= food[:gtinUpc] %></li>
-      <li>Ingredients: <%= food[:ingredients].downcase %></li>
-      <li>Description: <%= food[:lowercaseDescription] %></li>
+      <li>GTIN/UPC: <%= food.gtin_upc %></li>
+      <li>Ingredients: <%= food.ingredients %></li>
+      <li>Description: <%= food.description %></li>
     </ul> <br>
   <% end %>
 </ol>
