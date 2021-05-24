@@ -1,5 +1,5 @@
 class FoodController < ApplicationController
-  def Index
-    
+  def index
+    binding.pry
   end
 end
