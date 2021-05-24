@@ -1,0 +1,21 @@
+<h1>Food Search Results</h1>
+
+<p>Search Results: <%= @foods.count %> </p>
+
+<% @foods.each do |food| %>
+  <ul class='foods'>
+    <p class='gtinupc'>GTIN/UPC code: 
+      <%= food.gtinupc %>
+    </p>
+    <p class='description'>Description: 
+      <%= food.description %>
+    </p>
+    <p class='brandowner'>Brand Owner: 
+      <%= food.brandowner %>
+    </p>
+    <p class='ingredients'>Ingredients: 
+      <%= food.ingredients %>
+    </p>
+    <br>
+  </ul>
+<% end %>
