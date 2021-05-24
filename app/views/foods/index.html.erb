@@ -1,0 +1,8 @@
+Total number of items: <%= @foods.count %><br><br>
+
+<% @foods.each do |food|  %>
+  <b>GTIN/UPC Code:</b> <%= food.upc  %><br>
+  <b>Description: </b><%= food.description  %><br>
+  <b>Brand Owner: </b><%= food.brand_owner  %><br>
+  <b>Ingredients: </b><%= food.ingredients  %><br><br>
+<% end  %>
