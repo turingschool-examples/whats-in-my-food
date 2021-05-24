@@ -1,6 +1,34 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/facades/food_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          51,
+          null,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/services/food_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/poros/food.rb": {
         "lines": [
           1,
@@ -10,15 +38,15 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
+          50,
+          50,
+          50,
+          50,
           null,
           null
         ]
       }
     },
-    "timestamp": 1621873969
+    "timestamp": 1621875197
   }
 }
