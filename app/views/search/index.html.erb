@@ -1,0 +1,9 @@
+<h3>Search Results: <%= @food_info.size %></h3>
+<% @food_info.each do |food| %>
+  <section class="foods">
+      <h1 class="code">GTIN/UPC code: <%= food[:gtinUpc] %></h1>
+      <h1 class="description">Description: <%= food[:description] %></h1>
+      <h3 class="brand_owner">Brand Owner: <%= food[:brandOwner] %></h3>
+      <h3 class="ingredients">Ingredients: <%= food[:ingredients] %></h3>
+  </section>
+<% end %>
