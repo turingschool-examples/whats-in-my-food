@@ -1,8 +1,8 @@
 <h1>Food Search Results</h1>
-<% @food_response.each do |food|%>
-  <h2>Food GTIN/UPC: <%=food.gtinUPC%></h2>
-  <h2>Food Description: <%=food.description%></h2>
-  <h2>Food Brand Owner: <%=food.brandOwner%></h2>
-  <h2>Food Ingredients: <%=food.ingredients%></h2>
+<% @food_response.first(10).each do |food|%>
+  <h2>Food GTIN/UPC: <%=food[:gtinUpc]%></h2>
+  <h2>Food Description: <%=food[:description]%></h2>
+  <h2>Food Brand Owner: <%=food[:brandOwner]%></h2>
+  <h2>Food Ingredients: <%=food[:ingredients]%></h2>
 <%end%>
 
