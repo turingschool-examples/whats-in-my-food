@@ -1,43 +1,24 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/controllers/welcome_controller.rb": {
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/poros/food.rb": {
         "lines": [
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/controllers/food_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
           null,
           null,
           null,
-          2,
-          2,
-          null,
-          2,
           1,
           1,
-          null,
           1,
-          null,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1621872654
+    "timestamp": 1621873969
   }
 }
