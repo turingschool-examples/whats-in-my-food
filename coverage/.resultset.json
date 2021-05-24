@@ -1,0 +1,81 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1621869484
+  }
+}

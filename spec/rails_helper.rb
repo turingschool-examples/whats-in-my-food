@@ -62,3 +62,18 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.filter_sensitive_data('get_yer_hands_off_my_token') { ENV['food_api_key'] }
+  config.default_cassette_options = { re_record_interval: 7.days }
+  config.configure_rspec_metadata!
+end
