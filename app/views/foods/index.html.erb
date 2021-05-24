@@ -1,0 +1,26 @@
+
+<h1>Foods</h1>
+<h3><%= @count %> RESULTS</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gtin ucp code</th>
+      <th>Description</th>
+      <th>Brand</th>
+      <th>Ingredient</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @foods.each do |food| %>
+      <tr>
+        <td><%= food[:gtinUpc] %></td>
+        <td><%= food[:lowercaseDescription] %></td>
+        <td><%= food[:brandOwner] %></td>
+        <td><%= food[:ingredients] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
