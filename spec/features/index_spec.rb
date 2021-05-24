@@ -4,32 +4,44 @@ RSpec.describe 'As a user' do
     it 'And I fill  search form with "sweet potatoes" and click search, and I am redirected to /foods' do
       visit root_path
 
-      fill_in "sweet potatoes", from: :q
-      click_button 'Search'
-      expect(current_path).to eq(search_path)
+      fill_in :q, with: "sweet potatoes"
+      click_on "Search"
+      expect(current_path).to eq(foods_path)
     end
 
     it ' should see a total of the number of items returned by the search (more than 30,000 results)' do
+      visit root_path
+
+      fill_in :q, with: "sweet potatoes"
+      click_on "Search"
+      expect(current_path).to eq(foods_path)
+
+      expect(page).to have_content("Search Hits: 44128")
     end
 
-    it 'I should see a list of TEN foods that contain the ingredient "sweet potatoes"' do
-    end
+    describe 'I should see a list of TEN foods that contain the ingredient "sweet potatoes"' do
+      it 'And for each of the foods I should see:' do
+        visit root_path
 
-    it 'And for each of the foods I should see:' do
-      visit foods_path
-      within(first(".foods")) do
-        expect(page).to have_content("GTIN/UPC code: ")
-        expect(page).to have_css(".code")
-        expect(page).to have_content("Description: ")
-        expect(page).to have_css(".description")
-        expect(page).to have_content("Brand Owner: ")
-        expect(page).to have_css(".brand_owner")
-        expect(page).to have_content("Ingredients: ")
-        expect(page).to have_css(".ingredient")
+        fill_in :q, with: "sweet potatoes"
+        click_on "Search"
+        expect(current_path).to eq(foods_path)
+
+        within(first(".foods")) do
+          expect(page).to have_content("GTIN/UPC code: ")
+          expect(page).to have_css(".code")
+          expect(page).to have_content("Description: ")
+          expect(page).to have_css(".description")
+          expect(page).to have_content("Brand Owner: ")
+          expect(page).to have_css(".brand_owner")
+          expect(page).to have_content("Ingredients: ")
+          expect(page).to have_css(".ingredient")
+        end
       end
     end
   end
 end
+
 
 
 
