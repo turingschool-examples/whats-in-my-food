@@ -1,7 +1,7 @@
 <h1><%= @results[:totalHits] %> Results</h1>
 <% @foods.each do |food| %>
-  <p><%= food[:gtinUpc] %></p>
-  <p><%= food[:description] %></p>
-  <p><%= food[:brandOwner] %></p>
-  <p><%= food[:ingredients] %></p>
+  <strong>GTIN/UPC code: <%= food[:gtinUpc] %></strong>
+  <p>Description: <%= food[:description] %></p>
+  <p>Brand Owner: <%= food[:brandOwner] %></p>
+  <p>Ingredients: <%= food[:ingredients] %></p>
 <% end %>
