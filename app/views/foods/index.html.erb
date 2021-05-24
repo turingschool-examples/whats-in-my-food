@@ -1,15 +1,11 @@
 <h3>Seach Results for <%= @foods[:foodSearchCriteria][:query] %></h3>
 <p>Total matching results: <%= @foods[:totalHits] %></p>
 <p>Ten foods that contain <%= @foods[:foodSearchCriteria][:query] %> </p>
-  <% @foods[:foods].each do |food| %>
-  <br>
-    <strong> Food </strong>
-    GTIN/UPC Code: <%= food[:gtinUpc] %>
-    <br>
-    Description: <%= food[:description] %>
-    <br>
-    Brand Owner: <%= food[:brandOwner] %>
-    <br>
-    Ingredients: <%= food[:ingredients] %>
-    <br>
+  <% @foods[:foods].first(10).each do |food| %>
+    <ul class="food"> Food
+      <li class="GTIN/UPC"> GTIN/UPC Code: <%= food[:gtinUpc] %> </li>
+      <li class="Description"> Description: <%= food[:description] %> </li>
+      <li class="Brand Owner"> Brand Owner: <%= food[:brandOwner] %> </li>
+      <li class="Ingredients"> Ingredients: <%= food[:ingredients] %> </li>
+  </ul>
   <% end %>

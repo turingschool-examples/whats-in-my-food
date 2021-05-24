@@ -24,9 +24,18 @@ RSpec.describe "Food Search" do
       click_button "Search"
 
       expect(current_path).to eq(foods_path)
+      expect(page.status_code).to eq(200)
+      expect(page.all('ul', count: 10))
 
-        expect(page.all('li', count > 30,000 ))
+      expect(page).to have_content("Total matching results")
+      expect(page).to have_content("Description")
+      expect(page).to have_content("Brand Owner")
+      expect(page).to have_content("Ingredients")
       expect(page).to have_content("sweet potatoes")
+      # expect(page).to have_css(".Description")
+      # expect(page).to have_css(".Brand Owner")
+      # expect(page).to have_css(".Ingredients")
+      # expect(page).to have_content("sweet potatoes")
     end
   end
 end
