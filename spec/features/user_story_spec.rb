@@ -18,5 +18,13 @@ RSpec.describe 'User Story' do
     expect(page).to have_content("Ingredient Search")
     fill_in :q, with: "sweet potatoes"
     click_on("Search")
- end
+    expect(current_path).to eq(foods_path)
+    expect(page).to have_content("Food Count: 10")
+    # within(first('.food_item')) do
+    #   expect(page).to have_css('.gtin_upc')
+    #   expect(page).to have_css('.description')
+    #   expect(page).to have_css('.brand_owner')
+    #   expect(page).to have_css('.ingredients')
+    # end
+  end
 end
