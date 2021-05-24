@@ -1,14 +1,17 @@
 class FoodService
   class << self
-    def conn
-      Faraday.new(url: 'https://api.nal.usda.gov') do |faraday|
-        faraday.params['api_key'] = ENV['food_key']
+    def search_by_ingredient(ingredient)
+      resp = conn.get('foods/search') do |faraday|
+        faraday.params['query'] = ingredient
       end
-
-      def food_by_ingredient(ingredient)
-        conn.get('/fdc/v1/foods/search') do |faraday|
-          faraday.params['query'] = ingredient
-        end
+      JSON.parse(resp.body, symbolize_names: true)
+    end
+    
+    private
+    
+    def conn
+      Faraday.new(url: 'https://api.nal.usda.gov/fdc/v1/') do |faraday|
+        faraday.params['api_key'] = ENV['food_key']
       end
     end
   end
