@@ -3,7 +3,7 @@ class FoodsService
 
     def foods_search(food)
       response = conn.get('/fdc/v1/foods/search') do |req|
-        req.params['query'] = "ingredients:""#{food}"
+        req.params['query'] = "ingredients:#{food}"
         req.params['pageSize'] = 10
       end
       parse_data(response)
