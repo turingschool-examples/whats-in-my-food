@@ -1,0 +1,11 @@
+<h2>Total Hits:</h2>
+<%= @food_list.total_hits %>
+<br>
+<h2>Foods:</h2>
+<% @food_list.foods.each do |food| %>
+  <%= food.gtin_upc %>
+  <%= food.description %>
+  <%= food.brand_owner %>
+  <%= food.ingredients %>
+  <br>
+<% end %>

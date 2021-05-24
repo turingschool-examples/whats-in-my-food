@@ -1,6 +1,5 @@
 class FoodItem
-  attr_reader :total_hits,
-              :gtin_upc,
+  attr_reader :gtin_upc,
               :description,
               :brand_owner,
               :ingredients
