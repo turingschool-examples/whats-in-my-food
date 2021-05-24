@@ -1,0 +1,15 @@
+<h1>Foods Search Result</h1>
+
+<b>Total items returned: <%="#{@num_results}"%></b>
+
+<h3>Foods containing <%=@query%></h3>
+
+<% @foods[0..9].each do |f| %>
+
+<ul>
+  <li> Description: <%= "#{f.description}"%>
+  <li> GTIN/UPC code: <%= "#{f.upc_code}"%>
+  <li> Brand Owner: <%= "#{f.brand_owner}"%>
+  <li> Ingredients: <%= "#{f.ingredients}"%>
+</ul>
+<%end%>
