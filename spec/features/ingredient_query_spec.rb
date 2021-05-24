@@ -21,7 +21,12 @@ RSpec.describe 'Query FoodData Central with one ingredient' do
     end
 
     it 'For each food item: GTIN/UPC code, description, Brand Owner, ingredients' do
-      within
+      within '.ten-foods' do
+        expect(page).to have_content('GTIN/UPC code:')
+        expect(page).to have_content('Description:')
+        expect(page).to have_content('Brand Owner:')
+        expect(page).to have_content('Ingredients:')
+      end
     end
   end
 end

@@ -8,8 +8,5 @@ class FoodsController < ApplicationController
     @total_results = parsed[:totalHits]
 
     @foods = parsed[:foods].first(10)
-
-
-    binding.pry
   end
 end
