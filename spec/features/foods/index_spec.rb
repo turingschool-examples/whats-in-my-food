@@ -12,10 +12,11 @@ RSpec.describe 'food index page' do
       expect(current_path).to eq(foods_path)
       expect(page).to have_content('Total number of items:')
 
-      expect(page).to have_content("070560951975")
-      expect(page).to have_content("The Pictsweet Company")
+      expect(page).to have_content("832298010009")
+      expect(page).to have_content("C.H. Robinson Company
+")
       expect(page).to have_content("NOT A BRANDED ITEM")
-      expect(page).to have_content("ORGANIC CORN STARCH AND LESS THAN 2% SILICON DIOXIDE")
+      expect(page).to have_content("Spring Acres Sales Company Inc.")
     end
   end
 end
