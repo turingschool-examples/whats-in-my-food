@@ -16,7 +16,7 @@ RSpec.describe 'As a user' do
       click_on "Search"
       expect(current_path).to eq(foods_path)
 
-      expect(page).to have_content("Search Hits: 44128")
+      expect(page).to have_content("Total Hits: 44128")
     end
 
     describe 'I should see a list of TEN foods that contain the ingredient "sweet potatoes"' do
@@ -35,7 +35,7 @@ RSpec.describe 'As a user' do
           expect(page).to have_content("Brand Owner: ")
           expect(page).to have_css(".brand_owner")
           expect(page).to have_content("Ingredients: ")
-          expect(page).to have_css(".ingredient")
+          expect(page).to have_css(".ingredients")
         end
       end
     end

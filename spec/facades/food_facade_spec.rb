@@ -2,11 +2,10 @@ require 'rails_helper'
 
 describe 'Food Facade'do
   it 'returns foods containing a keyword' do
-    food_info = FoodFacade.foods_containing("sweet potatoes")
+    foods = FoodFacade.foods_containing("sweet potatoes")
 
     expect(foods).to be_an(Array)
-    expect(foods.size).to eq(25)
-    expect(foods.first).to be_an_instance_of(Food)
+    expect(foods.size).to eq(50)
   end
 
   it 'returns count of foods containing a keyword' do
