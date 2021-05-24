@@ -1,6 +1,6 @@
 Total search results: <%= @total_results %><br><br>
 
-TEN food that contain sweet potatoes:
+TEN food that contain <%= @searched_ingredient %>:
 <div class="ten-foods">
   <ol>
     <% @foods.each do |food| %>

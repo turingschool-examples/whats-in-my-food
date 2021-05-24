@@ -16,7 +16,7 @@ RSpec.describe 'Query FoodData Central with one ingredient' do
 
     it 'Foods path displays TEN foods containing queried ingredient' do
 
-      expect(page).to have_content('TEN food that contain sweet potatoes:')
+      expect(page).to have_content('TEN food that contain')
       # test that there are only 10
     end
 
