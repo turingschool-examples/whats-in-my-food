@@ -8,7 +8,9 @@ RSpec.describe 'Food search' do
       click_on "Search"
       expect(current_path).to eq('/foods')
       expect(page.status_code).to eq 200
-      # expect(page).to have_content(" Results")
+      expect(page).to have_content("44128 Results")
+      expect(page).to have_content("492111402857")
+      expect(page).to have_content("492111402857")
     end
   end
 end

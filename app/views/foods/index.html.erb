@@ -1,0 +1,7 @@
+<h1><%= @results[:totalHits] %> Results</h1>
+<% @foods.each do |food| %>
+  <p><%= food[:gtinUpc] %></p>
+  <p><%= food[:description] %></p>
+  <p><%= food[:brandOwner] %></p>
+  <p><%= food[:ingredients] %></p>
+<% end %>
