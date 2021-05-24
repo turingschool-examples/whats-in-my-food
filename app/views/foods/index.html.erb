@@ -3,12 +3,12 @@
 <b>Total items returned: <%%></b>
 
 <h3>Foods containing <%=@query%></h3>
-<% @results.each do |r| %>
+<% @foods.each do |r| %>
 <ul>
-  <li> Title: <%="#{@foods_info.title}"%>
-  <li> GTIN/UPC code: <%="#{@foods_info.code}"%>
-  <li> Description: <%="#{@foods_info.description}"%>
-  <li> Brand Owner: <%="#{@foods_info.brandowner}"%>
-  <li> Ingredients: <% @foods_info.ingredients.each do |i|%> <%= i[:name]%>, <%end%>
+  <li> Title: <%= "#{@foods_info.title}"%>
+  <li> GTIN/UPC code: <%= "#{@foods_info.upc_code}"%>
+  <li> Description: <%= "#{@foods_info.description}"%>
+  <li> Brand Owner: <%= "#{@foods_info.brand_owner}"%>
+  <li> Ingredients: <%= "#{@foods_info.ingredients}"%>
     <%end%>
 </ul>
