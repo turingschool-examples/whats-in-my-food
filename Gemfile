@@ -21,13 +21,17 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
-end
-
-group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'shoulda-matchers'
+
+end
+
+group :test do
+  # gem 'webmock'
+  # gem 'vcr'
 end
 
 group :development do
