@@ -143,11 +143,11 @@ describe 'Food' do
                 }
             ]
         }
-  }
+      
     food =  Food.new(food_data)
     expect(food.upc_code).to eq "492111402857"
     expect(food.description).to eq "SWEET POTATOES"
-    expect(food.brandowner).to eq "ARCHER FARMS"
+    expect(food.brand_owner).to eq "ARCHER FARMS"
     expect(food.ingredients).to eq "SWEET POTATOES."
   end
 end
