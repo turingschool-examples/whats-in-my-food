@@ -6,5 +6,12 @@ class FoodController < ApplicationController
     )
     resp =conn.get('search', {query: params[:q]})
     @foods = JSON.parse(resp.body, symbolize_names: true)
+
+    if @foods[:totalHits] == 0
+      flash[:error] = 'No food found'
+      render 'welcome/index'
+    else
+      @foods = JSON.parse(resp.body, symbolize_names: true)
+    end
   end
 end

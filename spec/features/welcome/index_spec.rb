@@ -18,5 +18,12 @@ RSpec.describe 'Welcome Index Page' do
       expect(page).to have_content('Ingredients')
       expect(page).to have_css('.food', count: 10)
     end
+    it 'Sad Path it returns no results and is returned to the root' do
+      visit root_path
+      fill_in :q, with: 'asdfefgagsadfsfasdasfasfasg'
+
+      click_button 'Search'
+      expect(page).to have_content("No food found")
+    end
   end
 end

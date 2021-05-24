@@ -3,13 +3,13 @@
   <head>
     <title>WhatsInMyFood</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
   <body>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
+    <% end %>
     <%= yield %>
   </body>
-
 </html>
