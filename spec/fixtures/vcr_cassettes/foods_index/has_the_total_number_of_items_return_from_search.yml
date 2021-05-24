@@ -1,0 +1,371 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=Vwb0bOuhV0FNzU6eXHaHu3SI7ibWBZkJdz4mil4c&pageSize=10&query=ingredients:sugar
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 24 May 2021 16:48:51 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3488'
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST,  GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"totalHits":187431,"currentPage":1,"totalPages":18744,"pageList":[1,2,3,4,5,6,7,8,9,10],"foodSearchCriteria":{"query":"ingredients:sugar","generalSearchInput":"ingredients:sugar","pageNumber":1,"numberOfResultsPerPage":50,"pageSize":10,"requireAllWords":false},"foods":[{"fdcId":1637921,"description":"KEY
+        LIME CHEESECAKE MIX","lowercaseDescription":"key lime cheesecake mix","dataType":"Branded","gtinUpc":"816277011706","publishedDate":"2021-03-19","brandOwner":"Phoenix
+        Food LLC","brandName":"JUST IN TIME GOURMET","ingredients":"POWDERED SUGAR
+        (SUGAR, CORNSTARCH), BROWN SUGAR (SUGAR, CANE SYRUP), AND LIME FLAVORING.","marketCountry":"United
+        States","foodCategory":"Cake, Cookie & Cupcake Mixes","allHighlightFields":"<b>Ingredients</b>:
+        POWDERED <em>SUGAR</em> (<em>SUGAR</em>, CORNSTARCH), BROWN <em>SUGAR</em>
+        (<em>SUGAR</em>, CANE SYRUP), AND LIME FLAVORING.","score":-494.7954,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":100},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":389},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":88.9},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":267},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]},{"fdcId":518563,"description":"CARAMEL
+        APPLE CHEESECAKE MIX","lowercaseDescription":"caramel apple cheesecake mix","dataType":"Branded","gtinUpc":"816277011690","publishedDate":"2019-04-01","brandOwner":"JUST
+        IN TIME GOURMET","ingredients":"POWDERED SUGAR (SUGAR, CORNSTARCH), BROWN
+        SUGAR (SUGAR, CANE SYRUP), AND GREEN APPLE POWDER.","marketCountry":"United
+        States","foodCategory":"Cake, Cookie & Cupcake Mixes","allHighlightFields":"<b>Ingredients</b>:
+        POWDERED <em>SUGAR</em> (<em>SUGAR</em>, CORNSTARCH), BROWN <em>SUGAR</em>
+        (<em>SUGAR</em>, CANE SYRUP), AND GREEN APPLE POWDER.","score":-495.2337,"foodNutrients":[{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":94.1},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":353},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":70.6},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0}]},{"fdcId":1528953,"description":"FRESH
+        & EASY, HAYSTACK MACAROONS, COCONUT","lowercaseDescription":"fresh & easy,
+        haystack macaroons, coconut","dataType":"Branded","gtinUpc":"051379078701","publishedDate":"2021-03-19","brandOwner":"Pap''s
+        Fine Products","brandName":"FRESH & EASY","ingredients":"DESICCATED COCONUT,
+        CONFECTIONER''S SUGAR,EGG WHITES, SUGAR, INVERT SUGAR, LIGHT BROWN SUGAR.","marketCountry":"United
+        States","foodCategory":"Cookies & Biscuits","allHighlightFields":"<b>Ingredients</b>:
+        DESICCATED COCONUT, CONFECTIONER''S <em>SUGAR</em>,EGG WHITES, <em>SUGAR</em>,
+        INVERT <em>SUGAR</em>, LIGHT BROWN <em>SUGAR</em>.","score":-495.2337,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.57},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":21.4},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":60.7},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":464},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":53.6},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":7.1},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":36.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":21.4}]},{"fdcId":518561,"description":"PEPPERMINT
+        CHEESECAKE","lowercaseDescription":"peppermint cheesecake","dataType":"Branded","gtinUpc":"816277012505","publishedDate":"2019-04-01","brandOwner":"JUST
+        IN TIME GOURMET","ingredients":"POWDERED SUGAR (SUGAR, CORNSTARCH), BROWN
+        SUGAR (SUGAR, CANE SYRUP), AND NATURAL PEPPERMINT FLAVOR.","marketCountry":"United
+        States","foodCategory":"Cake, Cookie & Cupcake Mixes","allHighlightFields":"<b>Ingredients</b>:
+        POWDERED <em>SUGAR</em> (<em>SUGAR</em>, CORNSTARCH), BROWN <em>SUGAR</em>
+        (<em>SUGAR</em>, CANE SYRUP), AND NATURAL PEPPERMINT FLAVOR.","score":-495.2337,"foodNutrients":[{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":94.1},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":412},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":88.2},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0}]},{"fdcId":516565,"description":"PUMPKIN
+        PIE CHEESECAKE MIX","lowercaseDescription":"pumpkin pie cheesecake mix","dataType":"Branded","gtinUpc":"816277011652","publishedDate":"2019-04-01","brandOwner":"JUST
+        IN TIME GOURMET","ingredients":"POWDERED SUGAR (SUGAR, CORNSTARCH), BROWN
+        SUGAR (SUGAR, CANE SYRUP), GROUND CINNAMON AND SPICES.","marketCountry":"United
+        States","foodCategory":"Cake, Cookie & Cupcake Mixes","allHighlightFields":"<b>Ingredients</b>:
+        POWDERED <em>SUGAR</em> (<em>SUGAR</em>, CORNSTARCH), BROWN <em>SUGAR</em>
+        (<em>SUGAR</em>, CANE SYRUP), GROUND CINNAMON AND SPICES.","score":-495.2337,"foodNutrients":[{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":2.25},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":100},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":375},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":93.8},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0}]},{"fdcId":1522085,"description":"BOURBON
+        SOFT CARAMELS","lowercaseDescription":"bourbon soft caramels","dataType":"Branded","gtinUpc":"855339005789","publishedDate":"2021-03-19","brandOwner":"G
+        & L Decadence LC","brandName":"DEBI LILLY","ingredients":"CORN SYRUP, SWEETENED
+        CONDENSED MILK (MILK, SUGAR), SUGAR, HEAVY CREAM, BUTTER (CREAM, SALT), BROWN
+        SUGAR (SUGAR, INVERT SUGAR, MOLASSES), INVERT SUGAR, NATURAL FLAVOR, SALT,
+        SOY LECITHIN","marketCountry":"United States","foodCategory":"Candy","allHighlightFields":"<b>Ingredients</b>:
+        CORN SYRUP, SWEETENED CONDENSED MILK (MILK, <em>SUGAR</em>), <em>SUGAR</em>,
+        HEAVY CREAM, BUTTER (CREAM, SALT), BROWN","score":-495.82565,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":16.7},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":58.3},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":361},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":41.7},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":56.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":125},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":556},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCSL","derivationDescription":"Calculated
+        from a less than value per serving size measure","value":42.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":9.72}]},{"fdcId":1534278,"description":"DEBI-LILLY,
+        ROSE SOFT CARAMELS","lowercaseDescription":"debi-lilly, rose soft caramels","dataType":"Branded","gtinUpc":"855339005840","publishedDate":"2021-03-19","brandOwner":"G
+        & L Decadence LC","brandName":"DEBI-LILLY","ingredients":"CORN SYRUP, SWEETENED
+        CONDENSED MILK (MILK, SUGAR), SUGAR, HEAVY CREAM, BUTTER (CREAM, SALT), BROWN
+        SUGAR (SUGAR, INVERT SUGAR, MOLASSES), INVERT SUGAR, NATURAL FLAVOR, SALT,
+        SOY LECITHIN","marketCountry":"United States","foodCategory":"Candy","allHighlightFields":"<b>Ingredients</b>:
+        CORN SYRUP, SWEETENED CONDENSED MILK (MILK, <em>SUGAR</em>), <em>SUGAR</em>,
+        HEAVY CREAM, BUTTER (CREAM, SALT), BROWN","score":-495.82565,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":16.7},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":58.3},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":361},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":41.7},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":56.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":125},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":556},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCSL","derivationDescription":"Calculated
+        from a less than value per serving size measure","value":42.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":9.72}]},{"fdcId":1522087,"description":"PINK
+        PEPPERCORN SOFT CARAMELS","lowercaseDescription":"pink peppercorn soft caramels","dataType":"Branded","gtinUpc":"855339005864","publishedDate":"2021-03-19","brandOwner":"G
+        & L Decadence LC","brandName":"DEBI LILLY","ingredients":"CORN SYRUP, SWEETENED
+        CONDENSED MILK (MILK, SUGAR), SUGAR, HEAVY CREAM, BUTTER (CREAM, SALT), BROWN
+        SUGAR (SUGAR, INVERT SUGAR, MOLASSES), INVERT SUGAR, NATURAL FLAVOR, SALT,
+        SOY LECITHIN","marketCountry":"United States","foodCategory":"Candy","allHighlightFields":"<b>Ingredients</b>:
+        CORN SYRUP, SWEETENED CONDENSED MILK (MILK, <em>SUGAR</em>), <em>SUGAR</em>,
+        HEAVY CREAM, BUTTER (CREAM, SALT), BROWN","score":-495.82565,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":16.7},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":58.3},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":361},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":41.7},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":56.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":125},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":556},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCSL","derivationDescription":"Calculated
+        from a less than value per serving size measure","value":42.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":9.72}]},{"fdcId":1661478,"description":"UNCURED
+        BACON","lowercaseDescription":"uncured bacon","dataType":"Branded","gtinUpc":"725439993869","publishedDate":"2021-03-19","brandOwner":"Delhaize
+        America, Inc.","brandName":"NATURE''S PLACE","ingredients":"PORK PREPARED
+        WITH WATER, SALT, TURBINADO SUGAR, CELERY POWDER. COATED WITH: SUGAR, BROWN
+        SUGAR, MAPLE SUGAR.","marketCountry":"United States","foodCategory":"Bacon,
+        Sausages & Ribs","allHighlightFields":"<b>Ingredients</b>: PORK PREPARED WITH
+        WATER, SALT, TURBINADO <em>SUGAR</em>, CELERY POWDER. COATED WITH: <em>SUGAR</em>,
+        BROWN <em>SUGAR</em>, MAPLE <em>SUGAR</em>.","score":-496.096,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":13.3},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":46.7},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":6.67},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":533},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":6.67},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1070.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":100},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":16.7}]},{"fdcId":1485612,"description":"CREME
+        BRULEE","lowercaseDescription":"creme brulee","dataType":"Branded","gtinUpc":"072036709950","publishedDate":"2021-03-19","brandOwner":"Harris-Teeter
+        Inc.","brandName":"HT TRADERS","ingredients":"CREAM (CREAM, MILK, MICROCRYSTALLINE
+        CELLULOSE, CARRAGEENAN, CELLULOSE GUM), MILK, FROZEN SUGARED YOLK (EGG YOLK,
+        SUGAR), SUGAR, LIQUID EGG WHITES, NATURAL VANILLA FLAVOR, SUGAR POUCH (CARAMELIZED
+        SUGAR, SUGAR).","marketCountry":"United States","foodCategory":"Croissants,
+        Sweet Rolls, Muffins & Other Pastries","allHighlightFields":"<b>Ingredients</b>:
+        CREAM (CREAM, MILK, MICROCRYSTALLINE CELLULOSE, CARRAGEENAN, CELLULOSE GUM),
+        MILK, FROZEN <em>SUGARED</em>","score":-496.1109,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.64},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":18.2},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":17.3},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":255},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":11.8},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":55.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.98},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":45.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":909},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":173},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.45},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":10.0}]}],"aggregations":{"dataType":{"Branded":187431},"nutrients":{}}}'
+  recorded_at: Mon, 24 May 2021 16:48:51 GMT
+recorded_with: VCR 6.0.0

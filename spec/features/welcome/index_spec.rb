@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'welcome page' do
+RSpec.describe 'welcome page', :vcr do
   it 'has a search form that redirects to /foods' do
     visit root_path
 

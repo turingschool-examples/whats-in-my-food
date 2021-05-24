@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'foods index' do
+RSpec.describe 'foods index', :vcr do
   it 'has the total number of items return from search' do
     visit root_path
 
@@ -21,6 +21,7 @@ RSpec.describe 'foods index' do
     expect(page).to have_content('KEY LIME CHEESECAKE MIX')
     expect(page).to have_content('CREME BRULEE')
   end
+
   it 'has attrs for each food' do
     visit root_path
 
