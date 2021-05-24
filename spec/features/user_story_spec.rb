@@ -14,6 +14,9 @@ RSpec.describe 'User Story' do
       - The food's description
       - The food's Brand Owner
       - The food's ingredients " do
-
+    visit root_path
+    expect(page).to have_content("Ingredient Search")
+    fill_in :q, with: "sweet potatoes"
+    click_on("Search")
  end
 end
