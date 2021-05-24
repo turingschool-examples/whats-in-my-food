@@ -1,0 +1,17 @@
+Searched item count: <%= @search_food_count %>
+<% @foods_info[0..9].each do |food_info| %>
+  <ul class='food_information'>
+    <p class='gtin_upc_code'>
+      <%= food_info.gtin_upc_code %>
+    </p>
+    <p class='description'>
+      <%= food_info.description %>
+    </p>
+    <p class='brand_owner'>
+      <%= food_info.brand_owner %>
+    </p>
+    <p class='ingredients'>
+      <%= food_info.ingredients %>
+    </p>
+  </ul>
+<% end %>
