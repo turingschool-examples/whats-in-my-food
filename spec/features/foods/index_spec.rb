@@ -19,7 +19,7 @@ RSpec.describe 'foods index page' do
     end
     
     it 'should have total number of results' do
-      expect(page).to have_content('30,000 Results')
+      expect(page).to have_content('44128 Results')
     end
 
     it 'should return a list of the 10 most relevant foods' do
