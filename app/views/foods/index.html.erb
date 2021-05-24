@@ -1,6 +1,6 @@
 <h1>Food Search Results</h1>
-
-<p>Search Results: <%= @foods.count %> </p>
+<h3>Total Number of Items Returned by the Search: <%= @number_of_results %> </h3>
+<h3>Number of Results Shown on this Page: <%= @foods.count %> </h3>
 
 <% @foods.each do |food| %>
   <ul class='foods'>

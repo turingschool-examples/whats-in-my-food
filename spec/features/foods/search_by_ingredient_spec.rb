@@ -7,9 +7,10 @@ RSpec.describe "Food Search" do
     click_button('Search')
 
     expect(current_path).to eq('/foods')
-    expect(page).to have_content('Search Results: 44128')
+    expect(page).to have_content('Total Number of Items Returned by the Search: 44128')
+    expect(page).to have_content('Number of Results Shown on this Page: 10')
     expect(page).to have_css('.foods', count: 10)
-    within(first('.parks')) do
+    within(first('.foods')) do
       expect(page).to have_css('.gtinupc')
       expect(page).to have_css('.description')
       expect(page).to have_css('.brandowner')

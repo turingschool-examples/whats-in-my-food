@@ -6,6 +6,7 @@ describe FoodService do
       scenario 'test_food_service', :vcr do
         results = FoodService.find_foods_by_ingredient('sweet potatoes')
         expect(results).to have_key :foods
+        expect(results).to have_key :totalHits
       end
     end
   end
