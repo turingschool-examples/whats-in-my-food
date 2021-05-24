@@ -20,11 +20,11 @@ RSpec.describe 'User Story' do
     click_on("Search")
     expect(current_path).to eq(foods_path)
     save_and_open_page
-    # within(first('.food_item')) do
-    #   expect(page).to have_css('.gtinUpc')
-    #   expect(page).to have_css('.description')
-    #   expect(page).to have_css('.brandOwner')
-    #   expect(page).to have_css('.ingredients')
-    # end
+    within(first('.food_item')) do
+      expect(page).to have_css('.gtinUpc')
+      expect(page).to have_css('.description')
+      expect(page).to have_css('.brandOwner')
+      expect(page).to have_css('.ingredients')
+    end
   end
 end
