@@ -8,7 +8,22 @@ class FoodsService
       end
     end
 
-    future_refactor = parse_json(response)
+    parse_json(response)
+  end
+
+
+  def self.food_list(ingredient, list_length = 10) # move to facade in future
+    food_data = search_ingredients(ingredient)
+    top_ten = food_data[:foods].first(list_length)
+    # binding.pry
+    future_poro = top_ten.map do |food|#in future make this poro
+      {brand: food[:brandOwner],
+      description: food[:lowercaseDescription],
+      gtinUpc: food[:gtinUpc],
+      ingredients: food[:ingredients]}
+    end
+    future_poro
+
   end
 
   def self.connection

@@ -30,6 +30,8 @@ RSpec.describe 'foods index' do
 
     visit '/'
 
+
+
     fill_in 'q', with: "sweet potato"
     click_button "Search"
     expect(current_path).to eq("/foods")
@@ -37,6 +39,14 @@ RSpec.describe 'foods index' do
     search = "sweet potato"
 
     expect(page).to have_content("total foods with #{search}: #{44128}")
+
+    expected_1 = {:brand=>"Wholesale Produce Supply, LLC", :description=>"sweet potatos", :gtinUpc=>"790629122251", :ingredients=>"SWEET POTATO, SUGAR, PAPRIKA (COLOR), PALM OIL, TOMATO POWDER, CORN STARCH, SALT, RICE FLOUR, SPICES, CHIPOTLE CHILI PEPPER, GARLIC POWDER, SODIUM DIACETATE, ONION POWDER, RICE HULL CONCENTRATE, EXTRACTIVE OF PAPRIKA (COLOR), NATURAL FLAVOR, SMOKE FLAVORING."}
+
+    expect(page).to have_content(expected_1[:description])
+    expect(page).to have_content(expected_1[:brand])
+    expect(page).to have_content(expected_1[:gtinUpc])
+    expect(page).to have_content(expected_1[:ingredients])
+
 
   end
 

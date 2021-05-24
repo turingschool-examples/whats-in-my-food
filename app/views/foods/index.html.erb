@@ -1,1 +1,11 @@
-<%= "total foods with #{@ingredient}: #{@foods[:totalHits]}" %>
+<%= "total foods with #{@ingredient}: #{@food_count}" %>
+<br><br>
+
+<% @foods.each do |food| %>
+  <br>
+  <%= food[:description] %><br>
+  <%= food[:brand] %><br>
+  <%= food[:gtinUpc] %><br>
+  <%= food[:ingredients] %><br>
+  <br>
+<% end  %>
