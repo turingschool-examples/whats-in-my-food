@@ -1,11 +1,15 @@
 class FoodsController < ApplicationController
-  def index
-    conn = Faraday.new(url:"https://api.nal.usda.gov/fdc/v1/foods/", params: { api_key: ENV['food_token'] })
-    response = conn.get("list?pageSize=10&pageNumber=1&api_key=#{ENV['food_token']}")
-    @returned_foods = JSON.parse(response.body, symbolize_names: true)
-    # @returned_foods = returned_foods.map do |food|
-    #                     Food.new(food)
-    #                   end
+   def index
+    # food_input = params[:search]
+    food_input = 'sweet potatoes'
+    conn = Faraday.new("https://api.nal.usda.gov") do |faraday|
+      faraday.params['api_key'] = ENV['food_token']
+    end
+    response  =  conn.get("fdc/v1/foods/search?query=#{food_input}")
+    food_response = JSON.parse(response.body, symbolize_names: true)[:foods]
+    food_response.map do |food|
+      require 'pry'; binding.pry
+      food
+    end
   end
 end
-
