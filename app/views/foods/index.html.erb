@@ -1,0 +1,12 @@
+<h2>Total number of items with sweet potatoes: <%= %></h2>
+<h2>Ten foods that contain sweet potatoes:</h2>
+<ul>
+  <% @foods.each do |food| %>
+  <li>
+      Code: <%= food.code %> |
+      Description: <%= food.description %> |
+      Brand Owner: <%= food.brand_owner %> |
+      Ingredients: <%= food.ingredients %>
+    <% end %>
+  </li>
+</ul>
