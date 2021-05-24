@@ -21,7 +21,7 @@ RSpec.describe 'foods index' do
     expect(page).to have_content('KEY LIME CHEESECAKE MIX')
     expect(page).to have_content('CREME BRULEE')
   end
-  it 'has attrs for results' do
+  it 'has attrs for each food' do
     visit root_path
 
     fill_in :q, with: 'sugar'
