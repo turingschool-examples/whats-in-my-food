@@ -7,6 +7,9 @@ class FoodsController < ApplicationController
 
     @total_results = parsed[:totalHits]
 
-    @foods = parsed[:foods].first(10)
+    # @foods = parsed[:foods].first(10)
+    @foods = parsed[:foods].map do |food|
+      Food.new(food)
+    end.first(10)
   end
 end

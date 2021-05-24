@@ -5,10 +5,10 @@ TEN food that contain sweet potatoes:
   <ol>
     <% @foods.each do |food| %>
       <li id="food-#{food.id}">
-           GTIN/UPC code: <%= food[:gtinUpc] %><br>
-           Description: <%= food[:description] %><br>
-           Brand Owner: <%= food[:brandOwner] %><br>
-           Ingredients: <%= food[:ingredients] %></li><br>
+           GTIN/UPC code: <%= food.gtin_upc_code %><br>
+           Description: <%= food.description %><br>
+           Brand Owner: <%= food.brand_owner %><br>
+           Ingredients: <%= food.ingredients %></li><br>
     <% end %>
   </ol>
 </div>
