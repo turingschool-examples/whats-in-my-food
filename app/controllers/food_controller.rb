@@ -1,5 +1,10 @@
 class FoodController < ApplicationController
   def index
-    binding.pry
+    conn = Faraday.new(
+      url: 'https://api.nal.usda.gov/fdc/v1/foods',
+      headers: {'X-Api-Key' => ENV['fdc_api_key']}
+    )
+    resp =conn.get('search', {query: params[:q]})
+    @foods = JSON.parse(resp.body, symbolize_names: true)
   end
 end
