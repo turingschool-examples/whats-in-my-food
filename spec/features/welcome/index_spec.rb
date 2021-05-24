@@ -11,7 +11,7 @@ RSpec.describe 'Welcome page' do
 
     it 'user can search for a food by name' do
       visit root_path
-      fill_in :search, with: 'sweet potatoes'
+      fill_in :foods, with: 'sweet potatoes'
       click_button 'Search'
       expect(current_path).to eq('/foods')
     end
