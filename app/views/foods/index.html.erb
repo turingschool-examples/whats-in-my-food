@@ -1,18 +1,8 @@
 <h1>Food Search Results</h1>
-<h2>Food Count: <%=@returned_foods.count%></h2>
-<% @returned_foods.each do |food| %>
-  <ul class='.food_item'>
-    <p class='.gtin_upc'><%= food.foodCode%></p>
-    <p class='.description'><%= food.description%></p>
-    <p class='.brand_owner'><%= food.name %></p>
-    <p class='.ingredients'><%= food.name %></p>
-  </ul>
-<% end %>
+<% @food_response.each do |food|%>
+  <h2>Food GTIN/UPC: <%=food.gtinUPC%></h2>
+  <h2>Food Description: <%=food.description%></h2>
+  <h2>Food Brand Owner: <%=food.brandOwner%></h2>
+  <h2>Food Ingredients: <%=food.ingredients%></h2>
+<%end%>
 
-
-    # within(first('.food_item')) do
-    #   expect(page).to have_css('.gtin_upc')
-    #   expect(page).to have_css('.description')
-    #   expect(page).to have_css('.brand_owner')
-    #   expect(page).to have_css('.ingredients')
-    # end

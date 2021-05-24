@@ -6,10 +6,6 @@ class FoodsController < ApplicationController
       faraday.params['api_key'] = ENV['food_token']
     end
     response  =  conn.get("fdc/v1/foods/search?query=#{food_input}")
-    food_response = JSON.parse(response.body, symbolize_names: true)[:foods]
-    food_response.map do |food|
-      require 'pry'; binding.pry
-      food
-    end
+    @food_response = JSON.parse(response.body, symbolize_names: true)[:foods]
   end
 end
