@@ -1,36 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/welcome_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/foods_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -51,6 +21,47 @@
         }
       },
       "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/controllers/foods_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/wyattwicks/turing/3module/midmod/whats-in-my-food/app/helpers/application_helper.rb": {
         "lines": [
           0,
           0
@@ -79,6 +90,6 @@
         }
       }
     },
-    "timestamp": 1621870512
+    "timestamp": 1621871652
   }
 }
