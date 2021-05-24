@@ -5,10 +5,11 @@ RSpec.describe 'Foods Index (search results)' do
     it 'user sees search results for food' do
       visit root_path
 
-      fill_in :foods, with: 'sweet potatoes'
+      fill_in :q, with: 'sweet potatoes'
       click_button 'Search'
 
       expect(current_path).to eq(foods_path)
+      require 'pry'; binding.pry
       expect(page.status_code).to eq 200
       expect(page).to have_content("Total items returned: 44128")
       expect(page).to have_content("GTIN/UPC code:")
