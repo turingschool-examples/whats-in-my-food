@@ -1,8 +1,6 @@
-<h1>Results: <%= @food[:totalHits] %> </h1>
+<h1>Results: <%= @foods.totalhits %> </h1>
 
-<% @food[:foods].first(10).each do |food| %>
-<li> <%= food[:description] %> </li>
-<ul> <%= food[:gtinUpc] %> </ul>
-<ul> <%= food[:brandOwner] %> </ul>
-<ul> <%= food[:ingredients] %> </ul>
+<%= @foods.food_info.each do |food| %>
+<%= @description %>
+<%= @gtinupc %>
 <% end %>
