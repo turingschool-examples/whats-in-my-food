@@ -28,10 +28,10 @@ RSpec.describe 'foods index' do
     click_button 'Search'
 
     expect(current_path).to eq(foods_path)
-    within("#food-637921") do
+    within("#food-1637921") do
       expect(page).to have_content('KEY LIME CHEESECAKE MIX')
       expect(page).to have_content('816277011706')
-      expect(page).to have_content('Pheonix Food LLC')
+      expect(page).to have_content('Phoenix Food LLC')
       expect(page).to have_content('POWDERED SUGAR (SUGAR, CORNSTARCH), BROWN SUGAR (SUGAR, CANE SYRUP), AND LIME FLAVORING.')
     end
   end

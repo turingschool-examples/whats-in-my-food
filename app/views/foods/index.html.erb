@@ -3,7 +3,7 @@
 <section>
   Number of search results: <%= @foods[:totalHits] %><br>
   <% @foods[:foods].each do |food| %>
-    <section id="food-<% food.fdcId %>">
+    <section id="food-<%= food[:fdcId] %>">
       GTIN/UPC: <%= food[:gtinUpc] %><br>
       Description: <%= food[:description] %><br>
       Brand Owner: <%= food[:brandOwner] %><br>
