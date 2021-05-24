@@ -1,17 +1,32 @@
 require 'rails_helper'
 
-describe FoodsFacade do
+describe FoodsService do
   it 'exists' do
-    foods_facade = FoodsFacade.new
-    
-    expect(foods_facade).to be_an_instance_of(FoodsFacade)
+    foods_service  = FoodsService.new
+    expect(foods_service).to be_an_instance_of(FoodsService)
   end
 
-  it 'can search foods by search query' do
-    search =  "fire nation"
-    foods_facade = FoodsFacade.search_by_food(food_input)
+  it 'retrieves reviews'do
+    food_input    =  "sweet potatoes"
+    respsonse     = FoodsService.search_by_food_db(food_input)
 
-    expect(foods_facade.count).to eq(97)
-    expect(foods_facade.first).to be_an_instance_of(Character)
+    expect(respsonse).to be_a(Hash)
+    expect(respsonse).to have_key(:totalHits)
+    expect(respsonse).to have_key(:foods)
+
+    expect(respsonse[:foods]).to be_an(Array)
+    expect(respsonse[:foods][0]).to be_a(Hash)
+
+    expect(respsonse[:foods][0]).to have_key(:fdcId)
+    expect(respsonse[:foods][0][:fdcId]).to be_an(Integer)
+
+    expect(respsonse[:foods][0]).to have_key(:description)
+    expect(respsonse[:foods][0][:description]).to be_a(String)
+
+    expect(respsonse[:foods][0]).to have_key(:brandOwner)
+    expect(respsonse[:foods][0][:brandOwner]).to be_a(String)
+
+    expect(respsonse[:foods][0]).to have_key(:ingredients)
+    expect(respsonse[:foods][0][:ingredients]).to be_a(String)
   end
 end
