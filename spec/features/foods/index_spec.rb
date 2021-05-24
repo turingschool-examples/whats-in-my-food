@@ -8,5 +8,6 @@ RSpec.describe "Foods page" do
     expect(current_path).to eq(foods_path)
     expect(page).to have_content('Results:')
     expect(page).to have_content(44128)
+    expect(page).to have_content('SWEET POTATO')
   end
 end
