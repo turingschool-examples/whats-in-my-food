@@ -1,15 +1,7 @@
 class FoodsController < ApplicationController
   def index
-    query = params[:q]
-    conn = Faraday.new('https://api.nal.usda.gov')
-    response = conn.get("/fdc/v1/foods/search?query=#{query}&api_key=#{ENV['FUDSKY']}")
-    parsed = JSON.parse(response.body, symbolize_names: true)
+    @total_results = FoodFacade.total_results_ingredient(params[:q])
 
-    @total_results = parsed[:totalHits]
-
-    # @foods = parsed[:foods].first(10)
-    @foods = parsed[:foods].map do |food|
-      Food.new(food)
-    end.first(10)
+    @foods = FoodFacade.foods_with_ingredient(params[:q])
   end
 end
