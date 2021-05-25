@@ -1,13 +1,95 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/facades/food_facade.rb": {
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/spec/features/welcome/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/spec/poros/food_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          51,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/spec/services/food_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/facades/food_facade.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          103,
+          3,
+          null,
+          1,
+          2,
+          2,
           null,
           null
         ]
@@ -17,14 +99,14 @@
           1,
           null,
           1,
-          1,
+          7,
           null,
           null,
           null,
           null,
           1,
-          1,
-          1,
+          6,
+          6,
           null,
           null
         ]
@@ -38,15 +120,47 @@
           null,
           null,
           1,
-          50,
-          50,
-          50,
-          50,
+          101,
+          101,
+          101,
+          101,
+          null,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/joey_haas/turing_mod_3/tests/whats-in-my-food/app/controllers/food_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1621875197
+    "timestamp": 1621876513
   }
 }

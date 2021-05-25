@@ -1,9 +1,9 @@
 <h2> Foods</h2>
-<p> Total Results: <%= @foods[:totalHits]%>
-  <% @foods[:foods][0..9].each do |food| %>
+<p> Total Results: <%= @total_results%>
+  <% @foods.each do |food| %>
     <section class="food">
-      <p> UPC Code: <%=food[:gtinUpc]%> </p>
-      <p> Description: <%=food[:description]%> </p>
-      <p> Brand Owner: <%=food[:brandOwner]%> </p>
-      <p> Ingredients: <%=food[:ingredients]%></p>
+      <p> UPC Code: <%=food.upc%> </p>
+      <p> Description: <%=food.description%> </p>
+      <p> Brand Owner: <%=food.brand_owner%> </p>
+      <p> Ingredients: <%=food.ingredients%></p>
     <%end%>
