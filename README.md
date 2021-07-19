@@ -2,9 +2,9 @@
 
 ### Versions
 
-Ruby 2.5.3
+Ruby 2.7.2
 
-Rails 5.1.7
+Rails 5.2.5
 
 ### Setup
 
