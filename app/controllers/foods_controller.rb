@@ -1,7 +1,8 @@
 class FoodsController < ApplicationController
 
   def search
-    require "pry"; binding.pry
+    @foods = FoodFacade.food_search(params[:q])
+    @total_results = FoodService.search(params[:q])[:totalHits]
   end
 
 end

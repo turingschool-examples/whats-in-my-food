@@ -1,0 +1,10 @@
+<p>Total results: <%= @total_results %></p>
+
+<ul>
+  <% @foods.each do |food| %>
+    <li><%= food.id %>
+    <%= food.description %>
+    <%= food.owner %>
+    <%= food.ingredients %></li>
+  <% end %>
+</ul>
