@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
 gem 'faraday'
 gem 'figaro'
+gem 'pusher'
 
 
 group :development, :test do
@@ -28,6 +29,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
