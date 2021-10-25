@@ -10,9 +10,13 @@ describe 'Foods Index Page' do
   end
 
   before :each do
-    allow(FoodFacade).to receive(:search).and_return(foods)
+    allow(FoodFacade).to receive(:search).and_return([foods, 12345])
 
     visit foods_path
+  end
+
+  it 'has the total hits' do
+    expect(page).to have_content('Total Hits: 12345')
   end
 
   it 'has all the food info' do
