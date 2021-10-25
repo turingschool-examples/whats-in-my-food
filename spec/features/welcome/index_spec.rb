@@ -1,10 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe "welcome and food search" do
-  it "text" do
+  it "searches for a food" do
     visit root_path
 
+    expect(page).to have_field(:q)
+    expect(page).to have_button("Search")
 
+    fill_in :q, with: "sweet potatoes"
+    click_on "Search"
 
     expect(current_path).to eq(foods_path)
   end
