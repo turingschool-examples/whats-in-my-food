@@ -6,12 +6,10 @@ class FoodsService
     end
   end
 
-  def self.get_data(url, search)
-    require "pry"; binding.pry
-    response = conn.get(url, search)
+  def self.get_data(url)
+    response = conn.get(url)
     data     = response.body
 
     JSON.parse(data, symbolize_names: true)
   end
-
 end

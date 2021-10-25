@@ -8,8 +8,8 @@ RSpec.describe 'foods index' do
   end
 
   it 'has the total number of foods that contain that ingredient' do
+    save_and_open_page
     expect(current_path).to eq(foods_path)
-    expect(page).to have_content("Foods that contain sweet potatoes")
+    expect(page).to have_content("foods that contain sweet potatoes")
   end
 end
-\
