@@ -1,0 +1,9 @@
+<h1>Number of Search Results: <%= @search_info.total_hits %></h1>
+
+
+<% @foods.each do |food| %>
+  <p>Description: <%= food.description %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+  <p>Brand Owner: <%= food.brand_owner %></p>
+  <p>GTIN/UPC Code: <%= food.gtinUpc %></p>
+<% end %>

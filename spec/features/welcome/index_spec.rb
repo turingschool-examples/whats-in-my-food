@@ -5,7 +5,7 @@ RSpec.describe 'welcome page' do
     visit "/"
   end
   it 'can search for foods with a keyword' do
-    VCR.use_cassette('welcome') do
+    VCR.use_cassette('welcome-1') do
       fill_in :q, with: 'sweet potato'
       click_on 'Search'
 
