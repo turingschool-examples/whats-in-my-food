@@ -6,6 +6,7 @@ RSpec.describe 'Index Page' do
       visit root_path
       save_and_open_page
 
+
       expect(current_path).to eq(root_path)
     end
   end
