@@ -1,7 +1,7 @@
 <h1>Search Results</h1>
 <% @foods.each do |food| %>
   <h3><%= food.description %></h3>
-  <p><%= food.code %></p>
-  <p><%= food.brand_owner %></p>
-  <p><%= food.food_ingredients %></p><br><br>
+  <p>GTIN/UPC Code: <%= food.code %></p>
+  <p>Brand Owner: <%= food.brand_owner %></p>
+  <p>Ingredients: <%= food.food_ingredients %></p><br><br>
 <% end %>
