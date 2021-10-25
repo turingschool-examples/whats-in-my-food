@@ -35,6 +35,6 @@ RSpec.describe 'Foods index page' do
     fill_in :q, with: 'sweet potatoes'
     click_on 'Search'
 
-    expect(page).to have_content("Total results: 46320")
+    expect(page).to have_content("Total Foods: 46320")
   end
 end
