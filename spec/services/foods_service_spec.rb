@@ -14,4 +14,12 @@ describe FoodsService do
       expect(response[0]).to have_key :foodNutrients
     end
   end
+  it 'can get the total amount of hits for a search' do
+    VCR.use_cassette("total hits") do
+      response = FoodsService.food_search_hits('sweet potatoes')
+
+      expect(response).to be_a Hash
+      expect(response).to have_key :totalHits
+    end
+  end
 end

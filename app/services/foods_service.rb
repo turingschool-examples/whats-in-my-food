@@ -9,5 +9,9 @@ class FoodsService
       foods = get_data("https://api.nal.usda.gov/fdc/v1/foods/search?query=#{keyword}&pageSize=10&api_key=#{ENV['API_KEY']}")
       foods[:foods]
     end
+
+    def food_search_hits(keyword)
+      foods_info = get_data("https://api.nal.usda.gov/fdc/v1/foods/search?query=#{keyword}&pageSize=10&api_key=#{ENV['API_KEY']}")
+    end
   end
 end
