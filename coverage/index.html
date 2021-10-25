@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-25T10:46:25-06:00">2021-10-25T10:46:25-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-25T11:00:03-06:00">2021-10-25T11:00:03-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="yellow">
-  86.05%
+      <span class="green">
+  90.8%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.97
+       <span class="green">
+         6.69
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>86</b> relevant lines,
-    <span class="green"><b>74</b> lines covered</span> and
-    <span class="red"><b>12</b> lines missed. </span>
-    (<span class="yellow">
-  86.05%
+    <b>87</b> relevant lines,
+    <span class="green"><b>79</b> lines covered</span> and
+    <span class="red"><b>8</b> lines missed. </span>
+    (<span class="green">
+  90.8%
 </span>
 )
   </div>
@@ -106,11 +106,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#f75cf794ba917d52fe2c07902ebb3bbc9484a202" class="src_link" title="app/facades/food_facade.rb">app/facades/food_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.60</td>
+            <td class="cell--number">18.00</td>
             
           </tr>
         
@@ -127,12 +127,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7507c374d0c10bfb02fb8f5d060ec162bbf7a8fa" class="src_link" title="app/poros/food_info.rb">app/poros/food_info.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">57.14 %</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">13</td>
             <td class="cell--number">7</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0.71</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">57.57</td>
             
           </tr>
         
@@ -336,12 +336,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#187fec8c0fe47f277beabec65e70f42a4afc61f6" class="src_link" title="spec/poros/food_info_spec.rb">spec/poros/food_info_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">70.00 %</td>
+            <td class="red strong cell--number t-file__coverage">80.00 %</td>
             <td class="cell--number">19</td>
             <td class="cell--number">10</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0.70</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0.80</td>
             
           </tr>
         
@@ -623,8 +623,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -675,7 +675,7 @@
 
             
 
-            <code class="ruby">    food_json = service.request_api(&quot;/fdc/v1/foods/search?query=#{item}&quot;)</code>
+            <code class="ruby">    food_json = service.request_api(&quot;/fdc/v1/foods/search?query=#{item}&quot;)[:foods]</code>
           </li>
         </div>
       
@@ -697,12 +697,34 @@
 
             
 
-            <code class="ruby">    FoodInfo.new(food_json[:foods])</code>
+            <code class="ruby">    food_json.map do |item_info|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="covered" data-hits="100" data-linenumber="7">
+            <span class="hits">100</span>
+            
+
+            
+
+            <code class="ruby">      FoodInfo.new(item_info)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -713,7 +735,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -785,8 +807,8 @@
   <div class="header">
     <h3>app/poros/food_info.rb</h3>
     <h4>
-      <span class="red">
-  57.14%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -796,8 +818,8 @@
 
     <div class="t-line-summary">
       <b>7</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -885,19 +907,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="8">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="100" data-linenumber="8">
+            <span class="hits">100</span>
             
 
             
 
-            <code class="ruby">    @upc_code = food_data[:upc_code]</code>
+            <code class="ruby">    @upc_code = food_data[:gtinUpc]</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
+          <li class="covered" data-hits="100" data-linenumber="9">
+            <span class="hits">100</span>
             
 
             
@@ -907,19 +929,19 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="100" data-linenumber="10">
+            <span class="hits">100</span>
             
 
-            <code class="ruby">    @brand_owner = food_data[:brand_owner]</code>
+            
+
+            <code class="ruby">    @brand_owner = food_data[:brandOwner]</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="11">
-            
+          <li class="covered" data-hits="100" data-linenumber="11">
+            <span class="hits">100</span>
             
 
             
@@ -4257,7 +4279,7 @@
     <h3>spec/poros/food_info_spec.rb</h3>
     <h4>
       <span class="red">
-  70.0%
+  80.0%
 </span>
 
       lines covered
@@ -4267,8 +4289,8 @@
 
     <div class="t-line-summary">
       <b>10</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -4400,8 +4422,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="12">
-            
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
             
 
             
@@ -4417,7 +4439,7 @@
 
             
 
-            <code class="ruby">      # expect(potatos.upc_code).to eq()</code>
+            <code class="ruby">      # expect(potatos.gtinUpc).to eq()</code>
           </li>
         </div>
       

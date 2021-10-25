@@ -1,8 +1,10 @@
 class FoodFacade
   def self.ten_foods(item)
     service = FoodService.new
-    food_json = service.request_api("/fdc/v1/foods/search?query=#{item}")
+    food_json = service.request_api("/fdc/v1/foods/search?query=#{item}")[:foods]
 
-    FoodInfo.new(food_json[:foods])
+    food_json.map do |item_info|
+      FoodInfo.new(item_info)
+    end
   end
 end
