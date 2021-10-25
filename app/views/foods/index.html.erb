@@ -1,11 +1,19 @@
 Total Foods: <%= @total_foods %>
 
 <h3>Foods:</h3>
-<% @foods.each do |food| %>
-  <section id="food-<%= food.fdc_id %>">
-    GTIN/UPC: <%= food.gtin_upc %><br>
-    Description: <%= food.description %><br>
-    Brand Owner: <%= food.brand_owner %><br>
-    Ingredients: <%= food.ingredients %><br>
-  </section>
-<% end %>
+<table id='foods'>
+  <tr>
+    <th>GTIN/UPC</th>
+    <th>Description</th>
+    <th>Brand Owner</th>
+    <th>Ingredients</th>
+  </tr>
+  <% @foods.each do |food| %>
+    <tr id="food-<%= food.fdc_id %>">
+      <td><%= food.gtin_upc %></td>
+      <td><%= food.description %></td>
+      <td><%= food.brand_owner %></td>
+      <td><%= food.ingredients %></td>
+    </tr>
+  <% end %>
+</table>
