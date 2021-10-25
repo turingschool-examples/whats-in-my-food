@@ -27,7 +27,7 @@ RSpec.describe 'Food Search Results' do
       results = FoodFacade.total_results('sweet potato')
       foods = FoodFacade.search_results('sweet potato')
       food = foods.first
-      
+
       expect(page.status_code).to eq 200
       expect(page).to have_content(results)
       expect(foods.size).to eq(10)
