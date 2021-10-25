@@ -2,7 +2,7 @@ class FoodClient
   class << self
     def search(food)
       url = "/fdc/v1/foods/search?query=#{food}&pageSize=10&api_key=#{ENV['api_key']}"
-      parse_data(conn.get(url))[:foods]
+      parse_data(conn.get(url))
     end
 
     private
