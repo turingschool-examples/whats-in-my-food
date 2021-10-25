@@ -10,8 +10,8 @@ RSpec.describe 'search functionality' do
     expect(current_path).to eq('/foods')
 
     expect(page).to have_content('Total results: 45082')
-    expect(page).to have_content('1998642')
-    expect(page).to have_content('GUSTARE VITA')
+    expect(page).to have_content('075450251951')
+    expect(page).to have_content('Hy-Vee, Inc.')
     expect(page).to have_content("REHYDRATED SWEET POTATOES (WATER, SWEET POTATO FLAKES), CORN FLOUR, POTATO STARCH, CORNSTARCH, RICE FLOUR, SALT, SWEET POTATO AROMA.")
   end
 end
