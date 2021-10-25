@@ -9,7 +9,7 @@ class FoodService
 private
   def self.conn
     Faraday.new('https://api.nal.usda.gov/fdc/') do |f|
-      f.header['X-Api-Key'] = ENV['food_key']
+      f.params['api_key'] = ENV['food_key']
     end
   end
 
