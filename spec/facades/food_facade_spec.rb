@@ -5,5 +5,6 @@ describe FoodFacade do
     foods = FoodFacade.ten_food_search("sweet potatoes")
     expect(foods).to be_a Array
     expect(foods.first).to be_a Food
+    expect(foods.count).to eq(10)
   end
 end
