@@ -3,7 +3,13 @@ class FoodFacade
     def search(name)
       data = FoodClient.search(name)
 
-      data.map do |food|
+      [foods(data), data[:totalHits]]
+    end
+
+    private
+
+    def foods(data)
+      data[:foods].map do |food|
         FoodPoro.new(food)
       end
     end
