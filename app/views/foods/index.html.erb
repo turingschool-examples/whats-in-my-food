@@ -1,2 +1,11 @@
 <h1>Foods Page</h1>
-<p>Total Items: <%=  %></p>
+<!-- <p>Total Items: <!%= FoodsService. %></p> -->
+<p><%= @food_count %></p>
+<% @foods.each do |food| %>
+  <ul>
+  <li><%= food.gtin_code %>
+  <li><%= food.description %>
+  <li><%= food.brand_owner %>
+  <li><%= food.ingredients %>
+  </ul>
+<% end %>

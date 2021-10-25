@@ -1,6 +1,7 @@
 class FoodsController < ApplicationController
 
   def index
-    require "pry"; binding.pry
+    @foods = FoodsFacade.foods_search(params[:search_params])
+    @food_count = FoodsService.total_foods("sweet%20potatoes")[:totalHits]
   end
 end
