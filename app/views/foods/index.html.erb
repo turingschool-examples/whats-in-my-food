@@ -1,0 +1,8 @@
+Total Foods with your Ingredient: <%= @total_hits %><br>
+
+<% @foods.each do |food| %>
+  <h2><%= food.description %><br></h2>
+  <b>gtin/UPC:</b> <%= food.upc %><br>
+  <b>Brand Owner:</b> <%= food.brand_owner %><br>
+  <b>Ingredients:</b> <%= food.ingredients %><br>
+<% end %>
