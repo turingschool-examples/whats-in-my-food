@@ -1,0 +1,15 @@
+<h1>Foods</h1>
+
+<% @foods.each do |food| %>
+  <br/>
+  <p>Upc: <%= food.upc_code || 'Not Given' %></p>
+  <p>Brand Owner: <%= food.brand_owner || 'Not Given' %></p>
+  <p>Description: <%= food.description || 'Not Given' %></p>
+  <p>Ingredients:
+    <ul>
+    <% food.ingredients&.each do |ingredient| %>
+      <li><%= ingredient %></li>
+    <% end %>
+    </ul>
+  </p>
+<% end %>
