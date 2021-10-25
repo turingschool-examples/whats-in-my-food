@@ -1,0 +1,18 @@
+<h1>Total Search Results: <%= @total_hits %></h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>GTIN/UPC</th>
+    <th>Brand Owner</th>
+    <th>Ingredients</th>
+  </tr>
+<% @foods.each do |food| %>
+  <tr>
+    <td><%= food.description %></td>
+    <td><%= food.gtin %></td>
+    <td><%= food.brand_owner %></td>
+    <td><%= food.ingredients %></td>
+  </tr>
+  <% end %>
+</table><br>
