@@ -1,0 +1,9 @@
+<h1>Get In My Belly</h1>
+
+<h2>Search Results: <%= @result_count %></h2>
+<% @foods.each do |food| %>
+  <h4><%= food.description %></h4><br>
+  <p>Brand: <%= food.brandOwner %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+  <p>UPC Code: <%= food.gtinUpc%></p>
+<% end %>
