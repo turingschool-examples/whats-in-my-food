@@ -27,7 +27,6 @@ RSpec.describe "Foods Index Page" do
     end
 
     it 'can display the total number of items returned by a search given a valid parameter' do
-
       expect(page).to have_content(Integer)
     end
   end

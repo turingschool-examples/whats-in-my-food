@@ -1,10 +1,16 @@
 class FoodsService
   class << self
-    def search_foods(query)
-      response = conn.get("/fdc/v1/foods/search?query=#{query}&pageSize=25&sortOrder=asc")
+
+    def total_foods(query)
+      response = conn.get("/fdc/v1/foods/search?query=#{query}&pageSize=10&sortOrder=asc")
       parse_json(response)
     end
 
+    def search_foods(query)
+      response = conn.get("/fdc/v1/foods/search?query=#{query}&pageSize=10&sortOrder=asc")
+      body = parse_json(response)
+      body[:foods]
+    end
 
     private
 
