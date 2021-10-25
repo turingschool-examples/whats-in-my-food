@@ -1,5 +1,5 @@
 class FoodsController < ApplicationController
   def index
-
-  end 
+    @food_count = FoodsFacade.total_items(params[:q])
+  end
 end
