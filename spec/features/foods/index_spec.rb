@@ -8,6 +8,6 @@ RSpec.describe 'foods index page', :vcr do
     click_on "Search"
 
     expect(current_path).to eq(foods_path)
-
+    expect(page).to have_content("Brand Owner", count: 10)
   end
 end
