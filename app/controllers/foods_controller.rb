@@ -1,6 +1,6 @@
 class FoodsController < ApplicationController
 
   def index
-    @food = FoodsFacade.foods_search(food_params)
+    require "pry"; binding.pry
   end
 end
