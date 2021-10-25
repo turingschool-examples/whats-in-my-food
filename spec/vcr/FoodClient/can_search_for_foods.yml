@@ -1,0 +1,364 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=<API_KEY>&pageSize=10&query=sweet%20potatoes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 25 Oct 2021 15:41:41 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3591'
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST,  GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"totalHits":46320,"currentPage":1,"totalPages":4632,"pageList":[1,2,3,4,5,6,7,8,9,10],"foodSearchCriteria":{"query":"sweet
+        potatoes","generalSearchInput":"sweet potatoes","pageNumber":1,"numberOfResultsPerPage":50,"pageSize":10,"requireAllWords":false},"foods":[{"fdcId":1929370,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"076700002019","publishedDate":"2021-07-29","brandOwner":"John
+        W. Taylor Packing Co. Inc","brandName":"TAYLOR''S","ingredients":"SWEET POTATOES.","marketCountry":"United
+        States","foodCategory":"Canned Vegetables","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":948.4067,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.88},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":19.5},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":80.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":10.6},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.8},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":18.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.8},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":18.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":7960.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":10.6},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]},{"fdcId":1959728,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"046567926179","publishedDate":"2021-07-29","brandOwner":"Raley''s","brandName":"RALEY''S","ingredients":"SWEET
+        POTATOES.","marketCountry":"United States","foodCategory":"Pre-Packaged Fruit
+        & Vegetables","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>.","score":948.4067,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.18},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.0},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":82.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":4.71},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.5},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":35.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.59},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":341},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":53.0},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]},{"fdcId":535125,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"492111402857","publishedDate":"2019-04-01","brandOwner":"ARCHER
+        FARMS","ingredients":"SWEET POTATOES.","marketCountry":"United States","foodCategory":"Frozen
+        Prepared Sides","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>.","score":948.4067,"foodNutrients":[{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":36.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.65},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":14100.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":2.2},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.82},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.0},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":82.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":4.55},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":2.7},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":55.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0}]},{"fdcId":1959694,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"070560951975","publishedDate":"2021-07-29","brandOwner":"The
+        Pictsweet Company","brandName":"PICTSWEET FARMS","ingredients":"SWEET POTATOES.","marketCountry":"United
+        States","foodCategory":"Frozen Vegetables","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":948.4067,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.69},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.3},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":85.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":4.24},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.4},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":30.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.85},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":337},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":55.0},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]},{"fdcId":1603120,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"085239028544","publishedDate":"2021-03-19","brandOwner":"Target
+        Stores","brandName":"ARCHER FARMS","ingredients":"SWEET POTATOES.","marketCountry":"United
+        States","foodCategory":"Pre-Packaged Fruit & Vegetables","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":948.4067,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.82},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.0},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":82.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":4.55},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":2.7},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":36.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.65},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":55.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":14100.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":2.2},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]},{"fdcId":451884,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"832298010009","publishedDate":"2019-04-01","brandOwner":"NOT
+        A BRANDED ITEM","ingredients":"","marketCountry":"United States","foodCategory":"Pre-Packaged
+        Fruit & Vegetables","allHighlightFields":"","score":948.3934,"foodNutrients":[{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":31.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.55},{"nutrientId":1090,"nutrientName":"Magnesium,
+        Mg","nutrientNumber":"304","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":28.0},{"nutrientId":1091,"nutrientName":"Phosphorus,
+        P","nutrientNumber":"305","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":46.0},{"nutrientId":1095,"nutrientName":"Zinc,
+        Zn","nutrientNumber":"309","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.23},{"nutrientId":1098,"nutrientName":"Copper,
+        Cu","nutrientNumber":"312","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.154},{"nutrientId":1101,"nutrientName":"Manganese,
+        Mn","nutrientNumber":"315","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":14200.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":2.8},{"nutrientId":1165,"nutrientName":"Thiamin","nutrientNumber":"404","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1166,"nutrientName":"Riboflavin","nutrientNumber":"405","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.052},{"nutrientId":1167,"nutrientName":"Niacin","nutrientNumber":"406","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.615},{"nutrientId":1170,"nutrientName":"Pantothenic
+        acid","nutrientNumber":"410","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.769},{"nutrientId":1175,"nutrientName":"Vitamin
+        B-6","nutrientNumber":"415","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.231},{"nutrientId":1177,"nutrientName":"Folate,
+        total","nutrientNumber":"417","unitName":"UG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":12.0},{"nutrientId":1185,"nutrientName":"Vitamin
+        K (phylloquinone)","nutrientNumber":"430","unitName":"UG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":1.2},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.54},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.0},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":85.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.85},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.1},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":338},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":54.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0}]},{"fdcId":983525,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"8901020020844","publishedDate":"2020-06-26","brandOwner":"NOT
+        A BRANDED ITEM","ingredients":"ORGANIC SWEET POTATOES.","marketCountry":"United
+        States","foodCategory":"Pre-Packaged Fruit & Vegetables","allHighlightFields":"<b>Ingredients</b>:
+        ORGANIC <em>SWEET</em> <em>POTATOES</em>.","score":948.3934,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.5},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.3},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":86.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":4.51},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":30.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.68},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":55.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":14200.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":2.3},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]},{"fdcId":1547804,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"095829400193","publishedDate":"2021-03-19","brandOwner":"C.H.
+        Robinson Company","brandName":"TOMORROW''S ORGANICS","ingredients":"ORGANIC
+        SWEET POTATOES","marketCountry":"United States","foodCategory":"Pre-Packaged
+        Fruit & Vegetables","allHighlightFields":"<b>Ingredients</b>: ORGANIC <em>SWEET</em>
+        <em>POTATOES</em>","score":948.3934,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.54},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":20.0},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":77.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":4.62},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.1},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":31.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.55},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":338},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":54.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":13500.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":2.8}]},{"fdcId":579614,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"819614010035","publishedDate":"2019-04-01","brandOwner":"BAKO
+        SWEET","ingredients":"","marketCountry":"United States","foodCategory":"Pre-Packaged
+        Fruit & Vegetables","allHighlightFields":"<b>Brand Owner</b>: BAKO <em>SWEET</em>","score":948.3934,"foodNutrients":[{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":15.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.28},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":16900.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":13.8},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.54},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":25.4},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":100},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":5.38},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.1},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":35.0}]},{"fdcId":1662832,"description":"SWEET
+        POTATOES","lowercaseDescription":"sweet potatoes","dataType":"Branded","gtinUpc":"826561500014","publishedDate":"2021-03-19","brandOwner":"Spring
+        Acres Sales Company Inc.","brandName":"WADA FARMS","ingredients":"","marketCountry":"United
+        States","foodCategory":"Pre-Packaged Fruit & Vegetables","allHighlightFields":"","score":948.3934,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":1.75},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":21.0},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":90.0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":6.14},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":3.5},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":35.0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.63},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":35.0},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":19200.0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":19.5},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","value":0.0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","value":0.0}]}],"aggregations":{"dataType":{"Branded":45082,"Survey
+        (FNDDS)":635,"SR Legacy":601,"Foundation":2},"nutrients":{}}}'
+  recorded_at: Mon, 25 Oct 2021 15:41:41 GMT
+recorded_with: VCR 6.0.0
