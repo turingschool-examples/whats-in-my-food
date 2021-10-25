@@ -6,7 +6,7 @@ RSpec.describe FoodService do
 
     expect(food_search).to be_a(Hash)
     expect(food_search).to have_key(:totalHits)
-    expect(food_search[:foods].first).to have_key(:fdcId)
+    expect(food_search[:foods].first).to have_key(:gtinUpc)
     expect(food_search[:foods].first).to have_key(:description)
     expect(food_search[:foods].first).to have_key(:brandOwner)
     expect(food_search[:foods].first).to have_key(:ingredients)
