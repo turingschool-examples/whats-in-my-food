@@ -12,4 +12,12 @@ RSpec.describe 'foods index' do
     expect(current_path).to eq(foods_path)
     expect(page).to have_content("foods that contain sweet potatoes")
   end
+
+  it 'Shows information about ten food' do
+    expect(page).to have_content("Ten Popular foods that contain sweet potatoes")
+    expect(page).to have_content("GTIN/UPC Code:", count: 10)
+    expect(page).to have_content("Description:", count: 10)
+    expect(page).to have_content("Brand Owner:", count: 10)
+    expect(page).to have_content("Ingredients:", count: 10)
+  end
 end
