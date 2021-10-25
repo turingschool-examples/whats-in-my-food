@@ -1,6 +1,9 @@
 <h1>Search Results</h1>
+<p><b>Total Number of Results: <%= @results_count %></b></p><br>
+<hr>
+<h3>Top 10 Matches: </h3>
 <% @foods.each do |food| %>
-  <h3><%= food.description %></h3>
+  <p><b><%= food.description %></b></p>
   <p>GTIN/UPC Code: <%= food.code %></p>
   <p>Brand Owner: <%= food.brand_owner %></p>
   <p>Ingredients: <%= food.food_ingredients %></p><br><br>

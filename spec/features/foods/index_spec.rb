@@ -9,5 +9,10 @@ RSpec.describe 'foods index page', :vcr do
 
     expect(current_path).to eq(foods_path)
     expect(page).to have_content("Brand Owner", count: 10)
+    expect(page).to have_content("GTIN/UPC Code:", count: 10)
+    expect(page).to have_content("Ingredients:", count: 10)
+    expect(page).to have_content("Search Results")
+    expect(page).to have_content("Total Number of Results:")
+    expect(page).to have_content("Top 10 Matches:")
   end
 end
