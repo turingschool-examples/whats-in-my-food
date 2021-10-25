@@ -16,7 +16,7 @@ describe 'Foods Index Page' do
   end
 
   it 'has the total hits' do
-    expect(page).to have_content('Total Hits: 12345')
+    expect(page).to have_content('Total Items: 12345')
   end
 
   it 'has all the food info' do
