@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
 gem 'faraday'
 gem 'figaro'
+gem 'vcr'
 
 
 group :development, :test do
