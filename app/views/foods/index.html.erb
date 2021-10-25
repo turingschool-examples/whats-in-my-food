@@ -1,4 +1,4 @@
-<h1>Foods related to your search:</h1>
+<h1>Foods related to your search: </h1>
 <h3><%= @food_count %> Results </h3>
 <% @foods.each do |food| %>
   <ul>
@@ -6,7 +6,7 @@
     <ul>
       <li> <%= food.description %> </li>
       <li> <%= food.brand_owner %> </li>
-      <li> <%= food.ingredients %> </li>
+        <li> <%= food.ingredients %> </li>
     </ul>
   </ul>
   <% end %>
