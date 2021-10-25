@@ -6,8 +6,6 @@ describe 'welcome page' do
 
     fill_in :q, with: 'sweet potatoes'
 
-    save_and_open_page
-
     expect(page).to have_button('Search')
   end
 end
