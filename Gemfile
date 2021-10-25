@@ -18,17 +18,17 @@ gem 'bootsnap'
 gem 'faraday'
 gem 'figaro'
 
-
 group :development, :test do
   gem 'pry'
 end
 
 group :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 4.0.1'
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
-end
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'orderly'end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
