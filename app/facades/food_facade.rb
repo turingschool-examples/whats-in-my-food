@@ -1,5 +1,9 @@
 class FoodFacade
   def self.search(query)
-    food_data = FdcService.search(query)
-    require "pry"; binding.pry
+    data = FdcService.search(query)
+    foods = data[:foods].map do |food|
+      Food.new(food)
+    end
+    hash = {total_hits: data[:totalHits], top_ten: foods}
+  end
 end
