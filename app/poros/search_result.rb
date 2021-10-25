@@ -5,6 +5,4 @@ class SearchResult
     @total_results = data[:total_results]
     @foods = data[:foods]
   end
-
-
 end
