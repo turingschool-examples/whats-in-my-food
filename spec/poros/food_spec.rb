@@ -7,7 +7,6 @@ RSpec.describe Food do
       description: 'stringy beans',
       brandOwner: 'evil.inc',
       ingredients: 'SOULS, GROUND SPIDERS, CORN STARCH'
-
     }
     food = Food.new(data)
     expect(food.id).to eq('123')
