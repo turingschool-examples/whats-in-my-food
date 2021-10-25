@@ -11,8 +11,11 @@ RSpec.describe "welcome and food search" do
     click_on "Search"
 
     expect(current_path).to eq(foods_path)
+    expect(page).to have_content("GTIN/UPC Code: 076700002019")
+    expect(page).to have_content("Description: SWEET POTATOES")
+    expect(page).to have_content("Brand Owner: John W. Taylor Packing Co. Inc")
+    expect(page).to have_content("Ingredients: SWEET POTATOES.")
   end
-
 end
 
 
