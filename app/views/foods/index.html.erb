@@ -3,7 +3,8 @@
 <hr>
 <h3>Top 10 Matches: </h3>
 <% @foods.each do |food| %>
-  <p><b><%= food.description %></b></p>
+  <p><b><%= food.name %></b></p>
+  <p>Description: <%= food.description %></p>
   <p>GTIN/UPC Code: <%= food.code %></p>
   <p>Brand Owner: <%= food.brand_owner %></p>
   <p>Ingredients: <%= food.food_ingredients %></p><br><br>
