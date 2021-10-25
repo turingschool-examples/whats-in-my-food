@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
   def index
-    @foods =  if params[:search].present?
-                 FoodFacade.ten_foods(param[:search])
-              end   
+    @foods =  if params[:q].present?
+                 FoodFacade.ten_foods(params[:q])
+              end
   end
 end
