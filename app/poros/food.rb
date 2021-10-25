@@ -1,8 +1,13 @@
 class Food
-  attr_reader :fdcid
+  attr_reader :totalHits,
+              :currentPage,
+              :totalPages,
+              :foods
 
   def initialize(data)
-    @fdcid = data[:fdcid]
-
+    @totalHits = data[:totalHits]
+    @currentPage = data[:currentPage]
+    @totalPages = data[:totalPages]
+    @foods = data[:foods]
   end
 end

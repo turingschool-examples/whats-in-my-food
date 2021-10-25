@@ -2,11 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'welcome page' do
   before :each do
-    visit root_path
   end
 
   it 'can search for foods' do
-save_and_open_page
+    visit root_path
   end
 end
 # When I visit "/"
