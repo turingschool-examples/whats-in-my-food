@@ -36,4 +36,12 @@ RSpec.describe 'foods page' do
       expect(page).to have_content("819614010394")
     end
   end
+
+  it 'shows 10 food results on the page' do
+    VCR.use_cassette('search-1') do
+      @foods = FoodsFacade.search('sweet potato')
+
+      expect(@foods.length).to eq(10)
+    end
+  end
 end
