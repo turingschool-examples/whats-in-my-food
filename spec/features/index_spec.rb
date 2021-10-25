@@ -7,6 +7,7 @@ RSpec.describe 'Foods Index' do
     visit '/'
     fill_in :q, with: "sweet potatoes"
     click_on "Search"
+    save_and_open_page
     expect(current_path).to eq("/foods")
     expect(page).to have_content(total)
     foods.each do |food|
