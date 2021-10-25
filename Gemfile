@@ -7,16 +7,25 @@ end
 
 ruby '2.7.2'
 
-gem 'rails', '~> 5.2.5'
+gem 'rails', '5.2.6'
 gem 'pg', '>= 0.18', '< 2.0'
-gem "puma", ">= 4.3.8"
+gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
-gem 'faraday'
+gem 'jbuilder', '~> 2.5'
 gem 'figaro'
+gem 'bcrypt'
+gem 'faraday'
+gem 'factory_bot_rails'
+gem 'faker'
+gem 'travis'
+gem 'database_cleaner'
+gem 'draper'
+gem 'react-rails', '~> 1.11'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'redis'
 
 
 group :development, :test do
@@ -28,6 +37,10 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'shoulda-matchers'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'orderly'
 end
 
 group :development do
