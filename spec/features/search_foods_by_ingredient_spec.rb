@@ -7,7 +7,7 @@ RSpec.describe 'welcome page' do
     click_button('Search')
   end
 
-  xit 'can get to foods_path' do
+  it 'can get to foods_path' do
     expect(current_path).to eq(foods_path)
   end
 
@@ -19,15 +19,20 @@ RSpec.describe 'welcome page' do
 
   xit 'has a list of ten foods that contain the ingredient' do
     # Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"
-
+    # expect(page).to have_section('food-1')
   end
 
-  xit 'has attributes for each listed food' do
+  it 'has attributes for each listed food' do
     # And for each of the foods I should see:
     # - The food's GTIN/UPC code
     # - The food's description
     # - The food's Brand Owner
     # - The food's ingredients
-
+    within '#food-1929370' do
+      expect(page).to have_content("GTIN/UPC: 076700002019")
+      expect(page).to have_content("Description: SWEET POTATOES")
+      expect(page).to have_content("Brand Owner: John W. Taylor Packing Co. Inc")
+      expect(page).to have_content("Ingredients: SWEET POTATOES.")
+    end
   end
 end
