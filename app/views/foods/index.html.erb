@@ -1,0 +1,11 @@
+<h1>Search Results</h1>
+
+<h3>Total Hits: <%= @hits %></h3>
+
+<% @foods.each do |food| %>
+  <p><%= food.gtinUpc %></p>
+  <p><%= food.description %></p>
+  <p><%= food.brandOwner %></p>
+  <p><%= food.ingredients %></p>
+  <br>
+<% end %>
