@@ -11,5 +11,7 @@ class FoodFacade
       data = FoodService.find_foods(food)
       data[:totalHits]
     end
+
+    #would like to refactor this and pull out the call to the service into its own method
   end
 end
