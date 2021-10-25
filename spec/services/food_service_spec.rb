@@ -7,5 +7,6 @@ RSpec.describe FoodService do
     expect(results).to be_a(Hash)
     expect(results[:totalHits]).to eq(45082)
     expect(results).to have_key(:foods)
+    expect(results[:foods]).to be_a(Array)
   end
 end
