@@ -1,0 +1,8 @@
+<h1>List of Foods:</h1>
+
+<% @foods.each do |food| %>
+  <%= food.upc_code %>
+  <%= food.description %>
+  <%= food.brand_owner %>
+  <%= food.ingredients %>
+<% end %>
