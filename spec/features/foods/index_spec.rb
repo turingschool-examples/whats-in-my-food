@@ -1,11 +1,11 @@
 require "rails_helper"
 
 # As a user,
-# When I visit "/"
-# And I fill in the search form with "sweet potatoes"
-# (Note: Use the existing search form)
-# And I click "Search"
-# Then I should be on page "/foods"
+# When I visit "/" x
+# And I fill in the search form with "sweet potatoes" x
+# (Note: Use the existing search form) x
+# And I click "Search" x
+# Then I should be on page "/foods" x
 # Then I should see a total of the number of items returned by the search.
 # (sweet potatoes should find more than 30,000 results)
 # Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"
@@ -16,15 +16,14 @@ require "rails_helper"
 # - The food's ingredients
 RSpec.describe "Foods Index Page" do
   describe 'when I search for a food' do
-    it 'can return a list of foods' do
+    it 'can redirect to foods path' do
       visit root_path
 
-      fill_in "Ingredient Search", with: "sweet potatoes"
+      fill_in :q, with: "sweet potatoes"
 
       click_on "Search"
 
-      expect(current_path).to be(foods_path)
+      expect(current_path).to eq(foods_path)
     end
   end
-
 end
