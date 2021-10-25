@@ -8,7 +8,7 @@ Rails 5.2.5
 
 ### Setup
 
-- Clone this repo
+- Fork and Clone this repo
 - `bundle install`
 - `bundle exec figaro install`
 - `rails db:{create,migrate}`
