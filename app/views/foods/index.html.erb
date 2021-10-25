@@ -1,3 +1,13 @@
-<h1>Search Results</h1>
+<h1>Search Results for "<%= @search_query %>"</h1>
 
-<p>Total Results: <%= @search.total_results %></p>
+<p>Total Results: <%= @foods.first.total_hits %></p>
+
+<h4>Top 10 Results</h4>
+<% @foods[0..9].each do |food| %>
+  <ul>
+    <li>GTIN/UPC Code: <%= food.gtin_upc %></li>
+    <li>Description: <%= food.description %></li>
+    <li>Brand Owner: <%= food.brand_owner %></li>
+    <li>Ingredients: <%= food.ingredients %></li>
+  </ul>
+<% end %>
