@@ -4,6 +4,10 @@ RSpec.describe 'welcome page' do
   before :each do
     visit root_path
   end
+
+  it 'can search for foods' do
+save_and_open_page
+  end
 end
 # When I visit "/"
 # And I fill in the search form with "sweet potatoes"
