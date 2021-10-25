@@ -9,11 +9,11 @@ RSpec.describe "FoodInfo Poros" do
         FoodFacade.ten_foods("sweet potatos")
       end
 
-      expect(potatos).to be_a FoodInfo
-      # expect(potatos.upc_code).to eq()
-      expect(potatos.description).to eq("Bread, sweet potato")
-      expect(potatos.brand_owner).to eq("")
-      # expect(potatos.ingredients).to eq
+      expect(potatos[0]).to be_a FoodInfo
+      # expect(potatos[0].upc_code).to eq()
+      expect(potatos[0].description).to eq("Bread, sweet potato")
+      expect(potatos[0].brand_owner).to eq()
+      expect(potatos[0].ingredients).to eq()
     end
   end
 end

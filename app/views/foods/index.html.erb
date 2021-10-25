@@ -1,8 +1,12 @@
 <h1>List of Foods:</h1>
 
-<% @foods.each do |food| %>
-  <%= food.upc_code %>
-  <%= food.description %>
-  <%= food.brand_owner %>
-  <%= food.ingredients %>
+<% @foods.take(10).each do |food| %>
+<ul>
+  <li>
+    <p>GTIN/UPC code: <%= food.upc_code %></p>
+    <p>Description: <%= food.description %></p>
+    <p>Brand Owner: <%= food.brand_owner %></p>
+    <p>Ingredients: <%= food.ingredients %></p>
+  </li>
+  </ul>
 <% end %>

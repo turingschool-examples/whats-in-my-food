@@ -10,9 +10,9 @@ RSpec.describe "Foods Index Page" do
 
       expect(current_path).to eq(foods_path)
       expect(page).to have_content("GTIN/UPC code")
-      expect(page).to have_content("description")
-      expect(page).to have_content("Brand Owener")
-      expect(page).to have_content("ingredients")
+      expect(page).to have_content("Description")
+      expect(page).to have_content("Brand Owner")
+      expect(page).to have_content("Ingredients")
     end
   end
 end

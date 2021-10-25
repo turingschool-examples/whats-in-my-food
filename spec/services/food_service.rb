@@ -13,7 +13,8 @@ RSpec.describe FoodService do
     it "can connect to the server" do
       response = @service.request_api("sweet potatos")
 
-      # example = response[:]
+      expect(response).to have_key(:foods)
+      expect(response[:foods]).to be_an(Array)
     end
   end
 end
