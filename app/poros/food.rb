@@ -6,6 +6,5 @@ class Food
     @description = data[:description]
     @owner = data[:brandOwner]
     @ingredients = data[:ingredients]
-
   end
 end
