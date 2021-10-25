@@ -1,8 +1,9 @@
 class FoodService
 
   def self.food_search(food)
-    response = conn.get('/fdc/v1/foods/search') do |faraday|
-    faraday.params['query'] = food
+    response = conn.get('/fdc/v1/foods/search?') do |faraday|
+    faraday.params[:query] = "#{food}"
+    faraday.params[:pageSize] = 10
     end
     parse_json(response)
   end

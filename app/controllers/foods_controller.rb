@@ -4,6 +4,5 @@ class FoodsController < ApplicationController
 
   def index
     @foods = FoodFacade.ten_food_search(params[:q])
-    binding.pry
   end
 end
