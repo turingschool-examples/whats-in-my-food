@@ -4,5 +4,9 @@ class FoodFacade
     foods = json[:foods].map do |food|
       FoodItem.new(food)
     end
+    {
+    total_hits: json[:totalHits],
+    foods: foods
+    }
   end
 end
