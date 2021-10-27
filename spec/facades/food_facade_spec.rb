@@ -8,6 +8,7 @@ RSpec.describe FoodFacade do
     expect(foods_results[:total_hits]).to be_an(Integer)
 
     expect(foods_results).to have_key(:foods)
+    expect(foods_results[:foods].count).to eq(10)
     expect(foods_results[:foods].first).to be_a(FoodItem)
   end
 end
