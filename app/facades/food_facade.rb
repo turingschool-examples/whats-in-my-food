@@ -6,7 +6,7 @@ class FoodFacade
     end
     {
     total_hits: json[:totalHits],
-    foods: foods
+    foods: foods.take(10)
     }
   end
 end
