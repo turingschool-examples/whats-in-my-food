@@ -1,18 +1,13 @@
 require 'rails_helper'
-
+# rspec spec/features/welcome_spec.rb
 RSpec.describe 'welcome page' do
-  before :each do
-  end
-
   it 'can search for foods' do
-    visit root_path
+    expect(page).to have_field(:q)
+
+    fill_in 'q', with: "sweet potatoes"
+    click_on 'Search'
+
+    expect(page.status_code).to eq 200
+    expect(current_path).to eq(foods_path)
   end
 end
-# When I visit "/"
-# And I fill in the search form with "sweet potatoes"
-# (Note: Use the existing search form)
-# And I click "Search"
-# Then I should be on page "/foods"
-# Then I should see a total of the number of items returned by the search.
-# (sweet potatoes should find more than 30,000 results)
-# Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"

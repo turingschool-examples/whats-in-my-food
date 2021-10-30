@@ -1,13 +1,13 @@
 class Food
-  attr_reader :totalHits,
-              :currentPage,
-              :totalPages,
-              :foods
+  attr_reader :gtinUpc,
+              :description,
+              :brandOwner,
+              :ingredients
 
   def initialize(data)
-    @totalHits = data[:totalHits]
-    @currentPage = data[:currentPage]
-    @totalPages = data[:totalPages]
-    @foods = data[:foods]
+    @gtinUpc = data[:gtinUpc]
+    @description = data[:description]
+    @ingredients = data[:ingredients]
+    @brandOwner = data[:brandOwner]
   end
 end

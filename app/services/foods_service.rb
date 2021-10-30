@@ -7,8 +7,11 @@ class FoodsService
 
   def self.get_data(url)
     response = conn.get(url)
-    data     = response.body
+    data = JSON.parse(response.body, symbolize_names: true)
+  end
 
-    JSON.parse(data, symbolize_names: true)
+  def self.search_foods(ingredient)
+    response = conn.get("search?query=#{ingredient}")
+    data = JSON.parse(response.body, symbolize_names: true)
   end
 end
