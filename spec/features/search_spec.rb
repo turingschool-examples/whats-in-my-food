@@ -16,7 +16,12 @@ RSpec.describe 'landing search page' do
     expect(current_path).to eq('/foods')
     expect(page).to have_content("Search returned 52829 results.")
     within 'div.foods' do
-      expect(all('div.food_*').count).to eq(10)
+      within 'div.food_1' do
+        expect(page).to have_content("Description:")
+        expect(page).to have_content("Item Code:")
+        expect(page).to have_content("Brand:")
+        expect(page).to have_content("Ingredients:")
+      end
     end
   end
 end
