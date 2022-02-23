@@ -6,9 +6,10 @@ RSpec.describe FoodFacade do
       food_items = FoodFacade.food_search("sweet potatoes")
 
       expect(food_items).to be_an Array
-      # expect(food_items.count).to_be <= 10
       food_items.each do |item|
         expect(item).to be_a FoodItem
+        expect(item.id).to be_an Integer
+        expect(item.name).to be_a String
       end
     end
   end
