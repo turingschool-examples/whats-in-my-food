@@ -1,1 +1,8 @@
 <h1>Total Results: <%= @count %></h1>
+<h1>Top 10 results</h1>
+<% @foods.each do |food|%>
+  <p><%= food.code %></p>
+  <p><%= food.description %></p>
+  <p><%= food.brand %></p>
+  <p><%= food.ingredients %></p>
+<% end %>
