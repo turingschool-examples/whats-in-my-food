@@ -3,7 +3,7 @@ class FoodsController < ApplicationController
     if params[:q].present?
       @food_search_term = search_params
       @food_list = FoodFacade.food_search_list(search_params)
-      @food_count = FoodFacade.food_search_list(search_params)
+      @food_count = FoodFacade.food_search_count(search_params)
     else
       redirect_to root_path
     end

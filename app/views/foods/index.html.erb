@@ -1,1 +1,8 @@
 <%= content_tag :h1, "Foods that contain #{@food_search_term}" %>
+<%= content_tag :h2, "Total number of foods that match search: #{@food_count}" %>
+
+<ol>
+  <% @food_list.each do |food| %>
+    <%= simple_format("GTIN/UPC Code: #{food.gtin_upc_code}\nDescription: #{food.description}\nBrand Owner: #{food.brand_owner}\nIngredients: #{food.ingredients}") %>
+  <% end %>
+</ol>

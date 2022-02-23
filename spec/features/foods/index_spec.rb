@@ -16,20 +16,36 @@ RSpec.describe 'Foods Index Page', type: :feature do
           visit root_path
           fill_in 'q', with: 'sweet potatoes'
           click_button 'Search'
-
+          
           expect(page).to have_css('h1', text: 'Foods that contain sweet potatoes')
         end
-
+        
         it 'displays the total number of items from the search' do
-          expect(page)
+          visit root_path
+          fill_in 'q', with: 'sweet potatoes'
+          click_button 'Search'
+          
+          
+          expect(page).to have_css('h2', text: 'Total number of foods that match search: 48008')
         end
-
-        it 'displays a list of 10 items from the food search' do
-
+        
+        it 'displays a list of 10 items max from the food search' do
+          visit root_path
+          fill_in 'q', with: 'sweet potatoes'
+          click_button 'Search'
+          
+          expect(page).to have_css('p', count: 10)
         end
-
+        
         it 'displays the foods information' do
+          visit root_path
+          fill_in 'q', with: 'sweet potatoes'
+          click_button 'Search'
 
+          expect(page).to have_content('GTIN/UPC Code:')
+          expect(page).to have_content('Description:')
+          expect(page).to have_content('Brand Owner:')
+          expect(page).to have_content('Ingredients:')
         end
       end
     end
