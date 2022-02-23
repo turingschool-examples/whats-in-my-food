@@ -1,0 +1,8 @@
+<h1>FOODS THAT CONTAIN <%= @ingredient %></h1>
+<%@foods.each do |food| %>
+  <p>GTIN: <%= food.gtin %></p>
+  <p>Brand Owner: <%= food.brand_owner %></p>
+  <p>Description: <%= food.description %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+  <hr>
+<% end %>
