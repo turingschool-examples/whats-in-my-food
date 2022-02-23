@@ -6,6 +6,6 @@ class FoodsService
 
   def self.get_foods(string)
     response = conn.get('search', { query: string})
-    JSON.parse(response.body, symbolize_names: true)[:results])
+    JSON.parse(response.body, symbolize_names: true)
   end
 end

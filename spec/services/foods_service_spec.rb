@@ -12,7 +12,7 @@ RSpec.describe FoodsService, type: :service do
 
     describe '::get_foods' do
      it 'returns hash of foods details' do
-       foods = FoodsService.get_foods(11)
+       foods = FoodsService.get_foods("Sweet potato")
 
        expect(foods).to be_a(Hash)
      end
