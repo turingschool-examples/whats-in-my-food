@@ -1,8 +1,8 @@
-<p>Count of Food: <%= @json[:totalHits] %></p>
+<p>Count of Food: <%= @foods.first.total %></p>
 
 <% @foods.each do |food| %>
-<p>Description: <%= food[:description] %></p>
-<p>Brand Owner: <%= food[:brandOwner] %></p>
-<p>Ingredients: <%= food[:ingredients] %></p>
-<p>GTIN/UPC: <%= food[:gtinUpc] %></p>
+<p> Description: <%= food.description %> </p>
+<p> Brand Owner: <%= food.brand %> </p>
+<p> Ingredients: <%= food.ingredients %> </p>
+<p> GTIN/UPC: <%= food.gtinUpc %> </p>
 <% end %>
