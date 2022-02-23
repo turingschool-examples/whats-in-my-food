@@ -2,12 +2,15 @@ require 'rails_helper'
 
 RSpec.describe 'Welcome Page' do
   it 'has a form to search for a food' do
-    visit '/'
+      VCR.use_cassette('foods_for_sweet_potatoes') do
 
-    fill_in :q, with: "sweet potatoes"
-    click_on "Search"
+      visit '/'
 
-    expect(current_path).to eq("/foods")
+      fill_in :q, with: "sweet potatoes"
+      click_on "Search"
+
+      expect(current_path).to eq("/foods")
+    end
   end
 end
 
