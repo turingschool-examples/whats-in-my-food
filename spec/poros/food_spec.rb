@@ -6,7 +6,7 @@ it 'exists' do
   attributes = {
     gtinUpc: "076700002019",
     description: "sweet potatoes",
-    brand_owner: "John W. Taylor Packing Co. Inc",
+    brandOwner: "John W. Taylor Packing Co. Inc",
     ingredients: "SWEET POTATOES."
   }
 
