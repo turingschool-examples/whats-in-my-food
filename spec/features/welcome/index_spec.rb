@@ -29,8 +29,6 @@ RSpec.describe 'Landing Page' do
     fill_in :search_query, with: 'sweet potatoes'
     click_on "Search"
 
-    expect(page).to have_content("Search Results: 46770")
-
     expect(page).to have_content("Food's that contain sweet potatoes:")
 
     expect(page).to have_content("GTIN/UPC: 028400015233")
