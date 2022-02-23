@@ -1,5 +1,5 @@
 class FoodSearch
-  attr_reader: :upc, :description, :brand, :ingredients
+  attr_reader :upc, :description, :brand_owner, :ingredients
 
   def initialize(data)
     @upc = data[:gtinUpc]
@@ -7,4 +7,4 @@ class FoodSearch
     @brand_owner = data[:brandOwner]
     @ingredients = data[:ingredients]
   end
-end 
+end
