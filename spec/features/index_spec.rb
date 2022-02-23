@@ -1,6 +1,6 @@
 require 'rails_helper'
 RSpec.describe "the welcome page" do
-  it "has a form", :vcr do
+  it "has a form that finds foods based on search", :vcr do
     visit "/"
     fill_in :q, with: "butter"
     click_button("Search")

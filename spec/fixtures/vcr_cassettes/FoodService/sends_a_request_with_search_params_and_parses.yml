@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nal.usda.gov/fdc/v1/foods/search??limit=10&api_key=food_key&query=anise
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=food_key&dataType=&pageNumber=1&page_size=10&query=anise
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Wed, 23 Feb 2022 17:37:24 GMT
+      - Wed, 23 Feb 2022 17:56:37 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,14 +31,14 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3585'
+      - '3582'
       X-Frame-Options:
       - sameorigin
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       - max-age=63072000; includeSubDomains; preload
       Age:
-      - '0'
+      - '1'
       Via:
       - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Cache:
@@ -49,7 +49,7 @@ http_interactions:
       - POST,  GET, OPTIONS
     body:
       encoding: ASCII-8BIT
-      string: '{"totalHits":553,"currentPage":1,"totalPages":12,"pageList":[1,2,3,4,5,6,7,8,9,10],"foodSearchCriteria":{"query":"anise","generalSearchInput":"anise","pageNumber":1,"numberOfResultsPerPage":50,"pageSize":50,"requireAllWords":false},"foods":[{"fdcId":171316,"description":"Spices,
+      string: '{"totalHits":553,"currentPage":1,"totalPages":12,"pageList":[1,2,3,4,5,6,7,8,9,10],"foodSearchCriteria":{"dataType":[],"query":"anise","generalSearchInput":"anise","pageNumber":1,"numberOfResultsPerPage":50,"pageSize":50,"requireAllWords":false},"foods":[{"fdcId":171316,"description":"Spices,
         anise seed","lowercaseDescription":"spices, anise seed","scientificName":"Pimpinella
         anisum","commonNames":"","additionalDescriptions":"","dataType":"SR Legacy","ndbNumber":2002,"publishedDate":"2019-04-01","foodCategory":"Spices
         and Herbs","allHighlightFields":"","score":571.9481,"foodNutrients":[{"nutrientId":1087,"nutrientName":"Calcium,
@@ -2112,5 +2112,5 @@ http_interactions:
         from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":23462719,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":552,"SR
         Legacy":1},"nutrients":{}}}'
-  recorded_at: Wed, 23 Feb 2022 17:37:24 GMT
+  recorded_at: Wed, 23 Feb 2022 17:56:37 GMT
 recorded_with: VCR 6.0.0
