@@ -62,3 +62,12 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.filter_sensitive_data('fake_api_key') { ENV['food_api_key'] }
+  config.default_cassette_options = { re_record_interval: 30.days }
+  config.configure_rspec_metadata!
+  config.allow_http_connections_when_no_cassette = true
+end
