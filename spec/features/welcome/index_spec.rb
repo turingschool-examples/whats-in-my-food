@@ -30,11 +30,11 @@ RSpec.describe 'Landing Page' do
     click_on "Search"
 
     expect(page).to have_content("Food's that contain sweet potatoes:")
-
-    expect(page).to have_content("GTIN/UPC: 028400015233")
-    expect(page).to have_content("Description: LIGHTLY SALTED SWEET & SMOKY BARBECUE FLAVORED KETTLE COOKED POTATO CHIPS, LIGHTLY SALTED SWEET & SMOKY BARBECUE")
-    expect(page).to have_content("Brand Owner: Frito-Lay Company")
-    expect(page).to have_content("Ingredients: POTATOES, VEGETABLE OIL (SUNFLOWER, CORN, AND/OR CANOLA OIL), SWEET & SMOKEY BBQ SEASONING (SUGAR, MALTODEXTRIN [MADE FROM CORN], BROWN SUGAR")
+    save_and_open_page
+    expect(page).to have_content("GTIN/UPC: 099482459734")
+    expect(page).to have_content("Description: SWEET POTATOES, ORANGE & YELLOW CARROTS, PARSNIPS, RED ONIONS ROOT VEGETABLES")
+    expect(page).to have_content("Brand Owner: Whole Foods Market, Inc.")
+    expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES, ORGANIC ORANGE CARROTS, ORGANIC YELLOW CARROTS, ORGANIC PARSNIPS, ORGANIC RED ONIONS.")
   end
 
 end
