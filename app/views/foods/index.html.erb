@@ -1,12 +1,20 @@
 <h1>Food Search Results</h1>
-<h2>total of the number of items returned by the search: <%=  %></h2>
-<h2>number of items: <%=  %></h2>
+<h2>total of the number of items returned by the search: <%= Food[:totalHits] %></h2>
+<h2>number of items: <%= @foods.count %></h2>
 
 <% @foods.each do |food| %>
 <ul class='foods'>
+  <p class='gtinupc'>
   <%= food.gtinupc %>
+  </p>
+  <p class='description'>
   <%= food.description %>
+  </p>
+  <p class='brandowner'>
   <%= food.brandowner %>
+  </p>
+  <p class='ingredients'>
   <%= food.ingredients %>
+  </p>
 </ul>
 <% end %>

@@ -10,4 +10,8 @@ RSpec.describe FoodFacade do
     expect(food).to be_a(Food)
     expect(food.gtinupc).to be_a(String)
   end
+
+  it 'returns total hits' do
+    
+  end
 end
