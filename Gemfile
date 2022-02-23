@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
 gem 'faraday'
 gem 'figaro'
-
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'pry'
