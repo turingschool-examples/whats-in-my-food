@@ -1,0 +1,11 @@
+  <% if @food %>
+  <h1> <%=@food%> Results </h1>
+
+  Total Number of items returned by search: <%= @foods.first.hits %>
+  <% @foods.each do |food| %>
+  <h2>GTIN/UPC: <%= food.gtinUpc %></h2>
+    <li>Description: <%= food.description %></li>
+    <li>Brand Owner: <%= food.brandOwner %></li>
+    <li>Ingredients: <%= food.ingredients %></li>
+  <% end %>
+<% end %>
