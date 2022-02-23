@@ -1,10 +1,12 @@
 class FoodFacade 
   def self.search_foods(keyword)
     response = FoodService.search_foods(keyword)
-    foods = response[:foods].take(10)
+    ten_foods = response[:foods].take(10)
 
-    foods.map do |food|
+    foods = ten_foods.map do |food|
       Food.new(food)
     end
+
+    {total_results: response[:totalHits], foods: foods}
   end
 end
