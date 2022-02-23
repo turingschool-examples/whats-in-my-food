@@ -4,7 +4,7 @@ RSpec.describe Food do
   let!(:hits) { 48008 }
 
   let!(:attributes) { {
-    gtinupc: "8901020020844",
+    gtinUpc: "8901020020844",
     description: "SWEET POTATOES",
     brandOwner: "NOT A BRANDED ITEM",
     ingredients: "ORGANIC SWEET POTATOES."
