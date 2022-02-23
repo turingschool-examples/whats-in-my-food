@@ -18,7 +18,7 @@ RSpec.describe Food do
   end
 
   it 'has attributes' do
-    expect(sweet_potatoes.total_hits).to eq(48008)
+    expect(sweet_potatoes.hits).to eq(48008)
     expect(sweet_potatoes.gtin_upc).to eq("8901020020844")
     expect(sweet_potatoes.description).to eq("SWEET POTATOES")
     expect(sweet_potatoes.brand_owner).to eq("NOT A BRANDED ITEM")
