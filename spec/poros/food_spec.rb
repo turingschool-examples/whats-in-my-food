@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Food do
   it 'exists' do
-    data = {totalHits: 1, foods: [{gtinUpc: "5", description: "Yummy Food", brandOwner: "Yummy Food Makers", ingredients: "love"}]}
+    data = {gtinUpc: "5", description: "Yummy Food", brandOwner: "Yummy Food Makers", ingredients: "love"}
     food = Food.new(data)
 
     expect(food).to be_instance_of(Food)
