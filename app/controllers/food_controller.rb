@@ -7,5 +7,6 @@ class FoodController < ApplicationController
     end
     food_response = conn.get("/fdc/v1/foods/search?query=#{@query}")
     @foods = JSON.parse(food_response.body, symbolize_names: true)
+    
   end
 end

@@ -1,1 +1,12 @@
-<h3> Number of items containing "<%= @query.capitalize %>" = <%= @foods[:totalHits] %> </h3>
+<h2> Number of items containing "<%= @query.capitalize %>" = <%= @foods[:totalHits] %> </h2>
+
+
+<h4> Top 10 food that contain "<%= @query.capitalize %>"</h4>
+<% @foods[:foods][0..9].each do |food| %>
+  <h5>Food Description: <%= food[:description] %></h5>
+  <p>Food GTIN/UPC Code: <%= food[:gtinUpc] %></p>
+  <p>Food Brand Owner:  <%= food[:brandOwner] %></p>
+  <p>Food ingredients: <%=food[:ingredients]%></p>
+  <br>
+
+<% end %>
