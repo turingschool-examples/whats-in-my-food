@@ -5,7 +5,7 @@
 <br>
 <h3>Top 10 Matches:</h3>
 <% @foods.each do |food| %>
-  <p><%= food.name %></p>
+  <p>Name: <b><%= food.name %></b></p>
   <p>Description: <%= food.description %></p>
   <p>GTIN/UPC Code: <%= food.code %></p>
   <p>Brand Owner: <%= food.brand_owner %></p>

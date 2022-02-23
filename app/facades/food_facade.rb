@@ -12,4 +12,4 @@ class FoodFacade
       data[:totalHits]
     end
   end
-end 
+end
