@@ -21,5 +21,22 @@ RSpec.describe 'Foods index page' do
   end
 
   it 'lists the foods attributes', :vcr do
+    visit foods_path
+
+    #first item
+    within("#foods") do
+      expect(page).to have_content("Description: SWEET POTATOES")
+      expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
+      expect(page).to have_content("GTIN/UPC code: 8901020020844")
+      expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES.")
+    end
+
+    #last item
+    within("#foods") do
+      expect(page).to have_content("Description: SWEET POTATOES")
+      expect(page).to have_content("Brand Owner: N&W Farm Produce Inc.")
+      expect(page).to have_content("GTIN/UPC code: 882495000013")
+      expect(page).to have_content("Ingredients: ")
+    end
   end
 end
