@@ -8,7 +8,7 @@ RSpec.describe FoodSearchService do
 
   it 'can search for foods', :vcr do
     query = 'cheddar cheese'
-    foods = @_service.search_foods(query)
+    foods = @_service.get_foods(query)
 
     expect(foods).to be_a Hash
     expect(foods[:foods]).to be_an Array
