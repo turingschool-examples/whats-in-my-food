@@ -2,11 +2,17 @@
 
 <p>Total Results Found: <%= @results %></p>
 
-<% @foods.each do |food| %>
-  <p>
-    Description: <%= food.description %>,
-    gtinUpc # <%= food.gtinUpc %>,
-    Brand Owner: <%= food.brand_owner %>,
-    Ingredients: <%= food.ingredients %>
-  </p>
-<% end %>
+<ol>
+  <% @foods.each do |food| %>
+    <li><p>
+      <h3>Description: </h3>
+      <p><%= food.description %></p>
+      <h3>gtinUpc # </h3>
+      <p><%= food.gtinUpc %></p>
+      <h3>Brand Owner: </h3>
+      <p><%= food.brand_owner %></p>
+      <h3>Ingredients: </h3>
+      <p><%= food.ingredients %></p>
+    </p></li>
+  <% end %>
+</ol>
