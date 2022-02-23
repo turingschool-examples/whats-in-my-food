@@ -10,7 +10,7 @@ RSpec.describe FoodService do
       after(:each) do
         VCR.eject_cassette('sweet_potato_search')
       end
-      
+
       let!(:search) {FoodService.foods_search('sweet potato')}
       let!(:result) {search[:foods].first}
 
@@ -20,6 +20,7 @@ RSpec.describe FoodService do
 
       it 'has total results count' do
         expect(search).to have_key(:totalHits)
+        expect(search[:totalHits]).to be_an(Integer)
       end
 
       it 'contains results array' do
