@@ -11,6 +11,8 @@ class FoodService
     response = connection.get('foods/search') do |request|
       request.params['api_key'] = ENV['food_api_key']
       request.params['query'] = ENV["#{query}"]
+      request.params['pageSize'] = 10
+      request.params['pageNumber'] = 5
     end
 
     JSON.parse(response.body, symbolize_names: true)

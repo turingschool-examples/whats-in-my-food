@@ -1,8 +1,10 @@
 <h1> Results </h1>
 
 <h3>Total Results: <%= @total_hits %></h3>
+<div class="food-stats">
 <% @foods.each do |food| %>
-  <p><%= food.ingredients %></p>
-  <p><%= food.description %></p>
-  <p><%= food.gtin %></p>
+  <p>Description: <%= food.description %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+  <p>GTIN/UPC Code: <%= food.gtin %></p>
   <% end %>
+  </div>

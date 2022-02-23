@@ -8,20 +8,12 @@ RSpec.describe "Food search results page", type: :feature do
     fill_in :q, with: "sweet potatoes"
     click_button "Search"
 
+    expect(current_path).to eq('/foods')
     expect(page).to have_content('Total Results: 396437')
-    
-    within(".foods") do
-      expect(page).to have_content('')
+    within(".food-stats") do
+      expect(page).to have_content('GTIN/UPC Code:')
+      expect(page).to have_content('Description:')
+      expect(page).to have_content('Ingredients:')
     end
   end
-
-
-    #  Then I should be on page "/foods"
-    #  Then I should see a total of the number of items returned by the search.
-    #  (sweet potatoes should find more than 30,000 results)
-    #  Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"
-    # And for each of the foods I should see:
-    #  - The food's Brand Owner
-    #  - The food's ingredients
-
 end
