@@ -16,13 +16,19 @@ RSpec.describe FoodService, type: :service do
 
         expect(search[:foodSearchCriteria][:query]).to eq('sweet potatoes')
         expect(search).to be_a(Hash)
-        expect(search[:foods])
+        expect(search[:foods].first[:description].downcase).to include('sweet potatoes')
       end
       
-      xit 'returns array of foods' do
+      it 'returns array of 10 foods that contain search term' do
         search = FoodService.search_foods('sweet potatoes')
         
-        expect(search[:totalHits]).to be_a(Array)
+        expect(search[:foods].count).to eq(10)
+      end
+      
+      it 'returns the number of total results found for the search term' do
+        search = FoodService.search_foods('sweet potatoes')
+        
+        expect(search[:totalHits]).to be > 30000
       end
     end
   end
