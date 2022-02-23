@@ -14,14 +14,15 @@ RSpec.describe 'foods index page' do
 
       it 'displays all relevant foods after a search' do
         visit root_path
-        fill_in 'q', with: 'cheese'
+        fill_in 'q', with: 'sweet potatoes'
         click_button 'Search'
         expect(current_path).to eq(foods_path)
-        expect(page).to have_content("Total foods found for: cheese 52659")
-        expect(page).to have_content('GTIN/UPC:  ')
+        expect(page).to have_content("Total results found for sweet potatoes: 48008")
+        expect(page).to have_content('GTIN/UPC:')
         expect(page).to have_content('Description: ')
         expect(page).to have_content('Brand Owner: ')
         expect(page).to have_content('Ingredients: ')
+        expect(page).to have_css('GTIN/UPC:', count: 10)
       end
     end
   end
