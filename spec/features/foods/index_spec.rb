@@ -21,7 +21,7 @@ RSpec.describe 'the food search index page', :vcr do
     expect(page).to have_content('Description: SWEET POTATOES')
     expect(page).to have_content('Ingredients: SWEET POTATOES')
     expect(page).to have_content('Brand Owner: John W. Taylor Packing Co. Inc')
-    expect(page).to have_content('Brand Owner: BAKO SWEET')
+    expect(page).to have_content('Brand Owner: Harris-Teeter Inc.')
     expect(page).to have_content('Brand Owner: ARCHER FARMS')
   end
 
