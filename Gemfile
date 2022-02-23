@@ -21,6 +21,8 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :test do
