@@ -1,4 +1,9 @@
 <p>Total number of foods:
-<%= @foods[:totalHits] %>
+<%= @foods[0].count %>
 </p>
-<%= binding.pry %>
+<% @foods.each do |food| %>
+  <%= food.code %>
+  <%= food.description %>
+  <%= food.owner %>
+  <%= food.ingredients %>
+<% end %>
