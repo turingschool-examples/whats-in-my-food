@@ -15,11 +15,22 @@ RSpec.describe 'Welcome Page', type: :feature do
         fill_in :q, with: 'sweet potatoes'
         click_button('Search')
 
-        expect(page).to have_current_path('/foods')
+        expect(current_path).to match('/foods')
+      end
+    end
+
+    context 'When I search sweet potatoes' do
+      before(:each) do
+        visit root_path
+        fill_in :q, with: 'sweet potatoes'
+        click_button('Search')
       end
 
+      scenario 'On /foods I should see a total number of items returned by the search' do
+        expect(page).to have_content('Total Results')
+        expect(page).to have_css('#results-number')
+      end
 
-      scenario 'On /foods I should see a total number of items returned by the search'
       scenario 'On /foods I should see a list of ten foods that contain that ingredient'
       scenario 'On /foods I should see attributes for each of the ten foods'
     end
