@@ -19,7 +19,6 @@ RSpec.describe 'Root Path' do
 
       expect(current_path).to eq("/foods")
       expect(page).to have_content("Foods Containing Sweet Potatoes:")
-      # make a within block or something here
     end
 
     it 'shows the foods description, upc code, brand, and ingredients' do
@@ -27,7 +26,13 @@ RSpec.describe 'Root Path' do
       click_button "Search"
 
       expect(current_path).to eq("/foods")
-      expect(page).to have_content("")
+
+      within "#food-item" do
+        expect(page).to have_content("UPC Code: ")
+        expect(page).to have_content("Food Brand: ")
+        expect(page).to have_content("Food Name: ")
+        expect(page).to have_content("Ingredients Contained in this Item: ")
+      end
     end
   end
 end
