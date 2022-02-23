@@ -1,0 +1,12 @@
+<h1>Food Search Results</h1>
+<h2>total of the number of items returned by the search: <%=  %></h2>
+<h2>number of items: <%=  %></h2>
+
+<% @foods.each do |food| %>
+<ul class='foods'>
+  <%= food.gtinupc %>
+  <%= food.description %>
+  <%= food.brandowner %>
+  <%= food.ingredients %>
+</ul>
+<% end %>
