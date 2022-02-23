@@ -28,6 +28,9 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'orderly'
+  gem 'faker'
+
 end
 
 group :development do
