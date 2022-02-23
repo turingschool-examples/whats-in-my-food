@@ -6,8 +6,8 @@ class UsdaService
   end
 
   def self.foods_by_keyword(food)
-    response = conn.get("/fdc/v1/foods/search?query=#{food}")
-
+    response = conn.get("/fdc/v1/foods/search?query=#{food}&dataType=&pageSize=10&pageNumber=1")
+    
     JSON.parse(response.body, symbolize_names: true)
   end
 end

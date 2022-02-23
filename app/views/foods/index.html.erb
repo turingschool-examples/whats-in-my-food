@@ -1,7 +1,7 @@
 <h1>Total Number of Items Found <%= @total_hits %></h1>
 
 <h2>Foods Found</h2>
-<% @foods[0..9].map do |food| %>
+<% @foods.map do |food| %>
 <h3>UPC: <%= food.upc %></h3>
 <li>Description: <%= food.description %></li>
 <li>Brand Owner: <%= food.brand_owner %></li>
