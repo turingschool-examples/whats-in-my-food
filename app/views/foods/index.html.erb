@@ -1,0 +1,11 @@
+<div class = 'foods'>
+<h1>Total Results: <%= @results %></h1>
+<ul>
+<% @foods.each do |f|%>
+  <li class = 'total-foods'>UPC: <%= f.gtin_upc %></li>
+  <li>Description: <%= f.description %></li>
+  <li>Brand: <%= f.brand_owner %></li>
+  <li>Ingredients: <%= f.ingredients %></li>
+<% end  %>
+</ul>
+</div>
