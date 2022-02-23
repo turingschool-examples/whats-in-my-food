@@ -1,7 +1,8 @@
 class FoodsController < ApplicationController
 
   def index
-    @foods = FoodSearchFacade.search_foods(food_params[:q]).take(10)
+    @results = FoodSearchFacade.search_foods(food_params[:q])
+    @foods = @results.take(10)
   end
 
   private

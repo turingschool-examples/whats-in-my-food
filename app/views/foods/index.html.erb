@@ -1,8 +1,10 @@
-<h1>Results:</h1>
+<h1>Results: <%= @results.length %></h1>
 
+<h3>First 10:</h3>
 <% @foods.each do |food| %>
   <p>Brand Owner: <%= food.brand_owner %></p>
   <p>Description: <%= food.description %></p>
   <p>gtinUpc: <%= food.gtinUpc %></p>
   <p>Ingredients: <%= food.ingredients %></p>
+  <br>
 <% end %>
