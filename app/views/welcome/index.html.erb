@@ -6,7 +6,7 @@
     <ul class="nav navbar-nav">
       <%= form_tag :foods, method: :get, class: "form-inline" do %>
         <div class="form-group search-field">
-          <%= text_field_tag(:q) %>
+          <%= text_field_tag(:search_query) %>
           <%= submit_tag "Search", class: "btn btn-primary" %>
         </div>
       <% end %>

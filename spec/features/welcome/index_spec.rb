@@ -7,7 +7,7 @@ RSpec.describe 'Landing Page' do
   end
 
   it 'contains search field and button' do
-    expect(page).to have_text_field(:search_query)
+    expect(page).to have_field(:search_query)
     expect(page).to have_button("Search")
   end
 
