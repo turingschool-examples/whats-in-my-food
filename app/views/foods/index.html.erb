@@ -1,0 +1,9 @@
+<h1>Here are your results!</h1>
+
+<p>Total Results: <%= @results.count %> </p>
+<% @foods.each do |food| %>
+  <p>GTIN/UPC code: <%= food.id %> </p>
+  <p>Description: <%= food.descriprion %> </p>
+  <p>Brand Owner: <%= food.brand_owner %> </p>
+  <p>Ingredients: <%= food.ingredients %> </p>
+<% end %>
