@@ -6,5 +6,6 @@ RSpec.describe 'search index' do
     click_button 'Search'
     expect(current_path).to eq('/foods')
     expect(page).to have_content("Total Results: 48008")
+    expect(page).to have_content("Top 10 results" )
   end
 end

@@ -10,7 +10,6 @@ class Food
     @description = data[:description]
     @brand = data[:brandOwner]
     @ingredients = data[:ingredients]
-    @results_count = data[:totalHits]
   end
 
   def results_count
