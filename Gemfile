@@ -21,6 +21,7 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'net-http'
 end
 
 group :test do
