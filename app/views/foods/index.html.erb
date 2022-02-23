@@ -1,7 +1,7 @@
 <h1>RESULTS FOR <%= @info.query %></h1>
 Total Results: <%= @info.total_hits %><br><br>
 
-<% @results.each do |result| %>
+<% @results.first(10).each do |result| %>
   <%= result.gtin_upc %><br>
   <%= result.description %><br>
   <%= result.brand_owner %><br>
