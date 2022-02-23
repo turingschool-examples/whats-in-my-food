@@ -2,7 +2,7 @@ class FoodFacade
 
   def self.search_foods(query, page_num)
     FoodService.search_foods(query, page_num)[:foods].map do |food_data|
-      food_data[:ingredients].downcase.include?(query) ? Food.new(food_data) : nil
+      food_data[:ingredients].downcase.include?(query.downcase) ? Food.new(food_data) : nil
     end.compact
   end
 
