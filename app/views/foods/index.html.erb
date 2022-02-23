@@ -2,6 +2,19 @@
 <div>
     Total Results:
     <div id="results-number">
-      <%= @foods.count %>
+      <%= @total_hits %>
+    </div>
+
+    <div id="foods">
+      <% counter = 1 %>
+      <% @foods.each do |food| %>
+        <div id="food-<%= counter %>">
+          <p>UPC: <%= food.upc %></p>
+          <p>Description: <%= food.description %></p>
+          <p>Brand: <%= food.brand %></p>
+          <p>Ingredients: <%= food.ingredients %></p>
+        </div>
+        <% counter += 1 %>
+      <% end %>
     </div>
 </div>

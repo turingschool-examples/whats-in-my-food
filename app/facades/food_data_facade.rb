@@ -5,15 +5,14 @@ class FoodDataFacade
     @service = FoodDataService.new
   end
 
-  def total_hits(results)
-    Hits.new(results[:totalHits])
+  def total_hits(query)
+    service.search_by_ingredient(query)[:totalHits]
   end
 
   def search_by_ingredient(query)
     @foods = service.search_by_ingredient(query)[:foods].map do |data|
       Food.new(data)
     end
-    # require "pry"; binding.pry
   end
 
 end

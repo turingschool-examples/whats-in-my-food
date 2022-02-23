@@ -31,8 +31,19 @@ RSpec.describe 'Welcome Page', type: :feature do
         expect(page).to have_css('#results-number')
       end
 
-      scenario 'On /foods I should see a list of ten foods that contain that ingredient'
-      scenario 'On /foods I should see attributes for each of the ten foods'
+      scenario 'On /foods I should see a list of ten foods that contain that ingredient' do
+        expect(page).to have_css("#food-10")
+        expect(page).to_not have_css("#food-11")
+      end
+
+      scenario 'On /foods I should see attributes for each of the ten foods' do
+        within "#food-1" do
+          expect(page).to have_content('UPC')
+          expect(page).to have_content('Description')
+          expect(page).to have_content('Brand')
+          expect(page).to have_content('Ingredients')
+        end
+      end
     end
   end
 
