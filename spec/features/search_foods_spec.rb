@@ -10,9 +10,22 @@ RSpec.describe 'Food search' do
       click_button "Search"
 
       expect(page.status_code).to eq 200
-      save_and_open_page
-      expect(page).to have_content("Total Number of items returned by search: 46770")
 
+      expect(page).to have_content("Total Number of items returned by search: 46770")
+      expect(page).to have_content("GTIN/UPC: 819614010394")
+      expect(page).to have_content("Brand Owner: Country Sweet Produce")
+      expect(page).to have_content("Ingredients: SWEET POTATOES")
+    end
+
+    it 'has sad path for empty search' do
+
+      visit root_path
+
+      click_button "Search"
+
+      expect(page.status_code).to eq 200
+
+      expect(current_path).to eq(root_path)
     end
   end
 end
