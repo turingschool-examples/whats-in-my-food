@@ -2,7 +2,6 @@ class FoodSearchFacade
 
   def self.search_foods(query)
     results = service.get_foods(query)
-    require "pry"; binding.pry
     foods = results[:foods].map { |data| Food.new(data) }
   end
 
