@@ -18,12 +18,10 @@ RSpec.describe 'foods index page' do
         click_button 'Search'
         expect(current_path).to eq(foods_path)
         expect(page).to have_content("Total results found for sweet potatoes: 48008")
-        expect(page).to have_content('GTIN/UPC:')
-        expect(page).to have_content('Description: ')
-        expect(page).to have_content('Brand Owner: ')
-        expect(page).to have_content('Ingredients: ')
-        #couldn't figure out proper testing for limiting page results
-        #expect(page).to have_css('GTIN/UPC:', count: 10)
+        expect(page).to have_content('GTIN/UPC:', count: 10)
+        expect(page).to have_content('Description:', count: 10)
+        expect(page).to have_content('Brand Owner:', count: 10)
+        expect(page).to have_content('Ingredients:', count: 10)
       end
     end
   end
