@@ -8,7 +8,7 @@ RSpec.describe 'Food Service' do
   
       expect(food_results[:totalHits]).to eq(48008)
       expect(foods).to be_a(Array)
-      expect(foods.first).to have_key(:fdcId)
+      expect(foods.first).to have_key(:gtinUpc)
       expect(foods.first).to have_key(:description)
       expect(foods.first).to have_key(:brandOwner)
       expect(foods.first).to have_key(:ingredients)
