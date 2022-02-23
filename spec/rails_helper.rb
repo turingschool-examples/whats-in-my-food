@@ -61,12 +61,11 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-end
-
-VCR.configure do |config|
-  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
-  config.hook_into :webmock
-  config.filter_sensitive_data('fake_api_key') { ENV['fdc_api_key'] }
-  config.default_cassette_options = { re_record_interval: 30.days }
-  config.configure_rspec_metadata!
+  VCR.configure do |config|
+    config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+    config.hook_into :webmock
+    config.filter_sensitive_data('fake_api_key') { ENV['fdc_api_key'] }
+    config.default_cassette_options = { re_record_interval: 30.days }
+    config.configure_rspec_metadata!
+  end
 end

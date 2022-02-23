@@ -1,0 +1,9 @@
+<p>Total Results: <%= @foods.count%> </p>
+
+<p>Showing 10 results: </p>
+<% @foods.each do |food| %>
+  <p>GTIN/UPC:<%= food.code %></p>
+  <p>Description:<%= food.description %></p>
+  <p>Brand Owner:<%= food.brand_owner %></p>
+  <p>Ingredients:<%= food.ingredients %></p>
+<% end %><br>
