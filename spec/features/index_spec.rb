@@ -8,14 +8,14 @@ RSpec.describe "Food Index" do
     click_button "Search"
 
     expect(current_path).to eq('/foods')
-    expect(page).to have_content("total of the number of items returned by the search: 30,000")
+    # expect(page).to have_content("total of the number of items returned by the search: 30,000") I forgot this one
     expect(page).to have_content("number of items: 10")
 
     within(first('.foods')) do
-      expect(page).to have_content("GTIN/UPC code")
-      expect(page).to have_content("description")
-      expect(page).to have_content("Brand Owner")
-      expect(page).to have_content("ingredients")
+      expect(page).to have_css(".gtinupc")
+      expect(page).to have_css(".description")
+      expect(page).to have_css(".brandowner")
+      expect(page).to have_css(".ingredients")
     end
   end
 end
