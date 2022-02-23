@@ -3,7 +3,7 @@ require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -61,4 +61,19 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+end
+
+VCR.configure do |config|
+  vcr_mode = ENV['VCR_MODE'] =~ /rec/i ? :all : :once
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+
+  config.default_cassette_options = {
+    record: vcr_mode,
+    match_requests_on: %i[method uri]
+  }
+
+  config.allow_http_connections_when_no_cassette = false
+  config.filter_sensitive_data('fake_api_key') { ENV['food_api_key'] }
+  config.configure_rspec_metadata!
 end
