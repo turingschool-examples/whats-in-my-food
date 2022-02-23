@@ -1,0 +1,606 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=<fake_api_key>&dataType=Branded&pageSize=10&query=Sweet%20Potato
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 23 Feb 2022 17:41:35 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3537'
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST,  GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"totalHits":46770,"currentPage":1,"totalPages":4677,"pageList":[1,2,3,4,5,6,7,8,9,10],"foodSearchCriteria":{"dataType":["Branded"],"query":"Sweet
+        Potato","generalSearchInput":"Sweet Potato","pageNumber":1,"numberOfResultsPerPage":50,"pageSize":10,"requireAllWords":false,"foodTypes":["Branded"]},"foods":[{"fdcId":1993823,"description":"SWEET
+        POTATO","lowercaseDescription":"sweet potato","dataType":"Branded","gtinUpc":"819614010394","publishedDate":"2021-07-29","brandOwner":"Country
+        Sweet Produce","brandName":"BAKO SWEET","ingredients":"SWEET POTATOES","marketCountry":"United
+        States","foodCategory":"Pre-Packaged Fruit & Vegetables","modifiedDate":"2021-02-18","dataSource":"LI","packageWeight":"14
+        OZ","servingSizeUnit":"g","servingSize":130.0,"allHighlightFields":"<b>Brand
+        Owner</b>: Country <em>Sweet</em> Produce<br/><b>Ingredients</b>: <em>SWEET</em>
+        <em>POTATOES</em>","score":1140.6783,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.54,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":22814667},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":22814668,"percentDailyValue":0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":20.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":22814669,"percentDailyValue":9},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":85.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":22814670},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.85,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":22814671},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.1,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":22814672,"percentDailyValue":14},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":30.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":22814673,"percentDailyValue":4},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.77,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":22814674,"percentDailyValue":6},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":337,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":22814675,"percentDailyValue":10},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":54.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":22814676,"percentDailyValue":3},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":22814677,"percentDailyValue":0},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.3,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6300,"indentLevel":1,"foodNutrientId":22814678,"percentDailyValue":4},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":22814679,"percentDailyValue":0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":22814680,"percentDailyValue":0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":22814681},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":22814682,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":477475,"description":"SWEET
+        POTATO","lowercaseDescription":"sweet potato","dataType":"Branded","gtinUpc":"20042431","publishedDate":"2019-04-01","brandOwner":"FRESH
+        & EASY","ingredients":"SWEET POTATO, CHIPOTLE CHICKEN {COOKED CHICKEN (CHICKEN
+        BREAST WITH RIB MEAT, CHICKEN BROTH, CONTAINS LESS THAN 2% OF: MODIFIED POTATO
+        STARCH, GARLIC POWDER, CANOLA OIL, SOYBEAN OIL, SALT, SODIUM PHOSPHATE, CHICKEN
+        FAT, FLAVOR), CHIPOTLE MANGO SAUCE [MANGO CHIPOTLE MARINADE (MANGO PUREE,
+        WATER, CHIPOTLE PEPPER, ONION, SALT, BROWN SUGAR, CANOLA OIL, VINEGAR, GARLIC,
+        LEMON JUICE CONCENTRATE, TOMATO PASTE, SPICES, RICE WINE VINEGAR, SUGAR, CILANTRO,
+        CITRIC ACID)], WATER, CILANTRO}, MANGO SALSA (MANGO, CUCUMBER, TOMATO, LIME
+        JUICE, MANGO PUREE, ONION, CILANTRO, SERRANO PEPPERS, SALT).","marketCountry":"United
+        States","foodCategory":"Other Deli","modifiedDate":"2018-01-20","dataSource":"LI","servingSizeUnit":"g","servingSize":312.0,"householdServingFullText":"1
+        CONTAINER","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATO</em>,
+        CHIPOTLE CHICKEN {COOKED CHICKEN (CHICKEN BREAST WITH RIB MEAT, CHICKEN BROTH","score":1140.6783,"foodNutrients":[{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":26.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":3376467,"percentDailyValue":8},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.58,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":3376468,"percentDailyValue":10},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":5290.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":7500,"indentLevel":1,"foodNutrientId":3376469,"percentDailyValue":330},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":4.8,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6300,"indentLevel":1,"foodNutrientId":3376470,"percentDailyValue":25},{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":5.45,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":4933342,"percentDailyValue":0},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.28,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":4933343,"percentDailyValue":6},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":16.4,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":4933344,"percentDailyValue":17},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":106,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":4933345,"percentDailyValue":0},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":4.17,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":4933346,"percentDailyValue":0},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.9,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":4933347,"percentDailyValue":24},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":173,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":4933348,"percentDailyValue":23},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":14.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":4933349,"percentDailyValue":15},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":4933350,"percentDailyValue":0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.32,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":4933351,"percentDailyValue":5}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":1946920,"description":"SWEET
+        POTATO","lowercaseDescription":"sweet potato","dataType":"Branded","gtinUpc":"854640007086","publishedDate":"2021-07-29","brandOwner":"Mindful
+        Foods, Inc.","brandName":"SOOZY''S","ingredients":"SOOZY''S FLOUR BLEND (BLANCHED
+        ALMOND FLOUR, ARROWROOT FLOUR, ORGANIC COCONUT FLOUR), CAGE-FREE WHOLE EGGS,
+        MAPLE SYRUP, FILTERED WATER, SWEET POTATO PUREE, PUMPKIN PUREE, ORGANIC COCONUT
+        SUGAR, ORGANIC EXTRA VIRGIN COCONUT OIL, ORGANIC APPLE CIDER VINEGAR, DRIED
+        ORANGE PEEL, PALEO BAKING POWDER (BAKING SODA, MONOCALCIUM PHOSPHATE, CREAM
+        OF TARTAR), SEA SALT, CRACKED BLACK PEPPER.","marketCountry":"United States","foodCategory":"Croissants,
+        Sweet Rolls, Muffins & Other Pastries","modifiedDate":"2019-03-23","dataSource":"LI","packageWeight":"9
+        oz/255 g","servingSizeUnit":"g","servingSize":64.0,"allHighlightFields":"<b>Ingredients</b>:  WHOLE
+        EGGS, MAPLE SYRUP, FILTERED WATER, <em>SWEET</em> <em>POTATO</em> PUREE, PUMPKIN
+        PUREE, ORGANIC COCONUT SUGAR","score":1140.6783,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":6.25,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":22954585},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":12.5,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":22954586,"percentDailyValue":12},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":32.8,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":22954587,"percentDailyValue":7},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":250,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":22954588},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":17.2,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":22954589},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":4.7,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":22954590,"percentDailyValue":12},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":62.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":22954591,"percentDailyValue":4},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":1.69,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":22954592,"percentDailyValue":6},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":297,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":22954593,"percentDailyValue":8},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":1560.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":7500,"indentLevel":1,"foodNutrientId":22954594,"percentDailyValue":20},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":1.9,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6300,"indentLevel":1,"foodNutrientId":22954595,"percentDailyValue":2},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":86.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":22954596,"percentDailyValue":18},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":22954597},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":6.25,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":22954598,"percentDailyValue":20}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":2212336,"description":"SWEET
+        POTATO MASHED POTATOES, SWEET POTATO","lowercaseDescription":"sweet potato
+        mashed potatoes, sweet potato","dataType":"Branded","gtinUpc":"016000461413","publishedDate":"2022-01-06","brandOwner":"General
+        Mills, Inc.","brandName":"BETTY CROCKER","ingredients":"POTATOES*, SWEET POTATO*,
+        SUGAR, BROWN SUGAR, SALT, MALTODEXTRIN, PALM OIL, VEGETABLE OIL (CANOLA, SOYBEAN
+        AND/OR SUNFLOWER OIL), SILICON DIOXIDE (ANTICAKING AGENT), SPICE, NATURAL
+        AND ARTIFICIAL FLAVOR, POTASSIUM CHLORIDE, CORN SYRUP*, MONO AND DIGLYCERIDES,
+        COLOR (CARAMEL COLOR, YELLOW LAKES 6 & 5, ANNATTO & TURMERIC EXTRACT), SODIUM
+        CASEINATE, POTASSIUM PHOSPHATE, TRICALCIUM PHOSPHATE (ANTICAKING AGENT), FRESHNESS
+        PRESERVED BY SODIUM ACID PYROPHOSPHATE, SODIUM BISULFITE, CITRIC ACID.","marketCountry":"United
+        States","foodCategory":"Vegetable and Lentil Mixes","modifiedDate":"2021-11-27","dataSource":"LI","packageWeight":"5.6
+        oz/158 g","servingSizeUnit":"g","servingSize":30.0,"householdServingFullText":"0.333
+        cup as pkgd 1/2 cup prepared","allHighlightFields":"<b>Ingredients</b>: <em>POTATOES</em>*,
+        <em>SWEET</em> <em>POTATO</em>*, SUGAR, BROWN SUGAR, SALT, MALTODEXTRIN, PALM
+        OIL, VEGETABLE OIL (CANOLA","score":11.61695,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.33,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":27292160},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.33,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":27292161,"percentDailyValue":1},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":83.3,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":27292162,"percentDailyValue":9},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":367,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":27292163},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":30.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":27292164},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":6.7,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":27292165,"percentDailyValue":6},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":27292166,"percentDailyValue":0},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.33,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":27292167,"percentDailyValue":2},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":967,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":27292168,"percentDailyValue":6},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":767,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":27292169,"percentDailyValue":10},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":27292170,"percentDailyValue":0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":23.3,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":27292171,"percentDailyValue":14},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":27292172,"percentDailyValue":0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":27292173},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":27292174,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":1998642,"description":"SWEET
+        POTATO GNOCCHI, SWEET POTATO","lowercaseDescription":"sweet potato gnocchi,
+        sweet potato","dataType":"Branded","gtinUpc":"075450251951","publishedDate":"2021-07-29","brandOwner":"Hy-Vee,
+        Inc.","brandName":"GUSTARE VITA","ingredients":"REHYDRATED SWEET POTATOES
+        (WATER, SWEET POTATO FLAKES), CORN FLOUR, POTATO STARCH, CORNSTARCH, RICE
+        FLOUR, SALT, SWEET POTATO AROMA.","marketCountry":"United States","foodCategory":"Pasta
+        by Shape & Type","modifiedDate":"2021-06-22","dataSource":"LI","packageWeight":"12
+        OZ/340 g","servingSizeUnit":"g","servingSize":136.0,"allHighlightFields":"<b>Ingredients</b>:
+        REHYDRATED <em>SWEET</em> <em>POTATOES</em> (WATER, <em>SWEET</em> <em>POTATO</em>
+        FLAKES), CORN FLOUR, <em>POTATO</em> STARCH, CORNSTARCH, RICE FLOUR, SALT,
+        <em>SWEET</em> <em>POTATO</em> AROMA.","score":0.82352066,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.21,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":23454233},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.37,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":23454234,"percentDailyValue":1},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":25.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":23454235,"percentDailyValue":12},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":103,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":23454236},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.68,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":23454237},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.5,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":23454238,"percentDailyValue":8},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":29.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":23454239,"percentDailyValue":2},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.59,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":23454240,"percentDailyValue":4},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":191,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":23454241,"percentDailyValue":6},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":346,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":23454242,"percentDailyValue":21},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":23454243,"percentDailyValue":0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":23454244,"percentDailyValue":0},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":23454245,"percentDailyValue":0},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":23454246},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":23454247,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":2107704,"description":"FRESH
+        SWEET POTATOES, SWEET POTATOES","lowercaseDescription":"fresh sweet potatoes,
+        sweet potatoes","dataType":"Branded","gtinUpc":"813652010095","publishedDate":"2021-10-28","brandOwner":"Fresh
+        Solution Farms, LLC","brandName":"SIDE DELIGHTS","subbrandName":"STEAMABLES","ingredients":"ORGANIC
+        SUGARS, SEA SALT, PASILLA NEGRA CHILE, ORANGE PEEL, ALLSPICE, CINNAMON, AJI
+        AMARILLO CHILE, ORGANIC RICE HULL, GINGER, AND CLOVE.","marketCountry":"United
+        States","foodCategory":"Pre-Packaged Fruit & Vegetables","modifiedDate":"2020-09-21","dataSource":"LI","packageWeight":"1
+        lb/454 g","servingSizeUnit":"g","servingSize":130.0,"allHighlightFields":"","score":0.27474213,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.54,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":26359422},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":26359423,"percentDailyValue":0},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":20.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":26359424,"percentDailyValue":9},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":85.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":26359425},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.85,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":26359426},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.1,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":26359427,"percentDailyValue":16},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":31.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":26359428,"percentDailyValue":4},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.55,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":26359429,"percentDailyValue":4},{"nutrientId":1090,"nutrientName":"Magnesium,
+        Mg","nutrientNumber":"304","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":28.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5500,"indentLevel":1,"foodNutrientId":26359430,"percentDailyValue":9},{"nutrientId":1091,"nutrientName":"Phosphorus,
+        P","nutrientNumber":"305","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":46.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5600,"indentLevel":1,"foodNutrientId":26359431,"percentDailyValue":6},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":338,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":26359432,"percentDailyValue":13},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":54.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":26359433,"percentDailyValue":3},{"nutrientId":1095,"nutrientName":"Zinc,
+        Zn","nutrientNumber":"309","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.23,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5900,"indentLevel":1,"foodNutrientId":26359434,"percentDailyValue":2},{"nutrientId":1098,"nutrientName":"Copper,
+        Cu","nutrientNumber":"312","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.154,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6000,"indentLevel":1,"foodNutrientId":26359435,"percentDailyValue":10},{"nutrientId":1101,"nutrientName":"Manganese,
+        Mn","nutrientNumber":"315","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6100,"indentLevel":1,"foodNutrientId":26359436,"percentDailyValue":15},{"nutrientId":1104,"nutrientName":"Vitamin
+        A, IU","nutrientNumber":"318","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":14200.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":7500,"indentLevel":1,"foodNutrientId":26359437,"percentDailyValue":370},{"nutrientId":1162,"nutrientName":"Vitamin
+        C, total ascorbic acid","nutrientNumber":"401","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":2.8,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6300,"indentLevel":1,"foodNutrientId":26359438,"percentDailyValue":6},{"nutrientId":1165,"nutrientName":"Thiamin","nutrientNumber":"404","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6400,"indentLevel":1,"foodNutrientId":26359439,"percentDailyValue":6},{"nutrientId":1166,"nutrientName":"Riboflavin","nutrientNumber":"405","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.052,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6500,"indentLevel":1,"foodNutrientId":26359440,"percentDailyValue":4},{"nutrientId":1167,"nutrientName":"Niacin","nutrientNumber":"406","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.615,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6600,"indentLevel":1,"foodNutrientId":26359441,"percentDailyValue":4},{"nutrientId":1170,"nutrientName":"Pantothenic
+        acid","nutrientNumber":"410","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.769,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6700,"indentLevel":1,"foodNutrientId":26359442,"percentDailyValue":10},{"nutrientId":1175,"nutrientName":"Vitamin
+        B-6","nutrientNumber":"415","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.231,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6800,"indentLevel":1,"foodNutrientId":26359443,"percentDailyValue":15},{"nutrientId":1177,"nutrientName":"Folate,
+        total","nutrientNumber":"417","unitName":"UG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":197,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":6900,"indentLevel":1,"foodNutrientId":26359444,"percentDailyValue":64},{"nutrientId":1185,"nutrientName":"Vitamin
+        K (phylloquinone)","nutrientNumber":"430","unitName":"UG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":1.2,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8800,"indentLevel":1,"foodNutrientId":26359445,"percentDailyValue":2},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":26359446,"percentDailyValue":0},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":26359447,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":2168774,"description":"SWEET
+        POTATO CASSEROLE, SWEET POTATO","lowercaseDescription":"sweet potato casserole,
+        sweet potato","dataType":"Branded","gtinUpc":"041415745612","publishedDate":"2021-10-28","brandOwner":"Publix
+        Super Markets, Inc.","brandName":"PUBLIX","subbrandName":"DELI","ingredients":"SWEET
+        POTATOES, SUGAR, MILK (MILK, VITAMIN D), WATER, BROWN SUGAR, EGGS, WHEAT FLOUR,
+        PECANS, MODIFIED CORNSTARCH, NATURAL VANILLA EXTRACT, SALT, CANOLA OIL, NATURAL
+        BUTTER FLAVOR (WHEY POWDER, SALT, NATURAL FLAVOR), ASCORBIC ACID.","marketCountry":"United
+        States","foodCategory":"Other Deli","modifiedDate":"2021-08-25","dataSource":"LI","packageWeight":"16
+        oz/1 lbs/453 g","servingSizeUnit":"g","servingSize":128.0,"allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>, SUGAR, MILK (MILK, VITAMIN D), WATER, BROWN
+        SUGAR, EGGS, WHEAT FLOUR, PECANS","score":0.27474213,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.34,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":26833411},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.34,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":26833412,"percentDailyValue":4},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":25.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":26833413,"percentDailyValue":12},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":133,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":26833414},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":17.2,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":26833415},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.6,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":26833416,"percentDailyValue":7},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":16.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":26833417,"percentDailyValue":2},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.84,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":26833418,"percentDailyValue":6},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":109,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":26833419,"percentDailyValue":4},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":180,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":26833420,"percentDailyValue":10},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":26833421,"percentDailyValue":0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":14.1,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":26833422,"percentDailyValue":36},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":12.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":26833423,"percentDailyValue":5},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":26833424},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":26833425,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":1975380,"description":"SWEET
+        POTATO CASSEROLE, SWEET POTATO","lowercaseDescription":"sweet potato casserole,
+        sweet potato","dataType":"Branded","gtinUpc":"041415066618","publishedDate":"2021-07-29","brandOwner":"Publix
+        Super Markets, Inc.","brandName":"PUBLIX","subbrandName":"DELI","ingredients":"SWEET
+        POTATOES, SUGAR, MILK (MILK, VITAMIN D), WATER, BROWN SUGAR, EGGS, WHEAT FLOUR,
+        PECANS, MODIFIED CORNSTARCH, NATURAL VANILLA EXTRACT, CANOLA OIL, SALT, NATURAL
+        BUTTER FLAVOR (WHEY POWDER, SALT, NATURAL FLAVOR), ASCORBIC ACID.","marketCountry":"United
+        States","foodCategory":"Other Deli","modifiedDate":"2020-04-08","dataSource":"LI","packageWeight":"36
+        oz/2.25 lbs/1.02 kg","servingSizeUnit":"g","servingSize":128.0,"allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>, SUGAR, MILK (MILK, VITAMIN D), WATER, BROWN
+        SUGAR, EGGS, WHEAT FLOUR, PECANS","score":0.27474213,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.34,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":24331525},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.34,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":24331526,"percentDailyValue":4},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":25.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":24331527,"percentDailyValue":12},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":133,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":24331528},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":17.2,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":24331529},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.6,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":24331530,"percentDailyValue":7},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":16.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":24331531,"percentDailyValue":2},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.84,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":24331532,"percentDailyValue":6},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":109,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":24331533,"percentDailyValue":4},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":180,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":24331534,"percentDailyValue":10},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":24331535,"percentDailyValue":0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":14.1,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":24331536,"percentDailyValue":36},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":12.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":24331537,"percentDailyValue":5},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":24331538},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":24331539,"percentDailyValue":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":2217665,"description":"SWEET
+        POTATO CASSEROLE, SWEET POTATO","lowercaseDescription":"sweet potato casserole,
+        sweet potato","dataType":"Branded","gtinUpc":"018894906971","publishedDate":"2022-01-06","brandOwner":"Big
+        Y Foods, Inc.","brandName":"BIG Y","ingredients":"YAMS BUTTER (CREAM NATURAL
+        FLAVORING), MILK, LIQUID EGGS (WHOLE EGGS, CITRIC ACID), FLOUR (UNBLEACHED
+        WHEAT FLOUR MALTED BARLEY FLOUR, NIACIN REDUCED IRON, THIAMIN MONONITRATE,
+        RIBOFLAVIN, FOLIC ACID) BROWN SUGAR, PECANS PURE VANILLA EXTRACT (WATER, ETHYL
+        ALCOHOL GLYCERIN VANILLA BEAN EXTRACTIVES) SALT","marketCountry":"United States","foodCategory":"Other
+        Deli","modifiedDate":"2021-11-08","dataSource":"LI","packageWeight":"16 oz/453
+        g","servingSizeUnit":"g","servingSize":87.0,"householdServingFullText":"2
+        ONZ","allHighlightFields":"","score":0.27474213,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.3,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":27314820},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":8.05,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":27314821,"percentDailyValue":9},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":19.5,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":27314822,"percentDailyValue":6},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":161,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":27314823},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":5.75,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":27314824},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":2.3,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":27314825,"percentDailyValue":7},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":23.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":27314826,"percentDailyValue":2},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.83,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":27314827,"percentDailyValue":4},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":161,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":27314828,"percentDailyValue":4},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":69.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":27314829,"percentDailyValue":3},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":27314830,"percentDailyValue":0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.4,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":27314831,"percentDailyValue":6},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":34.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":27314832,"percentDailyValue":10},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":27314833},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":3.45,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":27314834,"percentDailyValue":15}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]},{"fdcId":2153988,"description":"SWEET
+        POTATO CHEESECAKE, SWEET POTATO","lowercaseDescription":"sweet potato cheesecake,
+        sweet potato","dataType":"Branded","gtinUpc":"010374340022","publishedDate":"2021-10-28","brandOwner":"The
+        Father''s Table LLC","brandName":"THE FURLOUGH CHEESECAKE","ingredients":"CREAM
+        CHEESE [PASTEURIZED CULTURED MILK AND CREAM, SALT, GUM BLEND (LOCUST BEAN
+        GUM, GUAR GUM AND XANTHAN GUM)], SUGAR, WHOLE WHEAT FLOUR, WATER, EGGS, SOUR
+        CREAM [CULTURED MILK AND CREAM, ENZYMES], SOYBEAN OIL, WHEAT FLOUR, PALM OIL,
+        DRIED SWEET POTATO (SWEET POTATO, MALTODEXTRIN, CORN STARCH), CREAM [MILK],
+        BROWN SUGAR, GLUCOSE SYRUP, NATURAL FLAVOR, SPICES, SALT, SOY LECITHIN (EMULSIFIER),
+        BETA-CAROTENE (COLOR), CARRAGEENAN, VITAMIN A PALMITATE.","marketCountry":"United
+        States","foodCategory":"Cakes, Cupcakes, Snack Cakes","modifiedDate":"2020-04-08","dataSource":"LI","packageWeight":"4
+        oz/113 g","servingSizeUnit":"g","servingSize":113.0,"allHighlightFields":"<b>Ingredients</b>:
+        ], SOYBEAN OIL, WHEAT FLOUR, PALM OIL, DRIED <em>SWEET</em> <em>POTATO</em>
+        (<em>SWEET</em> <em>POTATO</em>, MALTODEXTRIN, CORN STARCH","score":0.27474213,"foodNutrients":[{"nutrientId":1003,"nutrientName":"Protein","nutrientNumber":"203","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":4.42,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":600,"indentLevel":1,"foodNutrientId":24757771},{"nutrientId":1004,"nutrientName":"Total
+        lipid (fat)","nutrientNumber":"204","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":21.2,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":800,"indentLevel":1,"foodNutrientId":24757772,"percentDailyValue":31},{"nutrientId":1005,"nutrientName":"Carbohydrate,
+        by difference","nutrientNumber":"205","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":33.6,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1110,"indentLevel":2,"foodNutrientId":24757773,"percentDailyValue":14},{"nutrientId":1008,"nutrientName":"Energy","nutrientNumber":"208","unitName":"KCAL","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":363,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":300,"indentLevel":1,"foodNutrientId":24757774},{"nutrientId":2000,"nutrientName":"Sugars,
+        total including NLEA","nutrientNumber":"269","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":18.6,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1510,"indentLevel":3,"foodNutrientId":24757775},{"nutrientId":1079,"nutrientName":"Fiber,
+        total dietary","nutrientNumber":"291","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":1.8,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1200,"indentLevel":3,"foodNutrientId":24757776,"percentDailyValue":7},{"nutrientId":1087,"nutrientName":"Calcium,
+        Ca","nutrientNumber":"301","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":35.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5300,"indentLevel":1,"foodNutrientId":24757777,"percentDailyValue":4},{"nutrientId":1089,"nutrientName":"Iron,
+        Fe","nutrientNumber":"303","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.96,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5400,"indentLevel":1,"foodNutrientId":24757778,"percentDailyValue":6},{"nutrientId":1092,"nutrientName":"Potassium,
+        K","nutrientNumber":"306","unitName":"MG","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":62.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5700,"indentLevel":1,"foodNutrientId":24757779,"percentDailyValue":2},{"nutrientId":1093,"nutrientName":"Sodium,
+        Na","nutrientNumber":"307","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":195,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":24757780,"percentDailyValue":10},{"nutrientId":1110,"nutrientName":"Vitamin
+        D (D2 + D3), International Units","nutrientNumber":"324","unitName":"IU","derivationCode":"LCCD","derivationDescription":"Calculated
+        from a daily value percentage per serving size measure","derivationId":75,"value":0.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":8650,"indentLevel":1,"foodNutrientId":24757781,"percentDailyValue":0},{"nutrientId":1235,"nutrientName":"Sugars,
+        added","nutrientNumber":"539","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":16.8,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":1540,"indentLevel":0,"foodNutrientId":24757782,"percentDailyValue":38},{"nutrientId":1253,"nutrientName":"Cholesterol","nutrientNumber":"601","unitName":"MG","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":71.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15700,"indentLevel":1,"foodNutrientId":24757783,"percentDailyValue":27},{"nutrientId":1257,"nutrientName":"Fatty
+        acids, total trans","nutrientNumber":"605","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":0.44,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":15400,"indentLevel":1,"foodNutrientId":24757784},{"nutrientId":1258,"nutrientName":"Fatty
+        acids, total saturated","nutrientNumber":"606","unitName":"G","derivationCode":"LCCS","derivationDescription":"Calculated
+        from value per serving size measure","derivationId":70,"value":10.6,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
+        analytical; partial documentation","rank":9700,"indentLevel":1,"foodNutrientId":24757785,"percentDailyValue":60}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":46770,"Survey
+        (FNDDS)":635,"SR Legacy":601,"Foundation":2},"nutrients":{}}}'
+  recorded_at: Wed, 23 Feb 2022 17:41:35 GMT
+recorded_with: VCR 6.0.0

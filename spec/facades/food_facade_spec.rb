@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe FoodFacade do
-  it 'foods' do
+  it 'foods', :vcr do
     food = 'Sweet Potato'
     foods = FoodFacade.all_foods(food)
 

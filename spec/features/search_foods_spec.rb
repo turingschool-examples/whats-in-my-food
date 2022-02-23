@@ -1,7 +1,7 @@
 require 'rails_helper'
 RSpec.describe 'Food search' do
   describe 'happy path' do
-    it 'allows user to search for foods' do
+    it 'allows user to search for foods', :vcr do
 
       visit root_path
 

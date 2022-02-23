@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe FoodService do
   context ' class methods ' do
     context 'search for foods' do
-      it 'returns food data ' do
+      it 'returns food data ', :vcr do
         all_foods = FoodService.foods('Sweet Potato')
 
         expect(all_foods).to be_a Hash
@@ -14,8 +14,17 @@ RSpec.describe FoodService do
           expect(food).to have_key(:fdcId)
           expect(food[:fdcId]).to be_a(Integer)
 
+          expect(food).to have_key(:gtinUpc)
+          expect(food[:gtinUpc]).to be_a(String)
+
           expect(food).to have_key(:description)
           expect(food[:description]).to be_a(String)
+
+          expect(food).to have_key(:brandOwner)
+          expect(food[:brandOwner]).to be_a(String)
+
+          expect(food).to have_key(:ingredients)
+          expect(food[:ingredients]).to be_an String
 
         end
       end
