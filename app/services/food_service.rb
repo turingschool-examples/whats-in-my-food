@@ -7,7 +7,7 @@ class FoodService
     end
 
     def search_for_food(query)
-      response = conn.get("/fdc/v1/foods/search?#{query}")
+      response = conn.get("/fdc/v1/foods/search?query=#{query}&dataType=&pageSize=10&pageNumber=1")
       JSON.parse(response.body, symbolize_names: true)
     end
   end

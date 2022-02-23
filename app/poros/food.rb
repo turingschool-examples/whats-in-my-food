@@ -2,10 +2,9 @@ class Food
   attr_reader :total_results, :id, :description, :brand_owner, :ingredients
 
   def initialize(data)
-    @id = data[:foodCode]
+    @id = data[:fdcId]
     @description = data[:description]
-    binding.pry
-    @brand_owner = data[:finalFoodInputFoods].first[:foodDescription].split(", ")[1]
+    @brand_owner = data[:brand_owner]
     @ingredients = data[:foodNutrients].map do |nutrient|
       nutrient[:nutrientName]
     end

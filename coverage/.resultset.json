@@ -7,6 +7,24 @@
           null
         ]
       },
+      "/Users/robindittrich/turing/3module/independent_challenges/whats-in-my-food/app/services/food_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/robindittrich/turing/3module/independent_challenges/whats-in-my-food/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
@@ -28,7 +46,8 @@
           1,
           1,
           1,
-          0,
+          1,
+          null,
           null,
           null
         ]
@@ -40,25 +59,7 @@
           1,
           null,
           1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/robindittrich/turing/3module/independent_challenges/whats-in-my-food/app/services/food_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
+          10,
           null,
           null,
           null
@@ -70,12 +71,11 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
+          10,
+          10,
+          10,
+          10,
+          150,
           null,
           null,
           null
@@ -129,6 +129,6 @@
         }
       }
     },
-    "timestamp": 1645636776
+    "timestamp": 1645639193
   }
 }
