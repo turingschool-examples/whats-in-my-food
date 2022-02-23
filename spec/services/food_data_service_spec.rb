@@ -16,7 +16,6 @@ RSpec.describe FoodDataService do
       expect(service.search_by_ingredient('sweet potatoes')[:totalHits]).to be_a Integer
 
       service.search_by_ingredient('sweet potatoes')[:foods].each do |food|
-        # require "pry"; binding.pry
         expect(food).to have_key(:gtinUpc)
         expect(food).to have_key(:description)
         expect(food).to have_key(:brandOwner)
