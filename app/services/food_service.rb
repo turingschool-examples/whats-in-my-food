@@ -1,7 +1,8 @@
 class FoodService
 
-  def self.search(query)
-    get_url("/search?#{query}")
+  def self.search(query, page_size)
+    query.gsub!(' ', "%20")
+    get_url("/search?api_key=#{ENV["food_api_key"]}&query=#{query}&pageSize=#{page_size}")
   end
 
   def self.get_url(url)

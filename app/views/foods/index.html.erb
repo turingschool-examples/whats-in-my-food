@@ -1,1 +1,10 @@
 <h1>Foods</h1>
+
+<div class="foods">
+  <p><%= "Search returned #{@total_hits} results." %></p>
+  <% @foods.each do |food| %>
+    <div class=<%= "food_#{food.code}" %>>
+      <h3><%= food.description %></h3>
+    </div>
+  <% end %>
+</div>
