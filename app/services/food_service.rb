@@ -1,7 +1,7 @@
-class FoodsService
+class FoodService
   def self.foods_by_ingredient(ingredient)
-    search = ingredient.strip
-    get_data("/v1/foods/seach?query=#{search}")
+    search = ingredient.gsub(/\s+/, "")
+    get_data("/v1/foods/search?query=#{search}")
   end
 
   private
@@ -13,6 +13,6 @@ class FoodsService
 
   def self.get_data(url)
     response = conn.get(url)
-    JSON.parse(response.body, symoblize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 end

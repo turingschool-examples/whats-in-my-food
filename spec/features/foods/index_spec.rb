@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Foods Index Page' do
   describe 'from the root path, visitor fills in search form' do
-    it 'redirects to the foods index and sees results of the search' do
+    it 'redirects to the foods index and sees results of the search' , :vcr do
       visit root_path
       fill_in :q, with: 'sweet potatoes'
       click_on "Search"
