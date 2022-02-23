@@ -270,6 +270,7 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
@@ -283,11 +284,50 @@
         "lines": [
           1,
           1,
+          2,
+          null,
+          2,
+          100,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/mid_mod/whats-in-my-food/spec/features/welcome/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
           1,
           null,
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/mid_mod/whats-in-my-food/spec/services/usda_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -296,20 +336,64 @@
         "lines": [
           1,
           1,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/mid_mod/whats-in-my-food/app/poros/food.rb": {
+        "lines": [
           1,
           1,
           null,
           null,
           null,
+          null,
+          1,
+          100,
+          100,
+          100,
+          100,
+          null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/mid_mod/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
           1,
           1,
           null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/mid_mod/whats-in-my-food/app/controllers/application_controller.rb": {
+        "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/mid_mod/whats-in-my-food/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1645634381
+    "timestamp": 1645638061
   }
 }
