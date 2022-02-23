@@ -4,11 +4,11 @@ RSpec.describe 'foods search result page' do
   before(:each) do
     visit root_path
     fill_in 'q', with: 'sweet potatoes'
-    VCR.insert_cassette('sweet_potato_search')
+    VCR.insert_cassette('test_search')
     click_button('Search')
   end
   after(:each) do
-    VCR.eject_cassette('sweet_potato_search')
+    VCR.eject_cassette('test_search')
   end
 
   it 'shows total number of items returned by search' do
@@ -42,4 +42,4 @@ RSpec.describe 'foods search result page' do
       expect(page).to have_content("SWEET POTATOES")
     end
   end
-end 
+end
