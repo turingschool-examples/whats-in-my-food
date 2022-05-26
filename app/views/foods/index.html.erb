@@ -1,1 +1,11 @@
 <h1>Results</h1>
+<p>Number of results: </p>
+
+<% @foods.each do |food| %>
+  <%= "ID: #{food.fdcId}" %><br>
+  <%= "Description: #{food.description}" %><br>
+  <%= "Brand Owner: #{food.brand_owner}" %><br>
+  <%= "Ingredients: #{food.ingredients}" %><br>
+  <br>
+  <br>
+<% end %>

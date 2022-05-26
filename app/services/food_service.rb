@@ -9,7 +9,6 @@ class FoodService
     def get_data(url)
       response = conn.get(url)
       parsed = JSON.parse(response.body, symbolize_names: true)
-      binding.pry
     end
   end
 end
