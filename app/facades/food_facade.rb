@@ -6,5 +6,10 @@ class FoodFacade
         Food.new(result)
       end
     end
+
+    def total_results(food)
+      food_data = FoodService.get_data("search?query=#{food}")
+      food_data[:totalHits]
+    end
   end
 end

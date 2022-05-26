@@ -1,5 +1,5 @@
 <h1>Results</h1>
-<p>Number of results: </p>
+<p><%= "Number of results: #{@total_results}" %> </p>
 
 <% @foods.each do |food| %>
   <%= "ID: #{food.fdcId}" %><br>
