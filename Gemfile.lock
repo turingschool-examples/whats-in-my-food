@@ -220,6 +220,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  arm64-darwin-21
 
 DEPENDENCIES
   bootsnap
@@ -233,7 +234,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   pry
   puma (>= 4.3.8)
-  rails (~> 5.2.5)
+  rails (~> 5.2.6)
   rspec-rails
   sass-rails (~> 5.0)
   simplecov
@@ -242,7 +243,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.7.4p191
 
 BUNDLED WITH
-   2.2.11
+   2.2.27
