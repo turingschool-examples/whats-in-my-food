@@ -1,1 +1,10 @@
 <h1>Food Result Page</h1>
+
+<h3>Results:<h3>
+
+Result Count: <%= @foods.count %><br>
+
+<% @foods.each do |food|%>
+  FDC ID: <%= food[:fdcId] %><br>
+
+<% end %>

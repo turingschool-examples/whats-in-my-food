@@ -20,10 +20,19 @@ RSpec.describe 'Food Search' do
 
       fill_in 'q', with: 'sweet potatoes'
       click_on 'Search'
-
+     
       expect(page).to have_content("Results:")
-      expect(page).to have_content("Result Count: 30000")
+      
+    end 
 
+    it 'Has list of foods that contain search terms' do
+      visit '/'
+
+      fill_in 'q', with: 'sweet potatoes'
+      click_on 'Search'
+
+      expect(page).to have_content('Foods Found In:')
+      expect(page).to have_content('GTIN/UPC Code:')
 
     end 
 
