@@ -11,9 +11,9 @@ RSpec.describe Food do
 
     food = Food.new(data)
 
-    expect(food.gtinUpc).to eq("292374")
+    expect(food.gtinupc).to eq("292374")
     expect(food.description).to eq("finger lickin gewd")
-    expect(food.brandOwner).to eq("The Colonel")
+    expect(food.brandowner).to eq("The Colonel")
     expect(food.ingredients).to eq("the ole spices and YEE ole Love n passion")
   end
 end
