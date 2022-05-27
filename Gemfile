@@ -28,6 +28,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'vcr'
+  gem 'shoulda-matchers'
 end
 
 group :development do
