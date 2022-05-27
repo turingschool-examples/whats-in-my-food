@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Welcome Page" do
-  it "has search function" do
+  it "has search function", :vcr do
     visit '/'
 
     fill_in "q", with: "sweet potatoes"

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FoodsFacade do
+RSpec.describe FoodsFacade, :vcr do
   describe "search results" do
     it "returns an array of foods that match the keyword" do
       foods = FoodsFacade.search_by_keyword("sweet potatoes")
