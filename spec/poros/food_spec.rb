@@ -5,7 +5,7 @@ RSpec.describe "Food" do
         data = {
         gtinUpc: "54366234",
         description: "chessy mac",
-        brandName: "Kraft",
+        brandOwner: "Kraft",
         ingredients: "Random stuff, fake stuff, cheese"    
          }
 
