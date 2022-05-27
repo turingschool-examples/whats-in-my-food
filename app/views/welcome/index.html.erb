@@ -13,3 +13,12 @@
     </ul>
   </div>
 </nav>
+
+<h1><%= @total_hits %> total results</h1>
+<% @foods[0..9].each do |food| %>
+  upc <%= food.upc %><p>
+  desc <%= food.description %><p>
+  company <%= food.company %><p>
+  ingredients <%= food.ingredients %><p>
+  <hr>
+<% end %>

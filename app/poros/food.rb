@@ -10,3 +10,4 @@ class Food
     @company = attr[:brandOwner] ? attr[:brandOwner] : 'No response'
     @ingredients = attr[:ingredients] ? attr[:ingredients] : 'No response'
   end
+end
