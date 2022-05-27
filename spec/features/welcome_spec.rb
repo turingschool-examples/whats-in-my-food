@@ -4,16 +4,23 @@ RSpec.describe "Welcome Page" do
   it "has search function" do
     visit '/'
 
-    fill_in "foods", with: "sweet potatoes"
+    fill_in "q", with: "sweet potatoes"
     click_button "Search"
 
     expect(current_path).to eq("/foods")
     expect(page).to have_content("Number of results: 49652")
+
+    #first item
     expect(page).to have_content("GTIN/UPC: 832298010009")
     expect(page).to have_content("Description: SWEET POTATOES")
     expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
     expect(page).to have_content("Ingredients: ")
 
+    #tenth item
+    expect(page).to have_content("GTIN/UPC: 882495000013")
+    expect(page).to have_content("Description: SWEET POTATOES")
+    expect(page).to have_content("Brand Owner: N&W Farm Produce Inc.")
+    expect(page).to have_content("Ingredients: ")
   end
 end
 # As a user,
