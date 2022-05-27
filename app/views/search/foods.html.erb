@@ -7,9 +7,9 @@ Results Count: <%= @foods.count %><br>
 
 <h3>Foods Found In:<h3>
 <% @foods.each do |food|%>
-  FDC ID: <%= food[:fdcId] %><br>
-  Description: <%= food[:description] %><br>
-  Brand Owner: <%= food[:brandOwner]  %><br>
-  Ingredients: <%= food[:ingredients]  %><br><br><br>
+  FDC ID: <%= food.fdcid %><br>
+  Description: <%= food.description %><br>
+  Brand Owner: <%= food.brand_owner  %><br>
+  Ingredients: <%= food.ingredients  %><br><br><br>
 
 <% end %>
