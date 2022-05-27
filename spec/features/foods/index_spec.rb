@@ -8,5 +8,6 @@ RSpec.describe "Foods index page", type: :feature do
     click_on "Search"
 
     expect(current_path).to eq('/foods')
+    expect(page).to have_content('Number of Results: ')
   end
 end
