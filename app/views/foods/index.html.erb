@@ -1,0 +1,8 @@
+<h1>Foods containing <%= params[:q] %></h1>
+
+<% @foods.each do |food| %>
+  <h3 style="color:green">GTIN/UPC code: <%= food.code %></h3>
+  <p>Description: <%= food.description %></p>
+  <p>Brand Owner: <%= food.brand_owner %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+<% end %>
