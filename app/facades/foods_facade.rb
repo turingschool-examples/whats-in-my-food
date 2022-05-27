@@ -4,4 +4,7 @@ class FoodsFacade
     FoodInfo.new(food)
   end
 
+  def self.ten_results(search)
+    # require "pry"; binding.pry
+  end
 end

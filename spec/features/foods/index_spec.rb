@@ -9,5 +9,6 @@ RSpec.describe "Foods index page", type: :feature do
 
     expect(current_path).to eq('/foods')
     expect(page).to have_content('Number of Results: ')
+    save_and_open_page
   end
 end

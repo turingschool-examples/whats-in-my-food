@@ -1,5 +1,11 @@
 <h1> Search Results </h1>
 
 <p>Number of Results: <%= @search_info.total_results %></p>
+<br>
 <% @foods.each do |food| %>
+  <p>gtinUpc: <%= food[:gtinUpc] %></p>
+  <p>Description: <%= food[:description] %></p>
+  <p>Brand Owner: <%= food[:brandOwner] %></p>
+  <p>Ingredients: <%= food[:ingredients] %></p>
+  <br>
   <% end %>
