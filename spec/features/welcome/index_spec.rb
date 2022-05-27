@@ -27,5 +27,10 @@ RSpec.describe 'Welcome Index Page' do
 
       expect(current_path).to eq('/foods')
     end
+
+    xit 'Then I should see a total of the number of items returned by the search.' do
+      #  (sweet potatoes should find more than 30,000 results)
+      expect(items.count).to be > 30000
+    end
   end
 end
