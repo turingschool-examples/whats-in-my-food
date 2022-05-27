@@ -1,0 +1,17 @@
+<h2>Resultsm for "<%= @results[:query] %>"</h2>
+<p><strong><%= @results[:total_results] %></strong> items matched your search.</p>
+<table>
+  <tr>
+    <th>Brand</th>
+    <th>Description</th>
+    <th>UPC</th>
+    <th>Ingredients</th>
+  </tr>
+
+  <% @results[:results].each do |food| %>
+  <tr>
+    <td><%= food.brand %></td>
+    <td><%= food.description %></td>
+    <td><%= food.upc %></td>
+    <td><%= food.ingredients %></td>
+  </tr>
