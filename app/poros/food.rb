@@ -1,5 +1,5 @@
 class Food
-  attr_reader :code, :description, :brand, :total_count
+  attr_reader :code, :description, :brand, :ingredients, :total_count
   def initialize(data, count)
     @code = data[:fdcId]
     @description = data[:description]

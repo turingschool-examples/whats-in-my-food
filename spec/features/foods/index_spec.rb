@@ -1,4 +1,4 @@
-require 'rails-helper'
+require 'rails_helper'
 
 RSpec.describe 'the foods index page' do
   context 'as a user searching for a food by name' do
