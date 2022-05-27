@@ -10,6 +10,7 @@ class FoodService
   end
 
   def self.search_for_foods(food)
-    conn.get("/fdc/v1/foods/search?#{food}")
+    response = conn.get("/fdc/v1/foods/search", query: food)
+    parse_json(response)
   end
 end
