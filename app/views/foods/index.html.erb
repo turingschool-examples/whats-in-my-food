@@ -1,0 +1,14 @@
+<h1>Search Results for <%= params[:q] %> </h1>
+
+
+<h3>Total search results: <%= @search_count %></h3>
+
+<% @foods[0..9].each do |food| %>
+<h5>Brand: </h5><%= food.brand %> <br>
+<h5>Description: </h5><%= food.description %> <br>
+<h5>GTIN/UPC Code: </h5><%= food.gtin_code %> <br>
+<h5>Ingredients: </h5><%= food.ingredients %> <br>
+<br>
+<hr>
+<br>
+<% end %>
