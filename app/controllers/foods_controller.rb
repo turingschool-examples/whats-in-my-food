@@ -1,7 +1,15 @@
 class FoodsController < ApplicationController
   def results
     conn = Faraday.new("https://api.nal.usda.gov/fdc/v1/foods/")
-    response = conn.get("search?query=sweet%20potatoes&dataType=&pageSize=10&sortBy=dataType.keyword&sortOrder=asc&api_key=IBrr3WLMRnFvnlpciDcPDMIChaL7447fd8EnsmWw")
-    @results = JSON.parse(response.body, symbolize_names: true)
+    response = conn.get("search?query=sweet%20potatoes&dataType=&sortBy=dataType.keyword&sortOrder=asc&api_key=IBrr3WLMRnFvnlpciDcPDMIChaL7447fd8EnsmWw")
+    results = JSON.parse(response.body, symbolize_names: true)
+    filtered_results = []
+    results[:foods].each do |food|
+      if food[:ingredients].downcase.include?(params[:q])
+        filtered_results << food
+      end
+    end
+    @results = filtered_results[0..9]
+    @item_count = results[:totalHits]
   end
 end

@@ -1,6 +1,6 @@
-<h1> Number of results: <%= @results[:totalHits] %> </h1>
+<h1> Number of results: <%= @item_count %> </h1>
 
-<% @results[:foods].each do |food| %>
+<% @results.each do |food| %>
   <p> GTIN/UPC: <%= food[:gtinUpc] %>
   <p> Description: <%= food[:description] %>
   <p> Brand Owner: <%= food[:brandOwner] %>
