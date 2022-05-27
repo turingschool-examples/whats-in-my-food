@@ -1,0 +1,10 @@
+<h1>Hits: <%= @hits %></h1>
+<% @foods.each do |food| %>
+  <h3><%=  food.description%></h3>
+  <br>
+  GTIN/UPC:<%= food.gtin%>
+  <br>
+  Brand Owner: <%= food.brand %>
+  <br>
+  Ingredients: <%= food.ingredients %>
+<% end %>
