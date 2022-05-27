@@ -1,1 +1,15 @@
 <h1>Foods</h1>
+
+<div class="foods">
+  <h2><%= "Search returned #{@total_hits} results." %></h2>
+   <br>
+   <% @foods.each_with_index do |food, i| %>
+     <div class=<%= "food_#{i}" %>>
+       <h3><%= "Description: #{food.description}" %></h3>
+       <p><%= "Item Code: #{food.code}" %></p>
+       <p><%= "Brand: #{food.brand}" %></p>
+       <p><%= "Ingredients: #{food.ingredients}" %></p>
+       <br>
+    </div>
+  <% end %>
+</div>
