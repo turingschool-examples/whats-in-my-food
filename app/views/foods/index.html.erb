@@ -1,0 +1,12 @@
+<div class="navbar-header">
+  <%= link_to "Ingredient Search", root_path, class: "navbar-brand" %>
+</div>
+<hr>
+<h2>Total number of results: <%= @total_results %></h2>
+<% @search_results.each do |food| %>
+  <p>GTIN/UPC: <%= food.gtinupc %></p>
+  <h3>Description: <%= food.description %></h3>
+  <p>Brand Owner: <%= food.brandowner %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+  <hr>
+<% end %>
