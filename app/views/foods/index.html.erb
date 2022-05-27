@@ -1,0 +1,14 @@
+<h1><%= @food_name %></h1>
+
+There are <%=@food_count%> foods that contain <%= @food_name %><br><br>
+
+Ten foods containing sweet potatoes <%= @food_name %><br><br>
+
+<% @ten_foods.each do |food| %>
+<ul>
+  <li>Description: <%= food.description %></li>
+   <li>GTIN/UPC Code: <%= food.gtin_upc_code %></li>
+   <li>Brand Owner: <%= food.brand_owner %></li>
+   <li>Ingredients: <%= food.ingredients %></li>
+</ul>
+<% end %>
