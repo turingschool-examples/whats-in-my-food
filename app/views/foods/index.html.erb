@@ -3,12 +3,12 @@
 <h2>Total # of Results: <%= @total_results %></h2>
 
 <% @foods.each do |food| %>
-  <div id='food-result-<%= food[:fdcId] %>' class='food'>
+  <div id='food-result-<%= food.id %>' class='food'>
     <ul>
-      <h4>Description: <%= food[:lowercaseDescription].capitalize %></h4>
-      <li>GTIN/UPC: <%= food[:gtinUpc] %></li>
-      <li>Brand Owner: <%= food[:brandOwner] %></li>
-      <li>Ingredients: <%= food[:ingredients] %></li>
+      <h4>Description: <%= food.description.capitalize %></h4>
+      <li>GTIN/UPC: <%= food.gtin_upc %></li>
+      <li>Brand Owner: <%= food.brand_owner %></li>
+      <li>Ingredients: <%= food.ingredients %></li>
     </ul>
-  </div>
+  </div><br>
 <% end %>
