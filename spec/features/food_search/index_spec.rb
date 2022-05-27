@@ -31,21 +31,21 @@ RSpec.describe 'The foods index' do
     click_button 'Search'
 
     within '#food-result-451884' do
-      expect(page).to have_content("Description: Sweet Potatoes")
+      expect(page).to have_content("Description: Sweet potatoes")
       expect(page).to have_content('GTIN/UPC: 832298010009') 
       expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
-      expect(page).to have_content("Ingredients: ")
+      expect(page).to have_content("Ingredients:")
     end
 
     within '#food-result-983525' do
-      expect(page).to have_content("Description: Sweet Potatoes")
+      expect(page).to have_content("Description: Sweet potatoes")
       expect(page).to have_content('GTIN/UPC: 8901020020844') 
       expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
       expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES")
     end
 
     within '#food-result-1929370' do
-      expect(page).to have_content("Description: Sweet Potatoes")
+      expect(page).to have_content("Description: Sweet potatoes")
       expect(page).to have_content('GTIN/UPC: 076700002019') 
       expect(page).to have_content("Brand Owner: John W. Taylor Packing Co. Inc")
       expect(page).to have_content("Ingredients: SWEET POTATOES")
