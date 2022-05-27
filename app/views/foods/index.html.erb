@@ -1,10 +1,10 @@
 <h1>Search Results</h1>
 
-<p>Total results: <%= @data[:totalHits]  %> </p>
+<h2>Total results: <%= @data[:totalHits]  %> </h2>
 
 <h2>Foods containing <%= @data[:foodSearchCriteria][:query] %> </h2>
 
-<% @data[:foods][0..9].each do |food_item| %>
+<% @results[0..9].each do |food_item| %>
   <p>GTIN/UPC code: <%= food_item[:gtinUpc] %>  </p>
   <p>Description: <%= food_item[:description] %>  </p>
   <p>Brand Owner: <%= food_item[:brandOwner] %>  </p>
