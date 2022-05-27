@@ -7,18 +7,18 @@ RSpec.describe FoodService do
 
       food_data = response[:foods]
 
-      food_data.each do |food|
-        expect(food).to have_key :dcId
+      food_data[0..9].each do |food|
+        expect(food).to have_key :fdcId
         expect(food[:fdcId]).to be_an Integer
 
         expect(food).to have_key :lowercaseDescription
-        expect(food[:lowercaseDesription]).to be_a String
+        expect(food[:lowercaseDescription]).to be_a String
 
         expect(food).to have_key :gtinUpc
         expect(food[:gtinUpc]).to be_a String
 
         expect(food).to have_key :brandOwner
-        expect(food[:brand_owner]).to be_a String
+        expect(food[:brandOwner]).to be_a String
       end
     end
   end
