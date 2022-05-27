@@ -31,7 +31,16 @@ end
   end
 
   it 'displays a list of 10 foods from the results of the query' do
-    expect(page).to have_content('Total results: 54526')
+    expect(page).to have_content('039674502084')
+    expect(page).to have_content('853910006170')
+    expect(page).to have_content('217260803726')
+    expect(page).to have_content('011863118740')
+    expect(page).to have_content('011863120569')
+    expect(page).to have_content('073296480078')
+    expect(page).to have_content('688267173844')
+    expect(page).to have_content('850276005014')
+    expect(page).to have_content('852230003326')
+    expect(page).to have_content('819753000683')
   end
 
   it 'displays the food item information from the query' do
