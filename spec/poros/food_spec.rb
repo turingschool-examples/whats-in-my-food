@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Food do
   data = {
-    fdcId: 12345,
+    gtinUpc: 12345,
     description: "Classic 'Za",
     brandOwner: "'Za LTD",
     ingredients: "Cheese, dough, pepperoni"
@@ -11,7 +11,7 @@ RSpec.describe Food do
   it 'Has all attributes' do
     pizza = Food.new(data)
 
-    expect(pizza.fdcId).to eq 12345
+    expect(pizza.gtinUpc).to eq 12345
     expect(pizza.description).to eq "Classic 'Za"
     expect(pizza.brandOwner).to eq "'Za LTD"
     expect(pizza.ingredients).to eq "Cheese, dough, pepperoni"

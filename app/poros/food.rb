@@ -1,8 +1,8 @@
 class Food
-  attr_reader :fdcId, :description, :brandOwner, :ingredients
+  attr_reader :gtinUpc, :description, :brandOwner, :ingredients
 
   def initialize(data)
-    @fdcId = data[:fdcId]
+    @gtinUpc = data[:gtinUpc]
     @description = data[:description]
     @brandOwner = data[:brandOwner]
     @ingredients = data[:ingredients]
