@@ -9,6 +9,6 @@ class FoodsController < ApplicationController
     body = JSON.parse(response.body, symbolize_names: true)
 
     @total_results = body[:totalHits]
-    @foods = body[:foods][0..9]
+    @foods = body[:foods][0..9].map {|data| Food.new(data)}
   end
 end
