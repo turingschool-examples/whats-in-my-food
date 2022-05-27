@@ -1,1 +1,13 @@
 <h1>Search Results</h1>
+<div id="total-hits">
+  <h2>Total Hits: <%= @results[:hits] %></h2>
+</div>
+
+<div id="top-10-foods">
+  <%= @results[:foods].each do |food| %>
+    <h3>GTIN UPC: <%= food.gtinUpc %></h3>
+    <h3>Description: <%= food.description %></h3>
+    <h3>Brand Owner: <%= food.brandOwner %></h3>
+    <h3>Ingredients: <%= food.ingredients %></h3>
+  <% end %>
+</div>
