@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe FoodService do
 
-  it 'returns food data as JSON' do
+  it 'returns food data as JSON', :vcr do
 
     search = FoodService.search_for_food('pork')
     expect(search).to be_an Array
