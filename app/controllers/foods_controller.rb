@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
   def results
     conn = Faraday.new("https://api.nal.usda.gov/fdc/v1/foods/")
-    response = conn.get("search?query=sweet%20potatoes&dataType=&sortBy=dataType.keyword&sortOrder=asc&api_key=IBrr3WLMRnFvnlpciDcPDMIChaL7447fd8EnsmWw")
+    response = conn.get("search?query=sweet%20potatoes&dataType=&sortBy=dataType.keyword&sortOrder=asc&api_key=#{ENV['api_key']}")
     results = JSON.parse(response.body, symbolize_names: true)
     filtered_results = []
     results[:foods].each do |food|
