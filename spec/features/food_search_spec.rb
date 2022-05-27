@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Food Search Page', type: :feature do
   before :each do
     visit root_path
-    fill_in :q, with: 'sweet potatoes'
+    fill_in :q, with: 'ingredients:sweet potatoes'
     click_on "Search"
   end
 
