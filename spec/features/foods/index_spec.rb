@@ -12,6 +12,6 @@ RSpec.describe "Foods search results page" do
   end
 
   it "displays total number of items" do
-    expect(page).to have_content
+    expect(page).to have_content("49652")
   end
 end
