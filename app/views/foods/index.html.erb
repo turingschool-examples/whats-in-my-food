@@ -1,3 +1,14 @@
 <h1>Foods</h1>
 
 Total Results: <%= @total_hits %>
+<br><br>
+
+<% @food_results.each do |food| %>
+  <ul>
+    <li>GTIN/UPC code: <%= food.code %></li>
+    <li>Description: <%= food.description %></li>
+    <li>Brand Owner: <%= food.brand_owner %></li>
+    <li>Ingredients: <%= food.ingredients %></li>
+  </ul>
+  <br>
+<% end %>

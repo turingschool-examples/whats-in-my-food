@@ -14,4 +14,8 @@ RSpec.describe "Foods search results page" do
   it "displays total number of items" do
     expect(page).to have_content("49652")
   end
+
+  it "displays first 10 items" do
+    expect(page).to have_content("SWEET POTATOES")
+  end
 end
