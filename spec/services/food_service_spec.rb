@@ -5,7 +5,7 @@ describe "food service" do
     context "#search" do
       it "returns foods related to search results", :vcr do
         search_response = FoodService.search("cheese")
-        binding.pry
+
         expect(search_response).to be_a Hash
         expect(search_response[:foods]).to be_an Array
         expect(search_response[:foods].first).to be_a Hash

@@ -69,8 +69,15 @@
         ],
         "branches": {
         }
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/facades/food_facade.rb": {
+        "lines": [
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1653667651
+    "timestamp": 1653668537
   }
 }
