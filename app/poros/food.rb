@@ -7,7 +7,7 @@ class Food
 
   def initialize(data)
     @name = data[:brandName]
-    @code = data[:gtinUpc]
+    @code = data[:gtinUpc].to_s
     @description = data[:description]
     @brand_owner = data[:brandOwner]
     @ingredients = data[:ingredients]
