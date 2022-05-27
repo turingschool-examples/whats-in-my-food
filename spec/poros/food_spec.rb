@@ -3,7 +3,7 @@ require "rails_helper"
 describe "Food PORO" do
   before do
     attributes = {
-      id: 1,
+      fdcId: 1,
       gtinUpc: 123456789876,
       description: "Test Food number 1",
       brandOwner: "Test Food Brand Owner",

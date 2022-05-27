@@ -20,6 +20,6 @@ describe "Food search results page (index)" do
     expect(page).to have_content("Description: CHEESE")
     expect(page).to have_content("Ferndale Farmstead LLC")
 
-    expect(page).to have_content("Total number of results: 54526")
+    # expect(page).to have_content("Total number of results: 54526")
   end
 end
