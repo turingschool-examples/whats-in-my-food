@@ -31,7 +31,7 @@ RSpec.describe 'Food Search' do
 
       fill_in 'q', with: 'sweet potatoes'
       click_on 'Search'
-      save_and_open_page
+      # save_and_open_page
       expect(page).to have_content('Foods Found In:')
       expect(page).to have_content('FDC ID: 983525')
       expect(page).to have_content('Description: SWEET POTATOES')
