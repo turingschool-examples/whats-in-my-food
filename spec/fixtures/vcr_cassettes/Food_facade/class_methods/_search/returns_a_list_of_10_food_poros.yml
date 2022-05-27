@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 May 2022 16:48:55 GMT
+      - Fri, 27 May 2022 17:01:03 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3589'
+      - '3587'
       X-Frame-Options:
       - sameorigin
       Strict-Transport-Security:
@@ -2880,5 +2880,5 @@ http_interactions:
         attributes","id":999,"foodAttributes":[{"value":"1602","name":"WWEIA Category
         number","id":985540},{"value":"Cheese","name":"WWEIA Category description","id":993731}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":53469,"Survey
         (FNDDS)":769,"SR Legacy":277,"Foundation":11},"nutrients":{}}}'
-  recorded_at: Fri, 27 May 2022 16:48:55 GMT
+  recorded_at: Fri, 27 May 2022 17:01:03 GMT
 recorded_with: VCR 6.1.0
