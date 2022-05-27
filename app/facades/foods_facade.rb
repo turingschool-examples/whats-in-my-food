@@ -1,6 +1,7 @@
 class FoodsFacade
-  def self.get_foods(search)
-    foods = FoodsService.search_foods(search)
-    require "pry"; binding.pry
+  def self.food_search(search)
+    food = FoodsService.search_foods(search)
+    FoodInfo.new(food)
   end
+
 end

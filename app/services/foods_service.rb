@@ -7,14 +7,12 @@ class FoodsService
   end
 
   def self.search_foods(search)
-    response = conn.get("foods/search?query=#{search}")
+    response = conn.get("foods/search?query=#{search}&pageSize=200")
     JSON.parse(response.body,symbolize_names: true)
-    # require "pry"; binding.pry
   end
 
   def self.get_foods(search)
     response = conn.get("foods/#{search_ids}?")
     JSON.parse(response.body, symbolize_names: true)
-    # require "pry"; binding.pry
   end
 end
