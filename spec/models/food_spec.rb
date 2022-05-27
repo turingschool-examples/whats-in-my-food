@@ -3,9 +3,9 @@ require 'rails_helper'
 
 RSpec.describe Food do 
   it 'exists and has attributes' do 
-  	data = {gintUpc: 100,
+  	data = {gtinUpc: 100,
   			description: 'Salt and vinegar chips',
-  			ownerBrand: 'Pringles',
+  			brandOwner: 'Pringles',
   			ingredients: 'Potato and additives'}
 
   	pringles= Food.new(data)
