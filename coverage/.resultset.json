@@ -1,0 +1,76 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/poros/food.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/services/food_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1653667651
+  }
+}
