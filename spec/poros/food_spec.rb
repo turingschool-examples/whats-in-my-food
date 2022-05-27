@@ -11,6 +11,7 @@ RSpec.describe 'Food' do
       }
 
       food = Food.new(data, 49652)
+      # require 'pry'; binding.pry
       expect(food.code).to eq(data[:gtinUpc])
       expect(food.description).to eq(data[:description])
       expect(food.brand).to eq(data[:brandOwner])
