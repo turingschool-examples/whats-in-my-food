@@ -4,7 +4,7 @@ describe "welcome page" do
   before do
     visit '/'
   end
-  it "should have a search bar" do
+  it "should have a search bar", :vcr do
     fill_in "q", with: "sweet potatoes"
     click_button "Search"
 

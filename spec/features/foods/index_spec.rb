@@ -8,10 +8,9 @@ describe "Food search results page (index)" do
     click_button "Search"
   end
 
-  it "displays a list of foods" do
+  it "displays a list of foods", :vcr do
     expect(current_path).to eq('/foods')
-    
-    expect(page).to have_content("Total number of results: 54526")
+
     expect(page).to have_content("GTIN/UPC: 039674502084")
     expect(page).to have_content("Description: CHEESE")
     expect(page).to have_content("Brand Owner: American Pride Food Corp.")
@@ -20,5 +19,7 @@ describe "Food search results page (index)" do
     expect(page).to have_content("GTIN/UPC: 853910006170")
     expect(page).to have_content("Description: CHEESE")
     expect(page).to have_content("Ferndale Farmstead LLC")
+
+    expect(page).to have_content("Total number of results: 54526")
   end
 end

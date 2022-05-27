@@ -22,17 +22,21 @@
           null
         ]
       },
-      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/poros/food.rb": {
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/controllers/foods_controller.rb": {
         "lines": [
           1,
           1,
+          2,
           null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/facades/food_facade.rb": {
+        "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          100,
           null,
           null,
           null
@@ -42,21 +46,37 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
           null,
           null,
           null,
           1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
           null,
           null,
           null,
           null,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/poros/food.rb": {
+        "lines": [
           1,
+          1,
+          null,
+          1,
+          101,
+          101,
+          101,
+          101,
+          101,
+          null,
           null,
           null
         ]
@@ -69,15 +89,8 @@
         ],
         "branches": {
         }
-      },
-      "/Users/sandiszthieme/turing/3module/assessment/whats-in-my-food/app/facades/food_facade.rb": {
-        "lines": [
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1653668537
+    "timestamp": 1653668920
   }
 }
