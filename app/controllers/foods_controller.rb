@@ -7,7 +7,7 @@ class FoodsController < ApplicationController
 
     response = connection.get("foods/search?query=#{params[:q]}")
 
-    data = JSON.parse(response.body, symbolize_names: true)
+    @data = JSON.parse(response.body, symbolize_names: true)
 
     # require 'pry'; binding.pry
   end
