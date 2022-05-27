@@ -5,7 +5,7 @@ class FoodsFacade
 
   def self.search_by_keyword(word)
     filtered_results = []
-
+    
     service.search_by_keyword(word)[:foods].each do |food|
       if food[:ingredients].downcase.include?(word)
         filtered_results << food
