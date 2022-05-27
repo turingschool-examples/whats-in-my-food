@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Item do
+RSpec.describe Food do
   context 'initialization' do
     it 'is initialized with a JSON hash' do
       data = {
