@@ -3,7 +3,7 @@ class Food
               :description,
               :brandOwner,
               :ingredients
-              
+
   def initialize(foods)
     @gtinUpc = foods[:gtinUpc]
     @description = foods[:description]
@@ -11,9 +11,3 @@ class Food
     @ingredients = foods[:ingredients]
   end
 end
-
-
-# - The food's GTIN/UPC code
-#  - The food's description
-#  - The food's Brand Owner
-#  - The food's ingredients
