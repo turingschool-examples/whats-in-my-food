@@ -1,8 +1,8 @@
-<h2>Number of Returned Search Items: <%= @foods.count %></h2>
+<h2>Number of Returned Search Items: <%= FoodsFacade.returned_items_number(@query) %></h2>
 
 <% @foods.each do |food| %>
-  <p>GTIN/UPC: <%= food.gtinUpc %></p>
+  <p>GTIN/UPC: <%= food.gtinupc %></p>
   <p>Description: <%= food.description %></p>
-  <p>Brand Owner: <%= food.brandOwner %></p>
+  <p>Brand Owner: <%= food.brand_owner %></p>
   <p>Ingredients: <%= food.ingredients %></p>
 <% end %>
