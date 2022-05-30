@@ -19,8 +19,7 @@ RSpec.describe FoodsService do
     expect(result[:foods].first).to have_key(:ingredients)
     expect(result[:foods].first[:ingredients]).to be_a(String)
 
-    expect(result[:totalHits]).to eq(49652)
-    expect(result[:totalPages]).to eq(994)
-    
+    expect(result[:totalHits]).to be_a(Integer)
+    expect(result[:totalPages]).to be_a(Integer)
   end
 end
