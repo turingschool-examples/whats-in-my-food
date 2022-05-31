@@ -1,5 +1,5 @@
   <h1>Search results</h1>
-
+  <h3>Total results: <%= @data[:total_hits] %></h3>
   <table class="table table-hover">
   <thead>
     <tr>
@@ -10,8 +10,8 @@
       <th scope="col">Ingredients</th>
     </tr>
   </thead>
-  <% if @foods %>
-    <% @foods.each_with_index do |food, index|%>
+  <% if @data[:foods] %>
+    <% @data[:foods].each_with_index do |food, index|%>
     <div class="food-<%= food.gintUpc %>">
     <tbody>
     <tr>

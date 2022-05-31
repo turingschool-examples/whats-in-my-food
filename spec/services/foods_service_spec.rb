@@ -1,16 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe FoodsService do
+RSpec.describe FoodsService, :vcr do
   it 'gets data for 10 foods based on keyword search' do
-    data = JSON.parse(File.read('spec/fixtures/cheese_data.json'), symbolize_names: true)
-    allow(FoodsService).to receive(:search_ingredient).and_return(data)
-    
     results = FoodsService.search_ingredient('cheddar cheese')
     
     expect(results).to be_an Hash
     expect(results[:foods].count).to eq(10)
-    expect(results[:foods][0][:gtinUpc]).to eq("041290110857")
-    expect(results[:foods][0][:brandOwner]).to eq("Piggly Wiggly Company")
+    expect(results[:foods][0][:gtinUpc]).to eq("75925306223")
+    expect(results[:foods][0][:brandOwner]).to eq("Three Square Inc.")
   end
 
 end

@@ -7,9 +7,10 @@ RSpec.describe FoodsFacade do
     
     results = FoodsFacade.search_ingredient('cheddar cheese')
     
-    expect(results).to be_an Array
-    expect(results.count).to eq(10)
-    expect(results).to be_all(Food)
+    expect(results).to be_an Hash
+    expect(results[:total_hits]).to eq(7713)
+    expect(results[:foods].count).to eq(10)
+    expect(results[:foods]).to be_all(Food)
   end
 
 end
