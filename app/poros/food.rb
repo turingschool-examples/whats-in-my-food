@@ -1,4 +1,4 @@
-class FoodData
+class Food
   attr_reader :gtinUpc, :description, :brandOwner, :ingredients
 
   def initialize(data)
