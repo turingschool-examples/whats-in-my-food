@@ -2,7 +2,7 @@ class FoodsFacade
   def self.get_list_of_foods(search)
     json = FoodsService.getting_list(search)
 
-    json[:foods].map do |data|
+    json[:foods][0..9].map do |data|
       Food.new(data)
     end
 
