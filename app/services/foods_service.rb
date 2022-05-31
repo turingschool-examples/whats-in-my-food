@@ -4,7 +4,7 @@ class FoodsService
 
     response = connection.get(list) do |faraday|
       faraday.params["api_key"] = ENV['API_KEY']
-      faraday.params["search"] = query
+      faraday.params["query"] = query
       faraday.params["dataType"] = 'Branded'
     end
      JSON.parse(response.body, symbolize_names: true)
