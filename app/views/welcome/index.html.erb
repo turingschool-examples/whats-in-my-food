@@ -4,7 +4,7 @@
   </div>
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <%= form_tag :foods, method: :get, class: "form-inline" do %>
+      <%= form_with url: "/food", method: :get, class: "form-inline" do %>
         <div class="form-group search-field">
           <%= text_field_tag(:q) %>
           <%= submit_tag "Search", class: "btn btn-primary" %>
