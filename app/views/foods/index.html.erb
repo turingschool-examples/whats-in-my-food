@@ -1,0 +1,15 @@
+<h1>You searched for: <%= @food %></h1>
+
+<% if @results.empty? %>
+  <p>No results found</p>
+<% else %>
+  <h3>Total Results: <%= @results.count %></h3>
+  <ul>
+    <% @results.each do |food| %>
+      <li>GTIN/UPC: <%= food.upc %></li>
+      <li>Description: <%= food.description %></li>
+      <li>Brand Owner: <%= food.brand_owner %></li>
+      <li>Ingredients: <%= food.ingredients %></li>
+    <% end %>
+  </ul>
+<% end %>
