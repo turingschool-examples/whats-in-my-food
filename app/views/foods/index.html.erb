@@ -6,6 +6,7 @@
   <div id="foods">
       <% @foods.each do |food| %>
         <div class="food">
+            <h3>Food:</h3>
             <p>UPC: <%= food.upc %></p>
             <p>Description: <%= food.description %></p>
             <p>Brand: <%= food.brand %></p>

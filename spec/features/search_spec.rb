@@ -39,4 +39,15 @@ RSpec.describe 'Food Search' do
             end
         end 
     end 
+
+    describe 'sad path' do
+        it 'will not let you search for nothing' do
+            visit '/'
+            
+            click_button("Search")
+
+            expect(current_path).to eq("/")
+             expect(page).to have_content("Please submit a query in the search form")
+        end 
+    end 
 end 
