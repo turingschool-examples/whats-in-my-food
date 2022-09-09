@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Food Poro' do 
-  it 'shows the total number of items returned by the search' do 
+  it 'it exists and has attributes' do 
     data = {
       "fdcId": 2021456,
       "description": "CHEDDAR CHEESE",
