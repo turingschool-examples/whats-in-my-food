@@ -22,4 +22,15 @@ RSpec.describe 'Foods Search' do
       expect(page).to have_content('Ingredients: No ingredients found.')
     end
   end
+
+  it 'error with no search', vcr: 'error' do
+    visit foods_path
+
+    expect(page).to_not have_content('result for parks in')
+    expect(page).to_not have_content('Description:')
+    expect(page).to_not have_content('Brand Owner:')
+    expect(page).to_not have_content('Ingredients:')
+    expect(page).to have_content('Error:')
+    expect(page).to have_content('Please search for an ingredient.')
+  end
 end
