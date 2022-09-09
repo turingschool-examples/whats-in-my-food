@@ -7,5 +7,4 @@ class Food
         @brand = data[:brandOwner]
         @ingredients = data[:ingredients]
     end 
-
 end 

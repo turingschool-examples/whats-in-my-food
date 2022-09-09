@@ -7,5 +7,4 @@ class FoodsIndexSearchResultFacade
             Food.new(food)
         end 
     end 
-
 end 
