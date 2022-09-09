@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Foods Index Page' do
+RSpec.describe 'Foods Index Page', :vcr do
   before do
     visit foods_path
   end
