@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Welcome Index', :vcr do
   it 'can fill in the search form and see the total number of items returned by the search' do
     visit '/'
-
+    
     fill_in :q, with: "sweet potatoes"
     click_on "Search"
 

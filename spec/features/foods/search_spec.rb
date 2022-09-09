@@ -4,11 +4,15 @@ RSpec.describe 'Foods Search', :vcr do
   it 'can fill in the search form and see the total number of items returned by the search' do
     visit '/foods'
 
-    fill_in :q, with: "sweet potatoes"
-    click_on "Search"
+    expect(page).to have_content("Search Results for: sweet potatoes")
+    expect(page).to have_content("Total Hits: 49676")
 
-    expect(page).to have_content("Search Results for: 'sweet potatoes'")
-    expect(page).to have_content("Total Count: 49676")
+    expect(page).to have_content('GTIN/UPC Code: 8901020020844')
+    expect(page).to have_content('Description: sweet potatoes')
+    expect(page).to have_content('Brand Owner: NOT A BRANDED ITEM')
+    expect(page).to have_content('Ingredients: ORGANIC SWEET POTATOES.')
+
+    expect(page).to_not have_content("Search Results for: potatoes")
   end
 end
 

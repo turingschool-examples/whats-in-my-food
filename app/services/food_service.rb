@@ -2,7 +2,6 @@ class FoodService
 
   def self.conn
     Faraday.new(url: 'https://api.nal.usda.gov/fdc/') do |faraday|
-      faraday.params[:format] = 'json'
       faraday.params[:api_key] = ENV['food_data_key']
     end
   end

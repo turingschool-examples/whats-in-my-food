@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DONT SHOW MY API KEY&format=json&query=sweet%20potatoes
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DONT SHOW MY API KEY&query=sweet%20potatoes
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 16:09:03 GMT
+      - Fri, 09 Sep 2022 18:17:31 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,10 +31,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '1'
+      - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=11bff643906f5fe808001cdadd2da71b; Path=/
-      - ApplicationGatewayAffinityCORS=11bff643906f5fe808001cdadd2da71b; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
+      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -48,9 +48,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3593'
+      - '3599'
       X-Vcap-Request-Id:
-      - f036b91c-5861-4b44-7b12-84e13f4c6277
+      - ef7a4a76-764b-4a13-646c-6d74ce06977e
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -3942,5 +3942,5 @@ http_interactions:
         Se","nutrientNumber":"317","unitName":"UG","derivationCode":"A","derivationDescription":"Analytical","derivationId":1,"value":0.7,"foodNutrientSourceId":1,"foodNutrientSourceCode":"1","foodNutrientSourceDescription":"Analytical
         or derived from analytical","rank":6200,"indentLevel":1,"foodNutrientId":1364547,"dataPoints":4}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 16:09:03 GMT
+  recorded_at: Fri, 09 Sep 2022 18:17:31 GMT
 recorded_with: VCR 6.1.0
