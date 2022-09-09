@@ -1,6 +1,6 @@
 class FoodsService
   def self.get_list_of_foods(q)
-  end_point = '/fdc/v1/foods'
+  end_point = '/fdc/v1/foods/search'
     response = conn.get(end_point) do |faraday|
       faraday.params['api_key'] = ENV['food_api_key']
       faraday.params['query'] = q
