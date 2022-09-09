@@ -15,5 +15,6 @@ RSpec.describe "Search Form" do
         fill_in 'q', with: 'sweet potatoes'
         click_button('Search')
         expect(current_path).to eq(foods_path)
+        save_and_open_page
     end
 end
