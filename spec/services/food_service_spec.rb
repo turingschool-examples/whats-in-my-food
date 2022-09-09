@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'FoodService' do 
+RSpec.describe 'Food Service' do 
 
   it "returns a collection of food from a search" do
     results = FoodService.foods_by_search("sweet potatoes")

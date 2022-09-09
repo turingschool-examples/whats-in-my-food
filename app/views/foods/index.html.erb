@@ -1,0 +1,8 @@
+<h1> Food Page </h1>
+
+<% @foods.each do |food| %>
+ <p> GTIN/UPC: <%= food.gtin_upc %> </p>
+ <p> Description: <%= food.descrition %> </p>
+ <p> Brand Owner: <%= food.brand_owner %> </p>
+ <p> Ingredients: <%= food.ingredients %> </p>
+<% end %>
