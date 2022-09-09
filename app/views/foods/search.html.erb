@@ -1,0 +1,10 @@
+<h1>Search Results for: <%= params[:q] %></h1>
+
+<h2>Total Hits: <%= @food_results.first.total_hits %></h2>
+
+<% @food_results.each do |food| %>
+  <h2>GTIN/UPC Code: <%= food.gtin_upc_code %></h2>
+  <h2>Description: <%= food.description %></h2>
+  <h2>Brand Owner: <%= food.brand_owner %></h2>
+  <h2>Ingredients: <%= food.ingredients %></h2>
+<% end %>
