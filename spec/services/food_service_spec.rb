@@ -22,8 +22,6 @@ describe FoodService do
 
       expect(foods.first).to have_key :ingredients
       expect(foods.first[:ingredients]).to be_a(String)
-
-      # require 'pry'; binding.pry 
     end
   end
 end
