@@ -1,1 +1,6 @@
-Food index
+<% @foods.each do |food|%>
+  <%= food.description %>
+  <%= food.brand_owner %>
+  <%= food.ingredients %>
+  <%= food.code %>
+<% end %>
