@@ -21,5 +21,22 @@ RSpec.describe 'Food Search' do
 
             expect(page).to have_content("Number of results: 49676")
         end 
+
+        it 'returns the top 10 food results' do
+            visit '/'
+            
+            fill_in "q", with: "sweet potatoes"
+            click_button("Search")
+
+            expect(current_path).to eq("/foods")
+
+            within "#foods" do
+                expect(page.all(".food")[0]).to have_content("SWEET POTATOES")
+                expect(page.all(".food")[0]).to have_content(983525)
+                expect(page.all(".food")[0]).to have_content("NOT A BRANDED ITEM")
+                expect(page.all(".food")[0]).to have_content("ORGANIC SWEET POTATOES.")
+                expect(page).to have_selector('.food', count: 10)
+            end
+        end 
     end 
 end 

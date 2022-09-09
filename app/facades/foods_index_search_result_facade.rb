@@ -1,12 +1,11 @@
 class FoodsIndexSearchResultFacade
 
     def self.service(search) 
-        data = FoodService.food_search(search)
-        # binding.pry 
+        data = FoodService.food_search(search)[:foods]
        
-        # @foods = data.map do |food|
-        #     FoodIndexResult.new(food)
-        # end 
+        @foods = data.map do |food|
+            Food.new(food)
+        end 
     end 
 
 end 

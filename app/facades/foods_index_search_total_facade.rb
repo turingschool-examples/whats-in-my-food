@@ -5,5 +5,4 @@ class FoodsIndexSearchTotalFacade
        
         @total_foods = data[:totalHits]
     end 
-
 end 

@@ -3,13 +3,13 @@
     <h3>Number of results: <%= @total_foods %></h3>
   </div>
 
-  <div id="top 10 foods">
-    <div class="top 10 food">
-      <%# <% @foods.each do |food| %>
-        <%# <%= food.upc %> %>
-        <%# <%= food.description %> %>
-        <%# <%= food.brand %> %>
-        <%# <%= food.ingredients %> %>
-      <%# <% end %> %> %>
-    </div>
+  <div id="foods">
+      <% @foods.each do |food| %>
+        <div class="food">
+            <p>UPC: <%= food.upc %></p>
+            <p>Description: <%= food.description %></p>
+            <p>Brand: <%= food.brand %></p>
+            <p>Ingredients: <%= food.ingredients %></p>
+        </div>
+      <% end %> 
   </div>
