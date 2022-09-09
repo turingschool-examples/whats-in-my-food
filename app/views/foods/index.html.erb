@@ -1,4 +1,5 @@
 <h1> Matching Foods </h1>
+<p>Total Matches: <%=@total_count%></p>
 <% @foods.each do |food| %>
 <ul><li><b><%= food.description %></b></li><ul>
 <li><%= food.upc_code %></li>

@@ -9,10 +9,10 @@ RSpec.describe 'index page' do
     click_on "Search"
 
     expect(current_path).to eql('/foods')
-    save_and_open_page
 
-    expect(page).to have_content("sweet potatoes")
+    expect(page).to have_content("SWEET POTATOES")
 
+    expect(page).to have_content("Total Matches: 49676")
  
   end
 end
