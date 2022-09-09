@@ -1,13 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe 'Welcome Index Page' do
-  describe 'search form' do
-    it 'can search for foods' do
+  before do
+    visit root_path
+  end
 
-    end
+  it "has a search form" do
 
-    it 'redirects to foods index page' do
+  end
 
-    end
+  it "can search for foods" do
+
+  end
+
+  it "redirects to foods index page" do
+
   end
 end
