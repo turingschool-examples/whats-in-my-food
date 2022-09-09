@@ -3,10 +3,10 @@
 <% if @results.empty? %>
   <p>No results found</p>
 <% else %>
-  <h3>Total Results: <%= @results.count %></h3>
+  <h3>Total Results: <%= @total_hits %></h3>
   <ol>
     <% @results.each do |food| %>
-      <li></li>
+      <li class="food"></li>
         <ul>
           <li>GTIN/UPC: <%= food.upc %></li>
           <li>Description: <%= food.description %></li>

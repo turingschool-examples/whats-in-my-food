@@ -1,5 +1,13 @@
 class FoodService
-  def self.foods(ingredient)
+  def self.total_foods(ingredient)
+    response = conn.get do |req|
+      req.params = { api_key: Figaro.env.foods_api_key, query: ingredient }
+    end
+    count = JSON.parse(response.body, symbolize_names: true)
+    count[:totalHits]
+  end
+
+  def self.top_10(ingredient)
     response = conn.get do |req|
       req.params = { api_key: Figaro.env.foods_api_key, query: ingredient, pageSize: 10 }
     end

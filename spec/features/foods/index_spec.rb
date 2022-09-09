@@ -9,11 +9,11 @@ RSpec.describe 'Foods Index Page', :vcr do
   end
 
   it "shows the total number of items returned by the search" do
-    expect(page).to have_content("Total Results: 10")
+    expect(page).to have_content("Total Results: 49676")
   end
 
   it "shows the ten foods that contain the ingredient searched for" do
-    expect(page).to have_content("Total Results: 10")
+    expect(page).to have_css('.food', count: 10)
   end
 
   it "shows the food's GTIN/UPC code" do
