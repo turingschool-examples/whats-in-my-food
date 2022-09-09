@@ -7,6 +7,7 @@ class FoodFacade
       @foods = data[:foods].map do |food|
         Food.new(food)
       end
+      @foods[0..9]
     end
 
     def count_foods(food)
