@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 15:52:07 GMT
+      - Fri, 09 Sep 2022 16:17:25 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -48,9 +48,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3584'
+      - '3583'
       X-Vcap-Request-Id:
-      - c5dd3f0f-cdcf-4501-7993-920b6e820ad9
+      - d35b1d3c-e539-4560-6d88-24c0a689239e
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -529,7 +529,7 @@ http_interactions:
         from value per serving size measure","derivationId":70,"value":4.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":5137549,"percentDailyValue":2}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 15:52:07 GMT
+  recorded_at: Fri, 09 Sep 2022 16:17:26 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=api_key&pageNumber=1&pageSize=10&query=sweet%20potatoes
@@ -549,7 +549,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 15:53:45 GMT
+      - Fri, 09 Sep 2022 16:18:56 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -563,8 +563,8 @@ http_interactions:
       Age:
       - '1'
       Set-Cookie:
-      - ApplicationGatewayAffinity=8f254b86c107b10a607a74d9756ae7c8; Path=/
-      - ApplicationGatewayAffinityCORS=8f254b86c107b10a607a74d9756ae7c8; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=b001f71a48e62c89a2bc9438e34dce20; Path=/
+      - ApplicationGatewayAffinityCORS=b001f71a48e62c89a2bc9438e34dce20; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -578,9 +578,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3585'
+      - '3582'
       X-Vcap-Request-Id:
-      - ffb1be8b-92b6-4468-7c8a-c9e327b9c446
+      - 8a5b1906-919a-416c-5fd5-4bdbc8e32931
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -1059,7 +1059,7 @@ http_interactions:
         from value per serving size measure","derivationId":70,"value":4.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":5137549,"percentDailyValue":2}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 15:53:45 GMT
+  recorded_at: Fri, 09 Sep 2022 16:18:56 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=api_key&pageNumber=1&pageSize=10&query=sweet%20potatoes
@@ -1093,8 +1093,8 @@ http_interactions:
       Age:
       - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=11bff643906f5fe808001cdadd2da71b; Path=/
-      - ApplicationGatewayAffinityCORS=11bff643906f5fe808001cdadd2da71b; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
+      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -1110,7 +1110,7 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '3581'
       X-Vcap-Request-Id:
-      - ca7c5a23-a79a-4e78-774e-e81fd73aecfc
+      - cb972396-e972-4534-72b8-99348da53775
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -1589,7 +1589,7 @@ http_interactions:
         from value per serving size measure","derivationId":70,"value":4.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":5137549,"percentDailyValue":2}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 16:26:23 GMT
+  recorded_at: Fri, 09 Sep 2022 16:26:24 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=api_key&pageNumber=1&pageSize=10&query=sweet%20potatoes
@@ -1623,8 +1623,8 @@ http_interactions:
       Age:
       - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=8f254b86c107b10a607a74d9756ae7c8; Path=/
-      - ApplicationGatewayAffinityCORS=8f254b86c107b10a607a74d9756ae7c8; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=11bff643906f5fe808001cdadd2da71b; Path=/
+      - ApplicationGatewayAffinityCORS=11bff643906f5fe808001cdadd2da71b; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -1638,9 +1638,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3562'
+      - '3561'
       X-Vcap-Request-Id:
-      - 4aab6e75-e3b1-4423-600f-e764de5fe728
+      - 97cc685f-9d90-4a14-52af-1c02d2f7241f
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -2139,7 +2139,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 16:35:08 GMT
+      - Fri, 09 Sep 2022 16:35:09 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -2151,10 +2151,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '0'
+      - '1'
       Set-Cookie:
-      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
-      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=8f254b86c107b10a607a74d9756ae7c8; Path=/
+      - ApplicationGatewayAffinityCORS=8f254b86c107b10a607a74d9756ae7c8; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -2168,9 +2168,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3556'
+      - '3555'
       X-Vcap-Request-Id:
-      - 5b0b0e2a-36dd-41c7-5206-03ba94a076a9
+      - bb22c519-bc27-4a78-7bdf-4ee021ac7ed6
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -2649,7 +2649,7 @@ http_interactions:
         from value per serving size measure","derivationId":70,"value":4.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":5137549,"percentDailyValue":2}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 16:35:08 GMT
+  recorded_at: Fri, 09 Sep 2022 16:35:09 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=api_key&pageNumber=1&pageSize=10&query=sweet%20potatoes
@@ -2683,8 +2683,8 @@ http_interactions:
       Age:
       - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
-      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=8f254b86c107b10a607a74d9756ae7c8; Path=/
+      - ApplicationGatewayAffinityCORS=8f254b86c107b10a607a74d9756ae7c8; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -2700,7 +2700,7 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '3547'
       X-Vcap-Request-Id:
-      - 9342066d-0599-4510-7406-a7e3bd90eab1
+      - 17bc8a64-3877-4925-6a2b-74fa02adf083
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -3213,8 +3213,8 @@ http_interactions:
       Age:
       - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
-      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=b001f71a48e62c89a2bc9438e34dce20; Path=/
+      - ApplicationGatewayAffinityCORS=b001f71a48e62c89a2bc9438e34dce20; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -3228,9 +3228,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3539'
+      - '3538'
       X-Vcap-Request-Id:
-      - dbc44133-f2a3-4233-7ac5-104d559bbf4c
+      - f0fa6510-2373-420e-56a0-4783dab156cc
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:

@@ -5,4 +5,9 @@ class FoodFacade
       Food.new(data)
     end
   end
+
+  def self.total(query)
+    parsed_json = FoodService.search(query)
+    parsed_json[:totalHits]
+  end
 end
