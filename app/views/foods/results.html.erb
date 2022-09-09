@@ -1,0 +1,10 @@
+<h1>Food Search Results</h1>
+
+<%= "Search Matches: #{@food_matches}" %>
+
+<% @foods.each do |food| %>
+    <%= "GTIN/UPC: #{food.gtinupc}" %>
+    <%= "Description: #{food.description}" %>
+    <%= "Brand Owner: #{food.brand}" %>
+    <%= "Ingredients: #{food.ingredients} "%>
+  <% end %>
