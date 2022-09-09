@@ -1,0 +1,11 @@
+<h3>Results for <%= @query %></h3>
+<p>Total Results: <%= @total %></p>
+<% @search.each do |food| %>
+  <div id="food-<%= food.id %>">
+    <b><%= food.description %></b><br>
+    <p><%= food.owner %></p>
+    <p><%= food.ingredients %></p>
+    <p><%= food.code %></p>
+  </div>
+<%=  %>
+<% end %>
