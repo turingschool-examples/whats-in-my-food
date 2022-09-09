@@ -1,6 +1,6 @@
 class FoodsService
   def self.food_with(ingredient)
-    response = conn.get("/fdc/v1/foods/search?query=#{ingredient}")
+    response = conn.get("/fdc/v1/foods/search?query=#{ingredient}&pageSize=10")
     parse_json(response)
   end
 

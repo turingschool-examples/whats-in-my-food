@@ -1,0 +1,10 @@
+<%= link_to 'Home', root_path %>
+
+<h1><%= @total %> results for food with <%= @query %></h1>
+
+<% @foods.each_with_index do |food, index| %>
+  <h3><%= index + 1 %>. <%= food.code %></h3>
+  <p>Description: <%= food.description.capitalize %></p>
+  <p>Brand Owner: <%= food.brand.capitalize %></p>
+  <p>Ingredients: <%= food.ingredients.capitalize %></p></br>
+<% end %>
