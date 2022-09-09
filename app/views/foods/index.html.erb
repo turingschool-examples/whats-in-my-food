@@ -1,13 +1,13 @@
 <h1>Searched Foods Index Page</h1>
 <p>Total hits for this search: <%= @total_hits.total_hits %></p>
-
+ <ol>
   <% @foods.each do |food| %>
-  <ul>
-    <li><%= food.name %></li>
-    <ul>
-      <li>GTIN/UPC code: <%= food.gtin_upc_code %></li>
-      <li>Brand Owner: <%= food.brand_owner %></li>
-      <li>Ingredients: <%= food.ingredients %></li>
-    </ul>
-  </ul>
+    <li>Description/Name: <%= food.name %></li>
+      <ul>
+        <li>GTIN/UPC code: <%= food.gtin_upc_code %></li>
+        <li>Brand Owner: <%= food.brand_owner %></li>
+        <li>Ingredients: <%= food.ingredients %></li>
+      </ul>
+    <br>
   <% end %>
+ </ol>
