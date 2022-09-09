@@ -1,7 +1,7 @@
 class FoodService
  
     def self.search_food(food)
-        response = conn.get("search?#{food}")
+        response = conn.get("search?query=#{food}")
         JSON.parse(response.body, symbolize_names: true) 
       end
 
