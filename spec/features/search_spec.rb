@@ -49,5 +49,12 @@ RSpec.describe 'Food Search' do
             expect(current_path).to eq("/")
              expect(page).to have_content("Please submit a query in the search form")
         end 
+
+        it 'will not let you visit the foods page without searching for foods' do
+            visit '/foods'
+
+            expect(current_path).to eq("/")
+            expect(page).to have_content("Please submit a query in the search form")
+        end 
     end 
 end 
