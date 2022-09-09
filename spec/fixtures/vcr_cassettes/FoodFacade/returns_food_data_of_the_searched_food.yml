@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 16:17:46 GMT
+      - Fri, 09 Sep 2022 16:12:25 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -48,9 +48,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3598'
+      - '3599'
       X-Vcap-Request-Id:
-      - 39772eec-b573-43f4-4ec1-ec3ebbe5df60
+      - 040d9548-c4ec-4f78-43d2-749692777fdd
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -529,5 +529,5 @@ http_interactions:
         from value per serving size measure","derivationId":70,"value":4.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":5137549,"percentDailyValue":2}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 16:17:46 GMT
+  recorded_at: Fri, 09 Sep 2022 16:12:26 GMT
 recorded_with: VCR 6.1.0
