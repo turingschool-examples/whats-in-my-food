@@ -1,0 +1,10 @@
+<h2>Number of hits: <%= @hits %></h2>
+<% @listed_foods.each_with_index do |food, index| %>
+  <div id="food-<%= index %>">
+    <p><strong>GTIN/UPC code: </strong><%= food.upc %></p>
+    <p><strong>Description: </strong><%= food.description %></p>
+    <p><strong>Brand Owner: </strong><%= food.brand %></p>
+    <p><strong>Ingredients: </strong><%= food.ingredients %></p>
+  </div>
+  <br>
+  <% end %>
