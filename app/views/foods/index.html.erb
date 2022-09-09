@@ -1,0 +1,17 @@
+<h1><%= @foods.first.total_results %> Results for search: "<%= params[:q] %>"</h1>
+<h3>Showing the 10 most relevant results</h3>
+
+<hr>
+
+<div id='all-foods'>
+  <% @foods.each_with_index do |food, index| %>
+    <div id="gtin-upc-<%= food.gtin_upc_code %>-info">
+      <h3>Result <%= index + 1 %></h3>
+      <p><strong>GTIN/UPC Code: </strong><%= food.gtin_upc_code %></p>
+      <p><strong>Brand Owner: </strong><%= food.brand_owner %></p>
+      <p><strong>Description: </strong><%= food.description %></p>
+      <p><strong>Ingredients: </strong><%= food.ingredients %></p>
+    </div>
+    <hr>
+  <% end %>
+</div>

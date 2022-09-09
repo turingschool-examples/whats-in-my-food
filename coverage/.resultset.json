@@ -1,0 +1,79 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/blake/turing/3module/ics/whats-in-my-food/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/ics/whats-in-my-food/app/poros/food.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          21,
+          21,
+          21,
+          21,
+          21,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/ics/whats-in-my-food/app/services/food_service.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/ics/whats-in-my-food/app/facades/food_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          2,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/ics/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/ics/whats-in-my-food/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1662740132
+  }
+}
