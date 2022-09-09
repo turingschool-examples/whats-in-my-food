@@ -11,5 +11,7 @@ RSpec.describe 'Welcome page' do
     fill_in (:q), with: 'sweet potatoes'
     click_on 'Search'
     expect(current_path).to eq(foods_path)
+
+    expect(page).to have_content("Number of items: 49676")
   end
 end
