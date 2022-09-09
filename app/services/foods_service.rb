@@ -9,7 +9,7 @@ class FoodsService
       end
 
       response = conn.get(url)
-      Json.parse (response.body, symbolize_names: true)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def find_food(keyword)

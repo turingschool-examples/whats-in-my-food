@@ -1,10 +1,12 @@
 "Sweet Topatoes"
 
 <% @foods.each do |food| %>
-  <%= food.upc %>
-  <%= food.description %>
-  <%= food.brand_owner %>
-  <%= food.ingredients %>
+<ol>
+  GTIN/UPC code: <%= food.upc %>
+  Description: <%= food.description %>
+  Brand Owner: <%= food.brand_owner %>
+  Ingredients: <%= food.ingredients %>
+</ol>
 <% end %>
 
-<%= @food_count %>
+Total Foods: <%= @food_count %>

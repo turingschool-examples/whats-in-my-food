@@ -6,6 +6,8 @@ class Food
               :ingredients
 
   def initialize(data)
+    binding.pry
+
     @upc = data[:gtinUpc]
     @description = data[:description]
     @brand_owner = data[:brandOwner]

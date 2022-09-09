@@ -12,6 +12,6 @@ RSpec.describe 'Food Facade' do
   it "returns the count of foods containing the key word" do
     count = FoodsFacade.count_foods('sweet potatoes')
 
-    expect(count).to eq(44128)
+    expect(count).to eq(49676)
   end
 end
