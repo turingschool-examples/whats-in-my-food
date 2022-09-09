@@ -1,1 +1,9 @@
 <h1> Matching Foods </h1>
+<% @foods.each do |food| %>
+<ul><li><b><%= food.description %></b></li><ul>
+<li><%= food.upc_code %></li>
+<li><%= food.brand_owner %></li>
+<li><%= food.ingredients %></li>
+</ul>
+</ul>
+<% end %>

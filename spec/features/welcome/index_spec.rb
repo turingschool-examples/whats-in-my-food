@@ -8,6 +8,11 @@ RSpec.describe 'index page' do
 
     click_on "Search"
 
+    expect(current_path).to eql('/foods')
+    save_and_open_page
+
+    expect(page).to have_content("sweet potatoes")
+
  
   end
 end
