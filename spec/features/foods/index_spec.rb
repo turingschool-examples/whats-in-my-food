@@ -16,7 +16,7 @@ RSpec.describe 'Food Show Page' do
   # - The food's description
   # - The food's Brand Owner
   # - The food's ingredients
-  it 'displays the total number of items returned by the search and has a list of 10 foods that contain the ingredient' do 
+  it 'displays the total number of items returned by the search' do 
     visit root_path 
 
     fill_in :q, :with => 'sweet potatoes'
@@ -27,8 +27,17 @@ RSpec.describe 'Food Show Page' do
     expect(page).to have_content "Total Hits: 49676"
   end
 
-    # expect(page).to have_content("Food Description", count: 10)
-    # expect(page).to have_content("GTIN/UPC Code", count: 10)
-    # expect(page).to have_content("Brand Owner", count: 10)
-    # expect(page).to have_content("Ingredients", count: 10)
+  it 'displays 10 foods that match the search' do 
+    visit root_path 
+
+    fill_in :q, :with => 'sweet potatoes'
+
+    click_on 'Search' 
+
+    expect(page).to have_content("Top 10 Matches")
+    expect(page).to have_content("Food Description", count: 10)
+    expect(page).to have_content("GTIN/UPC Code", count: 10)
+    expect(page).to have_content("Brand Owner", count: 10)
+    expect(page).to have_content("Ingredients", count: 10)
+  end
 end
