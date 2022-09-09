@@ -33,7 +33,6 @@ RSpec.describe 'Food Show Page' do
     fill_in :q, :with => 'sweet potatoes'
 
     click_on 'Search' 
-    save_and_open_page
 
     expect(page).to have_content("Top 10 Matches")
     expect(page).to have_content("Food Description", count: 10)
