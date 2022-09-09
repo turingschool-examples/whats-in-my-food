@@ -2,8 +2,8 @@
 <h3>Total number of items found: <%=@foods.count%></h3>
 <h4>Food Attributes</h4>
 <% @foods.each do |food| %>
-   <p>Description:<%= food.brand_owner %></p>
-   <p>Brand Owner:<%= food.description %></p>
-   <p>GTIN/UPC Code:<%= food.gtin_upc %></p>
-   <p>Ingredients:<%= food.ingredients %></p>
+   <p>Brand Owner: <%= food.brand_owner %></p>
+   <p>Description: <%= food.description %></p>
+   <p>GTIN/UPC Code: <%= food.gtin_upc %></p>
+   <p>Ingredients: <%= food.ingredients %></p>
 <% end %>

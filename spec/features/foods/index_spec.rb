@@ -15,9 +15,9 @@ RSpec.describe 'food search page' do
       fill_in :q, with: "sweet potatoes"
       click_on "Search"
 
-      expect(page).to have_content("Brand Owner:")
-      expect(page).to have_content("Description:")
-      expect(page).to have_content("GTIN/UPC Code:")
-      expect(page).to have_content("Ingredients:")
+      expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
+      expect(page).to have_content("Description: SWEET POTATOES")
+      expect(page).to have_content("GTIN/UPC Code: 8901020020844")
+      expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES.")
    end
 end
