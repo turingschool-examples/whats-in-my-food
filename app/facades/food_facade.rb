@@ -1,0 +1,2 @@
+class FoodFacade
+end

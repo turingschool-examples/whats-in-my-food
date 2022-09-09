@@ -10,6 +10,8 @@ RSpec.describe 'Welcome Page' do
       click_button "Search" 
 
       expect(current_path).to eq('/foods')
+      expect(page).to have_content('Total results:')
+      expect(page).to have_content('Total results:')
       
     end
   end
