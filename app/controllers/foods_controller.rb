@@ -6,7 +6,8 @@ class FoodsController < ApplicationController
     else
       search_results = FoodFacade.ingredient_search(params[:q])
 
-      @foods = search_results[0].first(10)
+      @foods = search_results.first
+      
       @total_result_count = search_results.last
     end
   end
