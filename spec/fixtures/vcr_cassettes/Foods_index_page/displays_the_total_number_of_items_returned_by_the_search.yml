@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 16:42:09 GMT
+      - Fri, 09 Sep 2022 16:48:04 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -50,9 +50,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3588'
+      - '3586'
       X-Vcap-Request-Id:
-      - 3e6f0279-4d9f-4871-6ea1-96ab92bb5bae
+      - 8ea7be38-cc28-4966-458e-c1fc293f600e
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -894,5 +894,5 @@ http_interactions:
         DFE","nutrientNumber":"435","unitName":"UG","derivationCode":"NC","derivationDescription":"Calculated","derivationId":49,"value":44.0,"foodNutrientSourceId":2,"foodNutrientSourceCode":"4","foodNutrientSourceDescription":"Calculated
         or imputed","rank":7200,"indentLevel":1,"foodNutrientId":1326741,"dataPoints":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":394811,"SR
         Legacy":7793,"Survey (FNDDS)":7083,"Foundation":184,"Experimental":26},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 16:42:10 GMT
+  recorded_at: Fri, 09 Sep 2022 16:48:04 GMT
 recorded_with: VCR 6.1.0

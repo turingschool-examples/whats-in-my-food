@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 16:42:10 GMT
+      - Fri, 09 Sep 2022 16:48:05 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -35,8 +35,8 @@ http_interactions:
       Age:
       - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=11bff643906f5fe808001cdadd2da71b; Path=/
-      - ApplicationGatewayAffinityCORS=11bff643906f5fe808001cdadd2da71b; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=8f254b86c107b10a607a74d9756ae7c8; Path=/
+      - ApplicationGatewayAffinityCORS=8f254b86c107b10a607a74d9756ae7c8; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -50,9 +50,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3588'
+      - '3585'
       X-Vcap-Request-Id:
-      - 1514b9ac-08bb-4118-79d6-375a41de3393
+      - f227cdc7-d459-4424-53df-9c069bf1142c
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -894,5 +894,5 @@ http_interactions:
         DFE","nutrientNumber":"435","unitName":"UG","derivationCode":"NC","derivationDescription":"Calculated","derivationId":49,"value":44.0,"foodNutrientSourceId":2,"foodNutrientSourceCode":"4","foodNutrientSourceDescription":"Calculated
         or imputed","rank":7200,"indentLevel":1,"foodNutrientId":1326741,"dataPoints":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":394811,"SR
         Legacy":7793,"Survey (FNDDS)":7083,"Foundation":184,"Experimental":26},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 16:42:10 GMT
+  recorded_at: Fri, 09 Sep 2022 16:48:05 GMT
 recorded_with: VCR 6.1.0
