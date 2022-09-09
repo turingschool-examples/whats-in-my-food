@@ -4,6 +4,11 @@ class FoodDBService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.get_top_hits(search_query)
+    response = conn.get("https://api.nal.usda.gov/fdc/v1/foods/search?api_key=#{ENV["food_api_key"]}&query=#{search_query}")
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
 private
 
   def self.conn

@@ -7,8 +7,8 @@ RSpec.describe 'Foods Index Page' do
     fill_in 'q', with: "sweet potatoes"
 
     click_button 'Search'
-
-    expect(page).to have_content('XXXX results found')
+    
+    expect(page).to have_content('Total hits for this search: 49676')
   end
 end
 
