@@ -279,14 +279,26 @@
           null
         ]
       },
+      "/Users/phillipmstewart/turing/2205/3-mod/mid-mod/whats-in-my-food/app/facades/food_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/phillipmstewart/turing/2205/3-mod/mid-mod/whats-in-my-food/app/services/food_service.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -295,18 +307,34 @@
         "lines": [
           1,
           1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/phillipmstewart/turing/2205/3-mod/mid-mod/whats-in-my-food/app/poros/food.rb": {
+        "lines": [
           1,
           1,
           null,
           null,
           null,
           1,
-          1,
+          20,
+          20,
+          20,
+          20,
           null,
           null
         ]
       }
     },
-    "timestamp": 1662737450
+    "timestamp": 1662738727
   }
 }

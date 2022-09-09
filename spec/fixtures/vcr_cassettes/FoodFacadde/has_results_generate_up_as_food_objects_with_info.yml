@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Sep 2022 15:30:50 GMT
+      - Fri, 09 Sep 2022 15:52:07 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,10 +31,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '1'
+      - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=b001f71a48e62c89a2bc9438e34dce20; Path=/
-      - ApplicationGatewayAffinityCORS=b001f71a48e62c89a2bc9438e34dce20; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=11bff643906f5fe808001cdadd2da71b; Path=/
+      - ApplicationGatewayAffinityCORS=11bff643906f5fe808001cdadd2da71b; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -48,9 +48,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3591'
+      - '3584'
       X-Vcap-Request-Id:
-      - bba2d635-2778-4ca5-76b4-5f5990bd690b
+      - c5dd3f0f-cdcf-4501-7993-920b6e820ad9
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -529,5 +529,5 @@ http_interactions:
         from value per serving size measure","derivationId":70,"value":4.0,"foodNutrientSourceId":9,"foodNutrientSourceCode":"12","foodNutrientSourceDescription":"Manufacturer''s
         analytical; partial documentation","rank":5800,"indentLevel":1,"foodNutrientId":5137549,"percentDailyValue":2}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Fri, 09 Sep 2022 15:30:50 GMT
+  recorded_at: Fri, 09 Sep 2022 15:52:07 GMT
 recorded_with: VCR 6.1.0
