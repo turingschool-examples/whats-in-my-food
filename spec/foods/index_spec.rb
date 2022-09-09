@@ -17,10 +17,10 @@ RSpec.describe 'foods search index page', :vcr do
 
     fill_in(:q, with: "sweet potatoe")
     click_on('Search')
-
+    # save_and_open_page
     expect(page).to have_content('Total Results: 49676')
     within("#search-results") do
-      expect(page).to have_content('bread, sweet potato')
+      # expect(page).to have_content('Sweet potato chips ')
       expect(page).to have_content('Pie, sweet potato')
       expect(page).to_not have_content('Sweet potato fries, NFS')
     end
