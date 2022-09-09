@@ -4,12 +4,15 @@
   <p>No results found</p>
 <% else %>
   <h3>Total Results: <%= @results.count %></h3>
-  <ul>
+  <ol>
     <% @results.each do |food| %>
-      <li>GTIN/UPC: <%= food.upc %></li>
-      <li>Description: <%= food.description %></li>
-      <li>Brand Owner: <%= food.brand_owner %></li>
-      <li>Ingredients: <%= food.ingredients %></li>
+      <li></li>
+        <ul>
+          <li>GTIN/UPC: <%= food.upc %></li>
+          <li>Description: <%= food.description %></li>
+          <li>Brand Owner: <%= food.brand_owner %></li>
+          <li>Ingredients: <%= food.ingredients %></li>
+        </ul>
     <% end %>
-  </ul>
+  </ol>
 <% end %>

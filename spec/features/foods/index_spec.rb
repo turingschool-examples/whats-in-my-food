@@ -13,9 +13,7 @@ RSpec.describe 'Foods Index Page', :vcr do
   end
 
   it "shows the ten foods that contain the ingredient searched for" do
-    results = FoodFacade.search("sweet potatoes").map { |result| result.description }
-    expect(results.count).to eq(10)
-    expect(results).to eq("SWEET POTATOES")
+    expect(page).to have_content("Total Results: 10")
   end
 
   it "shows the food's GTIN/UPC code" do
