@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/fdc/v1/food?api_key=DONT SHOW MY API KEY&query=sweet%20potatoes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 09 Sep 2022 15:37:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - POST,  GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Set-Cookie:
+      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
+      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
+        Secure
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000; includeSubDomains; preload
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3599'
+      X-Vcap-Request-Id:
+      - 8cc3c440-6682-4e30-49c3-15507d241f01
+      X-Frame-Options:
+      - sameorigin
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":"2022-09-09T15:37:37.550+0000","status":400,"error":"Bad
+        Request","message":"Failed to convert value of type ''java.lang.String'' to
+        required type ''java.lang.Long''; nested exception is java.lang.NumberFormatException:
+        For input string: \"food\"","path":"/portal-data/api/v1/food"}'
+  recorded_at: Fri, 09 Sep 2022 15:37:37 GMT
+recorded_with: VCR 6.1.0
