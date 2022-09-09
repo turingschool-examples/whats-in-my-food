@@ -1,6 +1,7 @@
 class FoodsController < ApplicationController
 
   def index
-    FoodFacade.get_a_food(params[:q])
+    data = FoodFacade.get_a_food(params[:q])
+    binding.pry
   end
 end
