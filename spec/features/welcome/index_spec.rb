@@ -8,7 +8,8 @@ RSpec.describe 'Welcome page' do
 
   it 'can search for a food' do
     visit root_path
-    fill_in (:q), with: 'sweet potatoes'
+    query = 'sweet potatoes'
+    fill_in (:q), with: query
     click_on 'Search'
     expect(current_path).to eq(foods_path)
 
