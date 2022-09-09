@@ -1,0 +1,8 @@
+<h1>Search Results Found: <%= @food_count %></h1>
+
+<% @foods.each do |food| %>
+  <h3>UPC Code: <%= food.upc %></h3>
+  <h3>Description: <%= food.description %></h3>
+  <h3>Brand Owner: <%= food.brand_owner %></h3>
+  <h3>Ingredients: <%= food.ingredients %></h3>
+<% end  %>
