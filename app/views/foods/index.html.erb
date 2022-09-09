@@ -1,0 +1,16 @@
+<div class="food_number_results">
+
+    <h3>Number of results: <%= @total_foods %></h3>
+  </div>
+
+  <div id="foods">
+      <% @foods.each do |food| %>
+        <div class="food">
+            <h3>Food:</h3>
+            <p>UPC: <%= food.upc %></p>
+            <p>Description: <%= food.description %></p>
+            <p>Brand: <%= food.brand %></p>
+            <p>Ingredients: <%= food.ingredients %></p>
+        </div>
+      <% end %> 
+  </div>
