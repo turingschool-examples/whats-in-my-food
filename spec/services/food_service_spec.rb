@@ -11,5 +11,5 @@ RSpec.describe 'Food Service' do
     expect(results[:foods].first).to have_key(:gtinUpc)
     expect(results[:foods].first).to have_key(:brandOwner)
     expect(results[:foods].first).to have_key(:ingredients)
-  end
+  end  
 end

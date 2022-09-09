@@ -8,6 +8,11 @@ class FoodFacade
         Food.new(food)
       end
     end
+
+    def count_foods(food)
+      data = FoodService.foods_by_search(food)
+      data[:totalHits]
+    end
   end
 end
 
