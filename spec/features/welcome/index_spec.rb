@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Welcome Index Page' do
+RSpec.describe 'Welcome Index Page', :vcr do
   before do
     visit root_path
   end
