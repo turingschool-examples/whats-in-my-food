@@ -10,7 +10,7 @@ RSpec.describe 'Foods Search', :vcr do
     expect(page).to have_content('GTIN/UPC Code: 8901020020844')
     expect(page).to have_content('Description: sweet potatoes')
     expect(page).to have_content('Brand Owner: NOT A BRANDED ITEM')
-    expect(page).to have_content('Ingredients: ORGANIC SWEET POTATOES.')
+    expect(page).to have_content('Ingredients: ORGANIC SWEET POTATOES')
 
     expect(page).to_not have_content("Search Results for: potatoes")
   end

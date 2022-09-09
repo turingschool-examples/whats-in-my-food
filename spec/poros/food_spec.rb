@@ -8,7 +8,7 @@ RSpec.describe Food do
       gtinUpc: "8901020020844",
       lowercaseDescription: "sweet potatoes",
       brandOwner: "NOT A BRANDED ITEM",
-      ingredients: "ORGANIC SWEET POTATOES."
+      ingredients: "ORGANIC SWEET POTATOES"
     }
 
     food_results = Food.new(total_hits, attrs)
