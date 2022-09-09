@@ -8,6 +8,8 @@ class FoodFacade
     @foods = food_results.map do |food|
       Food.new(food)
     end
+    
+    return [@foods,data[:totalHits]]
   end
 
 end

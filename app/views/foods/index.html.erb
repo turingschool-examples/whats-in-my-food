@@ -1,1 +1,26 @@
 <h1> Foods Index </h1>
+
+<div id="total-result-count">
+  <p>
+    Total Results: <%=@total_result_count%>
+  </p>
+</div>
+
+<div id="food-list">
+  <% @foods.each do |food|%>
+    <div class="food-item">
+      <p>
+        GTIN/UPC Code: <%=food.gtinUpc%>
+      </p>
+      <p>
+        Description: <%=food.description%>
+      </p>
+      <p>
+        Brand Owner: <%=food.brand_owner%>
+      </p>
+      <p>
+        Ingredients: <%=food.ingredients%>
+      </p>
+    </div>
+  <% end %>
+</div>
