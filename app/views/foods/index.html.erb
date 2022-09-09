@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+
+ <p> Total Results: <%= @total_results %> </p>
+
+<div id='search-results'>
+  <% @foods.each do |food| %>
+      <p> <%= food.description %> </p>
+  <% end %>
+</div>

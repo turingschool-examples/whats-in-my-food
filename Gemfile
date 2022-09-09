@@ -21,6 +21,7 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'shoulda-matchers'
 end
 
 group :test do
@@ -28,6 +29,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
