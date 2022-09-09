@@ -1,0 +1,13 @@
+<h1>Welcome to the foods search</h1>
+
+<h2>Total hits: <%= @total_items %></h2>
+
+<h2>First 10 food items</h2>
+
+<% @food_list.each do |item| %>
+  <h3>Item Description: <%= item.description %></h3>
+  <p>Item GTIN/UPC code: <%= item.gtinupc_code %></p>
+  <p>Item Brand Owner: <%= item.brand_owner %></p>
+  <p>Item Ingredients: <%= item.ingredients %></p>
+  <p>-----------------</p>
+<% end %>
