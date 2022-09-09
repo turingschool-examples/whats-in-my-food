@@ -1,1 +1,10 @@
 "Sweet Topatoes"
+
+<% @foods.each do |food| %>
+  <%= food.upc %>
+  <%= food.description %>
+  <%= food.brand_owner %>
+  <%= food.ingredients %>
+<% end %>
+
+<%= @food_count %>
