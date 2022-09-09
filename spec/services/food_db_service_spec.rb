@@ -14,6 +14,13 @@ RSpec.describe 'Food DB Service' do
     expect(first_food_object[:brandOwner]).to be_a String
     expect(first_food_object[:ingredients]).to be_a String
   end
+
+  it 'retrieves top hits data for search food' do 
+    parsed_json = FoodDBService.get_top_hits("sweet potatoes")
+
+    expect(parsed_json).to be_a Hash
+    expect(parsed_json[:totalHits]).to be_a Integer
+  end
 end
 
 
