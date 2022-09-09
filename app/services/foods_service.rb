@@ -11,4 +11,8 @@ class FoodsService
     def self.search(keyword)
         get_url("/fdc/v1/foods/search?", keyword)[:foods]
     end
+
+    def self.search_count(keyword)
+        get_url("/fdc/v1/foods/search?", keyword)
+    end
 end

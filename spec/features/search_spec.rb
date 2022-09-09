@@ -15,6 +15,10 @@ RSpec.describe "Search Form" do
         fill_in 'q', with: 'sweet potatoes'
         click_button('Search')
         expect(current_path).to eq(foods_path)
-        save_and_open_page
+        
+        expect(page).to have_content("Total Number of Items Returned by Search:")
+        expect(page).to have_content("GTIN UPC:")
+        expect(page).to have_content("Brand Owner:")
+        expect(page).to have_content("Ingredients:")
     end
 end

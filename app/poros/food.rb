@@ -5,6 +5,5 @@ class Food
         @description = data[:description]
         @brand_owner = data[:brandOwner]
         @ingredients = data[:ingredients]
-        binding.pry
     end
 end
