@@ -1,5 +1,7 @@
 <h1> Food Page </h1>
 
+<h3>Number of results: <%= @food_count %></h3>
+
 <% @foods.each do |food| %>
  <p> GTIN/UPC: <%= food.gtin_upc %> </p>
  <p> Description: <%= food.description %> </p>
