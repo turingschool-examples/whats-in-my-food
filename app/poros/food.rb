@@ -1,9 +1,9 @@
 class Food
+  attr_reader :code, :description, :ingredients, :brand
   def initialize(data)
-    @name = data[:name]
-    @code = data[:code]
+    @code = data[:foodCode]
     @description = data[:description]
-    @brand_owner = data[:brand_owner]
-    @ingredients = data[:ingredients]
+    @ingredients = data[:foodNutrients].map {|nutrient| nutrient[:nutrientName]}
+    @brand = data[:brand]
   end
 end
