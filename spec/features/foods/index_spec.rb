@@ -8,7 +8,7 @@ RSpec.describe "Food Index" do
 
     expect(current_path).to eq("/foods")
     expect(page).to have_content('Description: ')
-    expect(page).to have_content('Brand Owner: ')
-    expect(page).to have_content('Ingredients: ')
+    expect(page).to have_content('Brand Owner')
+    expect(page).to have_content('Ingredients')
   end
 end
