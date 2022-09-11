@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe FoodService do
   describe 'search_foods' do
-    it 'returns foods from a search' do
+    it 'returns foods from a search', :vcr do
         get_foods = FoodService.call_for_a_food("sweet potatoes")
         expect(get_foods).to be_a(Hash)
         expect(get_foods[:foods]).to be_a(Array)

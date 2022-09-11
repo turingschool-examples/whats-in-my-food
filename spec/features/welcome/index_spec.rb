@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'index page' do
-  it 'fills in the form with a food and returns matching food' do
+  it 'fills in the form with a food and returns matching food', :vcr do
     visit "/"
 
     fill_in "q", with: "sweet potatoes"

@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
 gem 'faraday'
-gem 'figaro'
+gem 'figaro' 
 
 
 group :development, :test do
@@ -28,6 +28,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
