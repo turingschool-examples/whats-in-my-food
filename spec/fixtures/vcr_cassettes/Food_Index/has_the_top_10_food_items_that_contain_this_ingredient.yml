@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DONT SHOW MY API KEY&query=
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DONT SHOW MY API KEY&query
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 10 Sep 2022 01:40:17 GMT
+      - Mon, 12 Sep 2022 23:46:12 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,10 +31,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '0'
+      - '2'
       Set-Cookie:
-      - ApplicationGatewayAffinity=11bff643906f5fe808001cdadd2da71b; Path=/
-      - ApplicationGatewayAffinityCORS=11bff643906f5fe808001cdadd2da71b; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
+      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -48,9 +48,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3587'
+      - '3599'
       X-Vcap-Request-Id:
-      - 8dca159b-64e0-4c03-7729-51dc8d2bb85e
+      - c85f5618-de6d-43f0-758a-98d00efc9b04
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -5825,5 +5825,5 @@ http_interactions:
         1, 12, and/or 6.","derivationId":64,"value":0.007,"foodNutrientSourceId":1,"foodNutrientSourceCode":"1","foodNutrientSourceDescription":"Analytical
         or derived from analytical","rank":6100,"indentLevel":1,"foodNutrientId":1756432,"dataPoints":0}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":394811,"SR
         Legacy":7793,"Survey (FNDDS)":7083,"Foundation":184,"Experimental":26},"nutrients":{}}}'
-  recorded_at: Sat, 10 Sep 2022 01:40:18 GMT
+  recorded_at: Mon, 12 Sep 2022 23:46:12 GMT
 recorded_with: VCR 6.1.0

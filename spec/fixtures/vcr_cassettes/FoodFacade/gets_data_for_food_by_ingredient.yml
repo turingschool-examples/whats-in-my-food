@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 10 Sep 2022 01:40:16 GMT
+      - Mon, 12 Sep 2022 23:46:11 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,10 +31,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '0'
+      - '2'
       Set-Cookie:
-      - ApplicationGatewayAffinity=5164bd01bfd5c519ce1bd2870a3ce176; Path=/
-      - ApplicationGatewayAffinityCORS=5164bd01bfd5c519ce1bd2870a3ce176; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=b001f71a48e62c89a2bc9438e34dce20; Path=/
+      - ApplicationGatewayAffinityCORS=b001f71a48e62c89a2bc9438e34dce20; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -48,9 +48,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3587'
+      - '3599'
       X-Vcap-Request-Id:
-      - 292eda03-58c7-427d-7882-ede804e830cb
+      - 445caece-a9e3-457e-4451-ebbf69978163
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -3942,5 +3942,5 @@ http_interactions:
         Se","nutrientNumber":"317","unitName":"UG","derivationCode":"A","derivationDescription":"Analytical","derivationId":1,"value":0.7,"foodNutrientSourceId":1,"foodNutrientSourceCode":"1","foodNutrientSourceDescription":"Analytical
         or derived from analytical","rank":6200,"indentLevel":1,"foodNutrientId":1364547,"dataPoints":4}],"finalFoodInputFoods":[],"foodMeasures":[],"foodAttributes":[],"foodAttributeTypes":[],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":48437,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":3},"nutrients":{}}}'
-  recorded_at: Sat, 10 Sep 2022 01:40:17 GMT
+  recorded_at: Mon, 12 Sep 2022 23:46:11 GMT
 recorded_with: VCR 6.1.0
