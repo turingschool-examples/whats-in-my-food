@@ -1,0 +1,10 @@
+<h2>Search Results for <%= params[:q] %></h2>
+
+<% @foods.each_with_index do |food, i| %>
+  <div id="food-<%= i %>">
+    <p>Description: <%= food.description %></p>
+    <p>gtinUpc: <%= food.gtinUpc %></p>
+    <p>Brand Owner: <%= food.brandOwner %></p>
+    <p>Ingredients: <%= food.ingredients %></p><br>
+  </div>
+  <% end %>
