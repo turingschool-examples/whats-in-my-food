@@ -1,9 +1,9 @@
 class FoodFacade 
   def self.create_foods(ingredient)
     foods = FoodService.get_foods(ingredient)
-    # require 'pry'; binding.pry 
-    count = foods[:totalHits] #includes count data
-    foods[:foods][0..9].map do |food| #adds range to get only 10 results
+
+    count = foods[:totalHits] #totalHits data
+    foods[:foods][0..9].map do |food| #range to get only 10 results; i could also just set this result limit in the pages params in the api call
       Food.new(food, count)
     end
   end

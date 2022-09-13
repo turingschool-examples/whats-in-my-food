@@ -3,13 +3,15 @@ class Food
               :code,
               :brand_owner,
               :ingredients,
-              :count
+              # :count,
+              :totalHits
   def initialize(data, count)
     @description = data[:description]
     # require 'pry'; binding.pry 
-    @code = data[:code]
+    @code = data[:gtinUpc]
     @brand_owner = data[:brand_owner]
     @ingredients = data[:ingredients]
-    @count = count
+    # @count = count
+    @totalHits = data[:totalHits]
   end
 end
