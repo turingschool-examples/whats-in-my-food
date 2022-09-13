@@ -10,5 +10,6 @@ RSpec.describe "Food Index" do
     expect(page).to have_content('Description: ')
     expect(page).to have_content('Brand Owner')
     expect(page).to have_content('Ingredients')
+    expect(page).to have_content('Total')
   end
 end
