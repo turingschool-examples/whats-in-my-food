@@ -281,25 +281,61 @@
           null
         ]
       },
-      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/spec/poros/food_spec.rb": {
+      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/app/facades/food_facade.rb": {
         "lines": [
           1,
           null,
           1,
+          2,
+          null,
+          2,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/app/services/food_service.rb": {
+        "lines": [
           1,
           null,
           1,
+          2,
+          2,
           null,
           null,
+          1,
           null,
+          1,
+          2,
+          2,
           null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
           null
         ]
@@ -313,58 +349,16 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/spec/service/food_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/sunnymoore/turing/3mod/midmod/whats-in-my-food/app/services/food_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
+          20,
+          20,
+          20,
+          20,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1662754254
+    "timestamp": 1663094854
   }
 }
