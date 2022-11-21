@@ -1,6 +1,7 @@
 <% @foods.each do |food|%>
-  Description: <%= food.description %>
-  Brand Owner: <%= food.brand_owner %>
-  Ingredients: <%= food.ingredients %>
-  Code: <%= food.code %>
+  <p>Description: <%= food.description %></p>
+  <p>Brand Owner: <%= food.brand_owner %></p>
+  <p>Ingredients: <%= food.ingredients %></p>
+  <p>GTIN/UPC Code: <%= food.code %></p>
+  <p>Total: <%= food.totalHits %></p>
 <% end %>
