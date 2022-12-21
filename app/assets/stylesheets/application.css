@@ -43,3 +43,7 @@
 .select {
   padding-top: 12px;
 }
+
+.food-item {
+    border: 1px solid red
+}
